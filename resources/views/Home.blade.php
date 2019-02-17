@@ -72,6 +72,15 @@
   </div>
 </section>
 
+<!-- New Product -->
+<section class="newproduct bgwhite p-t-45 p-b-105">
+  <div class="container">
+    <div class="sec-title p-b-60">
+      <h3 class="m-text5 t-center">
+        Featured Products
+      </h3>
+    </div>
+
 <!-- Instagram -->
 <section class="instagram p-t-20">
   <div class="sec-title p-b-52 p-l-15 p-r-15">
@@ -313,7 +322,7 @@
 		</div>
 			<div class="t-center s-text7 p-t-10">
 				Copyright © 2018 All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-			</div>	
+			</div>
 	</footer>
 
 

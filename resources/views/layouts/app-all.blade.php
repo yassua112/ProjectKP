@@ -73,11 +73,11 @@
 							</li>
 
 							<li>
-								<a href="{{asset('shop')}}">Shop</a>
+								<a href="{{asset('profile')}}">Profile</a>
 							</li>
 
 							<li>
-								<a href="{{asset('blog')}}">Blog</a>
+								<a href="{{asset('blog')}}">Documentation</a>
 							</li>
 
 							<li>

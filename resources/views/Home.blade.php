@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/daterangepicker/daterangepicker.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/lightbox2/css/lightbox.min.css')}}">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/noui/nouislider.min.css')}}">
+
 @stop
 
 @section('content')
@@ -72,15 +75,14 @@
   </div>
 </section>
 
-<!-- Content page -->
-<section class="bg p-t-55 p-b-65">
-<div class="row">
-  <div class="col-md-8 col-lg-9 p-b-75">
-    <div class = "container">
-      <div class="leftbar p-r-20 p-r-0-sm"> 
-        <div class=" p-r-50 p-r-0-lg">
-        <!-- Item Blog -->
-          <div class="item-blog p-b-80">
+<!-- Counten -->
+<section class="bgwhite p-t-60">
+	<div class="container">
+		<div class="row">
+			<!-- left bar -->
+			<div class="col-md-8 col-lg-9 p-b-75">
+				<div class="p-r-50 p-r-0-lg">
+					<div class="item-blog p-b-30">
 				  		<a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
 					  		<img src="{{asset('assets/images/blog-04.jpg')}}" alt="IMG-BLOG">
 
@@ -100,90 +102,162 @@
 							  	<i class="fa fa-long-arrow-right m-l-8" aria-hidden="true"></i>
 							  </a>
 					  	</div>
-					  </div>
-        </div>  
-      </div>
-    </div>  
-  </div>      
-  <div class="col-md-4 col-lg-3 p-b-75">      
-    <!--  -->
-    <div class="rightbar">
-      <h4 class="m-text23 p-t-56 p-b-34 ">
-          Mengapa Antinomi Law Office
-      </h4>
+					</div>
+				<hr>
+					<h2 class="m-text23 p-t-10 p-b-34 text-center"> 
+						MOTTO ANTINOMI LAW OFFICE
+					</h2>
+				</div>					
+			</div>
 
-        <ul class="p-b-54">
-           <li class="p-t-4">
-              <div class="btn-group open">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
-                      aria-haspopup="true" aria-expanded="false">
-                             We're Reliabic Partner
-                                <span class="sr-only">
-                                </span>
-                </button>
-                <div class="dropdown-menu bg-primary">                  
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu1
-                    </a>                  
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu2
-                    </a>                 
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu3
-                    </a>                  
-                </div>               
-              </div>
-           </li>
+			<!-- Right Barr-->
+			<div class="col-md-4 col-lg-3 p-b-75">
+					<div class="rightbar">
+						<h4 class="m-text23 p-t-56 p-b-34 ">
+          			Mengapa Antinomi Law Office
+     				 </h4>
+       				 <ul class="p-b-54">
+          				 <li class="p-t-4">
+           				   <div class="btn-group o1pen">
+            					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+                   						   aria-haspopup="true" aria-expanded="false">
+                         		  		  We're Reliabic Partner
+                              	  <span class="sr-only">
+                               		 </span>
+             					   </button>
+               							 	<div class="dropdown-menu bg-primary">                  
+                							    <a class="dropdown-item" href="#" >
+                							       dropdownmenu1
+                 								  </a>                  
+                 					 			  <a class="dropdown-item" href="#" >
+                      							 dropdownmenu2
+                   							  </a>                 
+                   	 							<a class="dropdown-item" href="#" >
+                      							 dropdownmenu3
+                   							  </a>                  
+                							</div>               
+              			 </div>
+           				 </li><li class="p-t-4">
+           				   <div class="btn-group o1pen">
+            					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+                   						   aria-haspopup="true" aria-expanded="false">
+                         		  		  We're Reliabic Partner
+                              	  <span class="sr-only">
+                               		 </span>
+             					   </button>
+               							 	<div class="dropdown-menu bg-primary">                  
+                							    <a class="dropdown-item" href="#" >
+                							       dropdownmenu1
+                 								  </a>                  
+                 					 			  <a class="dropdown-item" href="#" >
+                      							 dropdownmenu2
+                   							  </a>                 
+                   	 							<a class="dropdown-item" href="#" >
+                      							 dropdownmenu3
+                   							  </a>                  
+                							</div>               
+              			 </div>
+										</li>
+										<li class="p-t-4">
+           				   <div class="btn-group o1pen">
+            					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+                   						   aria-haspopup="true" aria-expanded="false">
+                         		  		  We're Reliabic Partner
+                              	  <span class="sr-only">
+                               		 </span>
+             					   </button>
+               							 	<div class="dropdown-menu bg-primary">                  
+                							    <a class="dropdown-item" href="#" >
+                							       dropdownmenu1
+                 								  </a>                  
+                 					 			  <a class="dropdown-item" href="#" >
+                      							 dropdownmenu2
+                   							  </a>                 
+                   	 							<a class="dropdown-item" href="#" >
+                      							 dropdownmenu3
+                   							  </a>                  
+                							</div>               
+              			 </div>
+           				 </li>
+        			 </ul>         
+      	 </div> 
+							<!-- Block Layanan -->
+							<h4 class="m-text10 p-t-5 p-b-5"> 
+								Layanan Jasa Hukum Kami
+							</h4>
+							<hr>        
+								<ul>
+										<li class="p-t-6 p-b-8 ">
+											<a href="#" class="s-text13 p-t-5 p-b-5">
+												Konsul Tasi Hukum
+											</a>
+										</li>
 
-           <li class="p-t-4">
-           <div class="btn-group open">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
-                      aria-haspopup="true" aria-expanded="false">
-                             We're Reliabic Partner
-                                <span class="sr-only">
-                                </span>
-                </button>
-                <div class="dropdown-menu bg-primary">                  
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu1
-                    </a>                  
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu2
-                    </a>                 
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu3
-                    </a>                  
-                </div>               
-              </div>
-           </li>
+										<li class="p-t-6 p-b-8 ">
+											<a href="#" class="s-text13 p-t-5 p-b-5">
+												Penanganan Kasus Hukum
+											</a>
+										</li>
 
-           <li class="p-t-4">
-              <div class="btn-group open">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
-                      aria-haspopup="true" aria-expanded="false">
-                             We're Reliabic Partner
-                                <span class="sr-only">
-                                </span>
-                </button>
-                <div class="dropdown-menu bg-primary">                  
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu1
-                    </a>                  
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu2
-                    </a>                 
-                    <a class="dropdown-item" href="#" >
-                       dropdownmenu3
-                    </a>                  
-                </div>               
-              </div>
-           </li>           
-        </ul>         
-     </div>
-  </div>
-</div> 
+										<li class="p-t-6 p-b-8 ">
+											<a href="#" class="s-text13 p-t-5 p-b-5">
+												Draft & Analisa Kontrak
+											</a>
+										</li>
+
+										<li class="p-t-6 p-b-8 ">
+											<a href="#" class="s-text13 p-t-5 p-b-5">
+												Pendapat/Opini Hukum
+											</a>
+										</li>
+
+										<li class="p-t-6 p-b-8 ">
+											<a href="#" class="s-text13 p-t-5 p-b-5">
+												Mewakil di pengadilan
+											</a>											
+										</li>
+									</ul>
+									
+							<!-- Block Layanan -->
+							<h4 class="m-text10 p-t-55 p-b-5"> 
+								Instagram
+							</h4>							
+							<hr>
+							<p> ID Instagram Antinomi
+								<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="carousel-item active">	
+											<img src="{{asset('assets/images/item-cart-01.jpg')}}" alt="Instagram">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>Tanggal</h5>
+													<p>Caption</p>
+												</div>
+											</div>
+
+											<div class="carousel-item">	
+											<img src="{{asset('assets/images/item-cart-01.jpg')}}" alt="Instagram2">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>Tanggal1</h5>
+													<p>Caption1</p>
+												</div>
+											</div>
+											
+											<div class="carousel-item">	
+											<img src="{{asset('assets/images/item-cart-01.jpg')}}" alt="Instagram3">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>Tanggal2</h5>
+													<p>Caption2</p>
+												</div>
+											</div>
+										</div>
+								</div>							
+							</div>							                 
+						</div>    
+					</div>					
+				</div>
+		</div>
+	</div>	
 </section>
- 
 
 	<!-- Footer -->
 	<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
@@ -212,13 +286,13 @@
 				</h4>
 
 				<ul>
-					<li class="p-b-9">
+					<li>
 						<a href="#" class="s-text7">
 							Men
 						</a>
 					</li>
 
-					<li class="p-b-9">
+					<li>
 						<a href="#" class="s-text7">
 							Women
 						</a>
@@ -253,7 +327,7 @@
 					<li class="p-b-9">
 						<a href="#" class="s-text7">
 							About Us
-						</a>
+						</a>    
 					</li>
 
 					<li class="p-b-9">

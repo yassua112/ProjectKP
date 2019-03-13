@@ -27,15 +27,15 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/slick/slick.css')}}">
 <!--===============================================================================================-->
-  @yield('css')
+@yield('css')
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/util.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/main.css')}}">
 <!--===============================================================================================-->
-  @yield('style')
+@yield('style')
 </head>
 <body class="animsition">
-  <!-- Header -->
+<!-- Header -->
 	<header class="header1">
 		<!-- Header desktop -->
 		<div class="container-menu-header">
@@ -69,23 +69,31 @@
 					<nav class="menu">
 						<ul class="main_menu">
 							<li class="sale-noti">
-								<a href="{{asset('/')}}">Home</a>
+								<a href="{{asset('/')}}">HOME</a>
 							</li>
 
 							<li>
-								<a href="{{asset('profile')}}">Profile</a>
+								<a href="{{asset('profile')}}">LAWYERS</a>
 							</li>
 
 							<li>
-								<a href="{{asset('blog')}}">Documentation</a>
+								<a href="{{asset('bhukum')}}">BIDANG HUKUM</a>
 							</li>
 
 							<li>
-								<a href="{{asset('about')}}">About</a>
+								<a href="{{asset('about')}}">TENTANG</a>
 							</li>
 
 							<li>
-								<a href="{{asset('contact')}}">Contact</a>
+								<a href="{{asset('contact')}}">KONTAK KAMI</a>
+							</li>
+
+							<li>
+								<a href="{{asset('article')}}">ARTIKEL HUKUM</a>
+							</li>
+
+							<li>
+								<a href="{{asset('documentation')}}">DOKUMENTASI KEGIATAN</a>
 							</li>
 						</ul>
 					</nav>

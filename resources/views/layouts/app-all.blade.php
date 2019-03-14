@@ -69,11 +69,11 @@
 					<nav class="menu">
 						<ul class="main_menu">
 							<li class="sale-noti">
-								<a href="{{asset('/')}}">HOME</a>
+								<a href="{{route('home')}}">HOME</a>
 							</li>
 
 							<li>
-								<a href="{{asset('profile')}}">LAWYERS</a>
+								<a href="{{route('profile')}}">LAWYERS</a>
 							</li>
 
 							<li>
@@ -107,7 +107,7 @@
 				</div>
 			</div>
 		</div>
-  @yield('content')
+@yield('content')
 
 
 <!--===============================================================================================-->
@@ -119,10 +119,10 @@
 	<script type="text/javascript" src="{{asset('assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
 <!--===============================================================================================-->
-  @yield('script')
+@yield('script')
 <!--===============================================================================================-->
 	<script src="{{asset('assets/js/main.js')}}"></script>
 <!--===============================================================================================-->
-  @yield('javascript')
+@yield('javascript')
 </body>
 </html>

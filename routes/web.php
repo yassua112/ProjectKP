@@ -13,8 +13,8 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 
 Route::get('/profile',function(){
-    return view('Profile');
-});
+    return view('profile');
+})->name('profile');

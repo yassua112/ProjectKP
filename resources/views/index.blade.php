@@ -85,7 +85,6 @@
                     <div class="item-blog p-b-30">
                         <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
                             <img src="{{asset('assets/images/blog-04.jpg')}}" alt="IMG-BLOG">
-
                             <span class="dis-block flex-c-m pos1 size20 bg4 s-text1">
                                 Selamat datang di Website Antinomi Law Office
                             </span>
@@ -95,12 +94,7 @@
                             <p class="p-b-12">
                                 Sebagai pendiri dari Antinomi Law Office pada Tahun 2018, rupanya Ucok Tamba menyadari
                                 akan kekurangan sebagai single partner...
-                            </p>
-
-                            <a href="blog-detail.html" class="s-text20">
-                                Continue Reading
-                                <i class="fa fa-long-arrow-right m-l-8" aria-hidden="true"></i>
-                            </a>
+                            </p>                            
                         </div>
                     </div>
                     <hr>
@@ -122,172 +116,36 @@
 
                         <a class="tag-item">
                             <p class="m-text15"> LIGAT </p>
-
-                        </a>
-                    </div>                   
-                    <!-- The founder Barr -->
-                    <div class="row">
-                        <div class="col-md-7     col-lg-6 p-b-75">
-                            <h2 class = "m-text23 p-t-56 p-b-34 p-l-80"> 
-                            The Founder 
+                        </a>                    
+                    </div>
+                    <div class="raw">
+                        <div class="p-t-50">
+                            <h2 class="m-text20 text-center">
+                                THE FOUNDER
                             </h2>
-                            <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="thefounder">                        
+                            <div class="mx-auto">
+                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
+                            </div>
                         </div>
-                        <div class="col-md-4 col-lg-5 p-b-75">
-                            <h2 class = "m-text23 p-t-56 p-b-34 p-l-80">
-                            The manager
-                            </h2>
-                        <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-right p-l-20" alt="theManager">
-                        </div>                    
-                    </div>                                           
-                </div>
-            
-            
+                    
+                        <!-- The founder Barr -->
+                        <h2 class="m-text20 text-center p-t-20">
+                                LAW OFFICE MANAGER
+                                </h2>
+                        <div class="row p-l-20 " >                        
+                            <div class="col-md-7 col-lg-6 p-b-75">
+                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">                        
+                            </div>
+                            <div class="col-md-4 col-lg-5 p-b-75">
+                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
+                            </div>                    
+                        </div>                                           
+                    </div>
+                </div>         
             </div>
 
             <!-- Right Barr-->
-            <div class="col-md-3 col-lg-3 p-b-75">
-                <div class="rightbar">
-                    <h4 class="m-text23 p-t-56 p-b-34 ">
-                        Mengapa Antinomi Law Office
-                    </h4>
-                    <ul class="p-b-54">
-                        <li class="p-t-4">
-                            <div class="btn-group open">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    We're Reliabic Partners
-                                    <span class="sr-only">
-                                    </span>
-                                </button>
-                                <div class="dropdown-menu bg-primary">
-                                    <a class="dropdown-item" href="#">
-                                        drop down menu1
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        drop down menu2
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        drop down menu3
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="p-t-4">
-                            <div class="btn-group open">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    We've Raputation
-                                    <span class="sr-only">
-                                    </span>
-                                </button>
-                                <div class="dropdown-menu bg-primary">
-                                    <a class="dropdown-item" href="#">
-                                        drop down menu1
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        drop down menu2
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        drop down menu3
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="p-t-4">
-                            <div class="btn-group open">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    We're The Best
-                                    <span class="sr-only">
-                                    </span>
-                                </button>
-                                <div class="dropdown-menu bg-primary">
-                                    <a class="dropdown-item" href="#">
-                                        dropdownmenu1
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        dropdownmenu2
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        dropdownmenu3
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Block Layanan -->
-                <h4 class="m-text10 p-t-5 p-b-5">
-                    Layanan Jasa Hukum Kami
-                </h4>
-                <hr>
-                <ul>
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Konsul Tasi Hukum
-                        </a>
-                    </li>
-
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Penanganan Kasus Hukum
-                        </a>
-                    </li>
-
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Draft & Analisa Kontrak
-                        </a>
-                    </li>
-
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Pendapat/Opini Hukum
-                        </a>
-                    </li>
-
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Mewakil di pengadilan
-                        </a>
-                    </li>
-                </ul>
-
-                <!-- Block Layanan -->
-                <h4 class="m-text10 p-t-55 p-b-5">
-                    Instagram
-                </h4>
-                <hr>
-                <p> ID Instagram Antinomi
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" alt="Instagram">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Tanggal</h5>
-                                    <p>Caption</p>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" alt="Instagram2">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Tanggal1</h5>
-                                    <p>Caption1</p>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" alt="Instagram3">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Tanggal2</h5>
-                                    <p>Caption2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
+            @include('layouts.right-bar')
         </div>
     </div>
 </section>

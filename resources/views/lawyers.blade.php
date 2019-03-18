@@ -1,4 +1,5 @@
 @extends('layouts.app-all')
+
 @section('css')
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/daterangepicker/daterangepicker.css')}}">

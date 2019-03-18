@@ -15,10 +15,26 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('/profile',function(){
-    return view('profile');
-})->name('profile');
-
-Route::get('/lawyers',function() {
-	return view('lawyers');
+Route::get('/lawyers',function(){
+    return view('lawyers');
 })->name('lawyers');
+
+Route::get('/bidang-hukum',function() {
+	return view('bhukum');
+})->name('bhukum');
+
+Route::get('/tentang-kami', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/kontak-kami',function(){
+    return view('contact');
+})->name('contact');
+
+Route::get('/artikel-hukum',function() {
+	return view('article');
+})->name('article');
+
+Route::get('/dokumentasi-kegiatan',function() {
+	return view('documentation');
+})->name('documentation');

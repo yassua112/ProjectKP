@@ -73,27 +73,27 @@
 							</li>
 
 							<li>
-								<a href="{{route('profile')}}">LAWYERS</a>
+								<a href="{{route('lawyers')}}">LAWYERS</a>
 							</li>
 
 							<li>
-								<a href="{{asset('bhukum')}}">BIDANG HUKUM</a>
+								<a href="{{route('bhukum')}}">BIDANG HUKUM</a>
 							</li>
 
 							<li>
-								<a href="{{asset('about')}}">TENTANG</a>
+								<a href="{{route('about')}}">TENTANG</a>
 							</li>
 
 							<li>
-								<a href="{{asset('contact')}}">KONTAK KAMI</a>
+								<a href="{{route('contact')}}">KONTAK KAMI</a>
 							</li>
 
 							<li>
-								<a href="{{asset('article')}}">ARTIKEL HUKUM</a>
+								<a href="{{route('article')}}">ARTIKEL HUKUM</a>
 							</li>
 
 							<li>
-								<a href="{{asset('documentation')}}">DOKUMENTASI KEGIATAN</a>
+								<a href="{{route('documentation')}}">DOKUMENTASI KEGIATAN</a>
 							</li>
 						</ul>
 					</nav>

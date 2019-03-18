@@ -77,7 +77,7 @@
     <ul>
         <li class="p-t-6 p-b-8 ">
             <a href="#" class="s-text13 p-t-5 p-b-5">
-                Konsul Tasi Hukum
+                Konsultasi Hukum
             </a>
         </li>
 
@@ -95,7 +95,7 @@
 
         <li class="p-t-6 p-b-8 ">
             <a href="#" class="s-text13 p-t-5 p-b-5">
-                Pendapat/Opini Hukum
+                Pendapat / Opini Hukum
             </a>
         </li>
 
@@ -109,10 +109,10 @@
     <div>
         <!-- Block Layanan -->
         <h4 class="m-text10 p-t-55 p-b-5">
-            Instagram
+            Facebook
         </h4>
         <hr>
-        <p> ID Instagram Antinomi
+        <p>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -123,26 +123,11 @@
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <img src="{{asset('assets/images/item-cart-01.jpg')}}" alt="Instagram2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Tanggal1</h5>
-                        <p>Caption1</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="{{asset('assets/images/item-cart-01.jpg')}}" alt="Instagram3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Tanggal2</h5>
-                        <p>Caption2</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     <div class="p-t-30">
-        <h4 class="m-text10 text-center"> FACEBOOK
+        <h4 class="m-text10 text-center"> Instagram Logo (Direct LINK)
         </h4>
         <hr>
     </div>

@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/profile',function(){
     return view('profile');
 })->name('profile');
+
+Route::get('/lawyers',function() {
+	return view('lawyers');
+})->name('lawyers');

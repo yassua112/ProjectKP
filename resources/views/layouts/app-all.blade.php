@@ -77,23 +77,23 @@
 							</li>
 
 							<li>
-								<a href="{{route('bhukum')}}">BIDANG HUKUM</a>
+								<a href="{{route('bidanghukum')}}">BIDANG HUKUM</a>
 							</li>
 
 							<li>
-								<a href="{{route('about')}}">TENTANG</a>
+								<a href="{{route('tentangkami')}}">TENTANG</a>
 							</li>
 
 							<li>
-								<a href="{{route('contact')}}">KONTAK KAMI</a>
+								<a href="{{route('kontakkami')}}">KONTAK KAMI</a>
 							</li>
 
 							<li>
-								<a href="{{route('article')}}">ARTIKEL HUKUM</a>
+								<a href="{{route('artikelhukum')}}">ARTIKEL HUKUM</a>
 							</li>
 
 							<li>
-								<a href="{{route('documentation')}}">DOKUMENTASI KEGIATAN</a>
+								<a href="{{route('dokumentasi')}}">DOKUMENTASI KEGIATAN</a>
 							</li>
 						</ul>
 					</nav>

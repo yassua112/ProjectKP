@@ -61,52 +61,20 @@
 				<!-- Logo -->
 				<a href="{{asset('/')}}" class="logo">
 					<img src="{{asset('assets/images/icons/logo.png')}}" alt="IMG-LOGO">
-
 				</a>
 
 				<!-- Menu -->
-				<div class="wrap_menu">
-					<nav class="menu">
-						<ul class="main_menu">
-							<li class="sale-noti">
-								<a href="{{route('home')}}">HOME</a>
-							</li>
-
-							<li>
-								<a href="{{route('lawyers')}}">LAWYERS</a>
-							</li>
-
-							<li>
-								<a href="{{route('bidanghukum')}}">BIDANG HUKUM</a>
-							</li>
-
-							<li>
-								<a href="{{route('tentangkami')}}">TENTANG</a>
-							</li>
-
-							<li>
-								<a href="{{route('kontakkami')}}">KONTAK KAMI</a>
-							</li>
-
-							<li>
-								<a href="{{route('artikelhukum')}}">ARTIKEL HUKUM</a>
-							</li>
-
-							<li>
-								<a href="{{route('dokumentasi')}}">DOKUMENTASI KEGIATAN</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+				@include('layouts.navmenu')
 
 				<!-- Header Icon -->
-				<div class="header-icons">
+				<!-- <div class="header-icons">
 					<a href="#" class="header-wrapicon1 dis-block">
 						<img src="{{asset('assets/images/icons/icon-header-01.png')}}" class="header-icon1" alt="ICON">
 					</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
+	</header>
 @yield('content')
 
 

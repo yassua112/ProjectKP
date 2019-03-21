@@ -34,47 +34,31 @@
 <!--===============================================================================================-->
 @yield('style')
 </head>
+
+<style type="text/css">
+#footer
+{
+     clear: left;
+     width:100%;
+     margin-left: 5px;
+     background-color: #ab1818;
+     border: 1px #a0b1a0 solid;
+     padding: 5px;
+
+    font-family: Montserrat-Bold;
+	font-size: 15px;
+	color: #ffffff;
+	line-height: 1.5;
+	text-transform: uppercase;
+
+	padding-bottom: 30px;
+}
+
+</style>
 <body class="animsition">
 <!-- Header -->
-	<header class="header1">
-		<!-- Header desktop -->
-		<div class="container-menu-header">
-			<div class="topbar">
-				<div class="topbar-social">
-					<a href="#" class="topbar-social-item fa fa-facebook"></a>
-					<a href="#" class="topbar-social-item fa fa-instagram"></a>
-					<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
-				</div>
+	@include('layouts.header')
 
-				<span class="topbar-child1">
-					Law Office
-				</span>
-
-				<div class="topbar-child2">
-					<span class="topbar-email">
-						fashe@example.com
-					</span>
-				</div>
-			</div>
-
-			<div class="wrap_header">
-				<!-- Logo -->
-				<a href="{{asset('/')}}" class="logo">
-					<img src="{{asset('assets/images/icons/logo.png')}}" alt="IMG-LOGO">
-				</a>
-
-				<!-- Menu -->
-				@include('layouts.navmenu')
-
-				<!-- Header Icon -->
-				<!-- <div class="header-icons">
-					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="{{asset('assets/images/icons/icon-header-01.png')}}" class="header-icon1" alt="ICON">
-					</a>
-				</div> -->
-			</div>
-		</div>
-	</header>
 @yield('content')
 
 

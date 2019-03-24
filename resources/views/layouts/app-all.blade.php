@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title>Welcome To Antonomi Laweys Officces</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -27,6 +27,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/slick/slick.css')}}">
 <!--===============================================================================================-->
+
 @yield('css')
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/util.css')}}">

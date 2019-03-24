@@ -117,6 +117,6 @@
         </div>
     </div>
     <div class="t-center colorwhite p-t-10">
-        MADE BY <i class="fa fa-heart-o" aria-hidden="true"></i>
+        MADE BY <i class="fa fa-heart-o" aria-hidden="true"> </i> BUT PROGRAMERS STILL SINGLE EXEPT ONE
     </div>
 </footer>

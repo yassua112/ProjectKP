@@ -20,21 +20,21 @@ Route::get('/lawyers',function(){
 })->name('lawyers');
 
 Route::get('/bidang-hukum',function() {
-	return view('bhukum');
-})->name('bhukum');
+	return view('bidanghukum');
+})->name('bidanghukum');
 
 Route::get('/tentang-kami', function () {
-    return view('about');
-})->name('about');
+    return view('tentangkami');
+})->name('tentangkami');
 
 Route::get('/kontak-kami',function(){
-    return view('contact');
-})->name('contact');
+    return view('kontakkami');
+})->name('kontakkami');
 
 Route::get('/artikel-hukum',function() {
-	return view('article');
-})->name('article');
+	return view('artikelhukum');
+})->name('artikelhukum');
 
 Route::get('/dokumentasi-kegiatan',function() {
-	return view('documentation');
-})->name('documentation');
+	return view('dokumentasi');
+})->name('dokumentasi');

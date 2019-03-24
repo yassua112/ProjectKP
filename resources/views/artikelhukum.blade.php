@@ -10,146 +10,127 @@
 
 @stop
 
+
+
 @section('content')
-<!-- Slide1 -->
+<!-- Jumbotron Artikel -->
 <section class="slide1">
     <div class="wrap-slick1">
         <div class="slick1">
-            <div class="item-slick1 item1-slick1" style="background-image: url({{asset('assets/images/master-slide-02.jpg')}});">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-                        Women Collection 2018
-                    </span>
-
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-                        New arrivals
-                    </h2>
-
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
-                        <!-- Button -->
-                        <a href="{{asset('assets/product.html')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                            LIHAT PROFILE
-                        </a>
+                    <div class="jumbotron">
+                    <h2>Artikel Hukum Antinomi Law Office</h2>
+                    <hr width="710px">
+                    <h6>Kumpulan berita hukum, artikel-artikel hukum terbaru serta pandangan-pandangan Ahli Hukum</h6>
                     </div>
-                </div>
-            </div>
-
-            <div class="item-slick1 item2-slick1" style="background-image: url({{asset('assets/images/master-slide-03.jpg')}});">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
-                        Women Collection 2018
-                    </span>
-
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                        New arrivals
-                    </h2>
-
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
-                        <!-- Button -->
-                        <a href="{{asset('assets/product.html')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                            LIHAT PROFILE
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item-slick1 item3-slick1" style="background-image: url({{asset('assets/images/master-slide-04.jpg')}});">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
-                        Women Collection 2018
-                    </span>
-
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
-                        New arrivals
-                    </h2>
-
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
-                        <!-- Button -->
-                        <a href="{{asset('assets/product.html')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                            LIHAT PROFILE
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<!-- Counten -->
-<section class="bgwhite p-t-60">
-    <div class="container">
-        <div class="row">
-            <!-- left bar -->
-            <div class="col-md-9 col-lg-9 p-b-75">
-                <div class="p-r-50 p-r-0-lg">
-                    <div class="item-blog p-b-30">
-                        
-                        <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="{{asset('assets/images/blog-04.jpg')}}" alt="IMG-BLOG">
-                            <span class="dis-block flex-c-m pos1 size20 bg4 s-text1">
-                                Selamat datang di Website Antinomi Law Office
-                            </span>
-                        </a>
-
-                        <div class="item-blog-txt p-t-33">
-                            <p class="p-b-12">
-                                Sebagai pendiri dari Antinomi Law Office pada Tahun 2018, rupanya Ucok Tamba menyadari
-                                akan kekurangan sebagai single partner...
-                            </p>                            
-                        </div>
+<!-- Counten -->  
+<div class="container" style="margin-top:40px">
+    <div class="row">
+        <div class="col-md-9">
+              <div class="panel panel-default">
+               <div class="panel-body">
+                  <h3>Latih Balita Anda Dalam Merangsang Saraf Motorik</h3>
+                    <div class="info-meta">
+                        <ul class="list-inline">
+                            <li><i class="fa fa-clock-o"></i> Jan 5, 2016 </li>
+                            <li><i class="fa fa-eye"></i>21k</li>
+                            <li><i class="fa fa-heart-o"></i>372</li>
+                            <li><i class="fa fa-user"></i> Posting by Ilmu Detil</li>
+                            <li class="pull-right">Category : Education</li>
+                        </ul>
+                    </div>
+                  <hr>
+                  
+                    <div class = "media">
+                       <a class = "pull-left" href = "#">
+                          <img class = "media-object " src = "images/education.jpg" width="100%" height="200px" >
+                       </a>
+                       <div class = "media-body">
+                          <p>A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles).
+                          A simple shell for an h1 to appropriately space out and segment sections of content on a page.
+                          </p> 
+                          <p>It can utilize the h1's default small element, as well as most other components (with additional styles).
+                            A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles). A simple shell for an h1 to appropriately space out and segment sections of content on a page.
+                         </p>
+                       </div>
+                        <p style="text-align:right;">
+                            <a href="artikel_edukasi.html">
+                                <button class="btn btn-primary">Read More</button>
+                            </a>
+                        </p>
                     </div>
                     <hr>
-                    <h2 class="m-text23 p-t-10 p-b-34 text-center">
-                        MOTTO ANTINOMI LAW OFFICE
-                    </h2>
-                    <div class="wrap-tags flex-w justify-content-center ">
-                        <a class="tag-item">
-                            <p class="m-text11"> PROFESIONAL </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text10"> FAST TEAMWORK </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text12"> QUICK INFO CENTER </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text15"> LIGAT </p>
-                        </a>                    
+                    <h3>Tip dan Trik dalam memilih laptop untuk penyuka game</h3>
+                    <div class="info-meta">
+                        <ul class="list-inline">
+                            <li><i class="fa fa-clock-o"></i> Jan 5, 2016 </li>
+                            <li><i class="fa fa-eye"></i>21k</li>
+                            <li><i class="fa fa-heart-o"></i>372</li>
+                            <li><i class="fa fa-user"></i> Posting by Ilmu Detil</li>
+                            <li class="pull-right">Category : Technology</li>
+                        </ul>
                     </div>
-                    <div class="raw">
-                        <div class="p-t-50">
-                            <h2 class="m-text20 text-center">
-                                THE FOUNDER
-                            </h2>
-                            <div class="mx-auto">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
-                            </div>
-                        </div>
-                    
-                        <!-- The founder Barr -->
-                        <h2 class="m-text20 text-center p-t-20">
-                                LAW OFFICE MANAGER
-                                </h2>
-                        <div class="row p-l-20 " >                        
-                            <div class="col-md-7 col-lg-6 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">                        
-                            </div>
-                            <div class="col-md-4 col-lg-5 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
-                            </div>                    
-                        </div>                                           
-                    </div>                
-                </div>         
+                  <hr>
+                  
+                    <div class = "media">
+                       <a class = "pull-left" href = "#">
+                          <img class = "media-object" src = "images/technology.jpg" width="300px" height="200px">
+                       </a>
+                       
+                       <div class = "media-body">
+                          <p>A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles).
+                          A simple shell for an h1 to appropriately space out and segment sections of content on a page.
+                          </p> 
+                          <p>It can utilize the h1's default small element, as well as most other components (with additional styles).
+                            A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles). A simple shell for an h1 to appropriately space out and segment sections of content on a page.
+                         </p>  
+                       </div>
+                        <p style="text-align:right;">
+                            <button class="btn btn-primary">Read More</button>
+                        </p>
+                    </div>
+               </div>
             </div>
-
-            <!-- Right Barr-->
-            @include('layouts.right-bar')
-        </div>
-    </div>
-</section>
+         </div>  
+        <div class="col-md-3">
+            <div class="panel panel-default">
+               <div class="panel-heading"><h4 class="text-center">Latest News</h4></div>
+               <div class="panel-body">
+                    <div class="recent">
+                        <a href="#"><img class="img-responsive" src="images/sport.jpg" alt="" /></a>                
+                        <div class="info-meta">
+                            <ul class="list-inline">
+                                <li><i class="fa fa-clock-o"></i> Jan 5, 2016 </a></li>
+                                <li><i class="fa fa-eye"></i>21k</li>
+                                <li><i class="fa fa-heart-o"></i>372</li>
+                            </ul>
+                        </div>
+                        <h4>
+                            <a href="">Pertandingan Basket NBA berlangsung sangat sengit</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="recent">
+                        <a href="#"><img class="img-responsive" src="images/technology.jpg" alt="" /></a>                           
+                        <div class="info-meta">
+                            <ul class="list-inline">
+                                <li><i class="fa fa-clock-o"></i> Jan 5, 2016</li>
+                                <li><i class="fa fa-eye"></i>21k</li>
+                                <li><i class="fa fa-heart-o"></i>372</li>
+                            </ul>
+                        </div>
+                        <h4 class="entry-title">
+                            <a href="">Tip dan Trik dalam memilih laptop untuk penyuka game</a>
+                        </h4>
+                    </div><!--recent-->
+                </div>
+            </div>      
+        </div>          
+    </div>          
+</div>
 
 <!-- Footer -->
 @include('layouts.footer')

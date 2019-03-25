@@ -31,7 +31,7 @@
                             printer, scanner, speaker, projector, hardware and more. laptop accessory.
                         </p>
                         <a href="#">
-                            <h5 class="text-uppercase">Mark Alviro Wiens</h5>
+                            <h5 class="text-uppercase">Ucok Orlando Parulian Tamba, S.H., M.H</h5>
                         </a>
                         <p>CEO at Google</p>
                         <hr>

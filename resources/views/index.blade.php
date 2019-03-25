@@ -83,7 +83,6 @@
             <div class="col-md-9 col-lg-9 p-b-75">
                 <div class="p-r-50 p-r-0-lg">
                     <div class="item-blog p-b-30">
-                        
                         <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
                             <img src="{{asset('assets/images/blog-04.jpg')}}" alt="IMG-BLOG">
                             <span class="dis-block flex-c-m pos1 size20 bg4 s-text1">
@@ -103,6 +102,7 @@
                         MOTTO ANTINOMI LAW OFFICE
                     </h2>
                     <div class="wrap-tags flex-w justify-content-center ">
+
                         <a class="tag-item">
                             <p class="m-text11"> PROFESIONAL </p>
                         </a>
@@ -124,25 +124,30 @@
                             <h2 class="m-text20 text-center">
                                 THE FOUNDER
                             </h2>
-                            <div class="mx-auto">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
+                            <div class="mx-auto p-t-10">
+                                <img src="{{asset('assets/images/profile-founder.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
                             </div>
+                            <a href="#">
+                            <h5 class="text-uppercase text-center">Ucok Orlando Parulian Tamba, S.H., M.H</h5>
+                            </a>
                         </div>
-                    
-                        <!-- The founder Barr -->
-                        <h2 class="m-text20 text-center p-t-20">
+
+                        <h2 class="m-text20 text-center p-t-50">
                                 LAW OFFICE MANAGER
                                 </h2>
-                        <div class="row p-l-20 " >                        
-                            <div class="col-md-7 col-lg-6 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">                        
+                        <div class="row p-l-20 p-t-10">                        
+                            <div class="col-md-7 col-lg-6 p-l-50">
+                                <img align="center" src="{{asset('assets/images/profile-manager.jpg')}}" class="rounded float-left" alt="theManager1">
                             </div>
-                            <div class="col-md-4 col-lg-5 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
-                            </div>                    
-                        </div>                                           
-                    </div>                
-                </div>         
+                            
+                            <div class="col-md-7 col-lg-6 p-r-50">
+                                <img align="center" src="{{asset('assets/images/profile-manager2.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
+                            </div>
+                            <div class="col"><h5 class="text-uppercase text-center">Dr. Musa Darwin Pane, S.H., M.H</h5></div>
+                            <div class="col"><h5 class="text-uppercase text-center">Dr. Sahat Maruli Tua Situmeang, S.H., M.H</h5></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Right Barr-->

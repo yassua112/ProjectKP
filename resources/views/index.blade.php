@@ -135,16 +135,21 @@
                         <h2 class="m-text20 text-center p-t-50">
                                 LAW OFFICE MANAGER
                                 </h2>
-                        <div class="row p-l-20 p-t-10">                        
-                            <div class="col-md-7 col-lg-6 p-l-50">
-                                <img align="center" src="{{asset('assets/images/profile-manager.jpg')}}" class="rounded float-left" alt="theManager1">
+                        <div class="row p-l-18 p-r-17 p-t-10">
+                            <div class="col-md-7 col-lg-6">
+                                <div class="single-feedback">
+                                    <img align="center" src="{{asset('assets/images/profile-manager.jpg')}}" class="rounded float-left" alt="theManager1">
+                                    <div class="col text-center">
+                                    <h5 class="text-uppercase text-center">Dr. Musa Darwin Pane, S.H., M.H</h5></div>
+                                </div>
                             </div>
-                            
-                            <div class="col-md-7 col-lg-6 p-r-50">
-                                <img align="center" src="{{asset('assets/images/profile-manager2.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
+                            <div class="col-md-7 col-lg-6">
+                                <div class="single-feedback p-r-10">
+                                    <img align="center" src="{{asset('assets/images/profile-manager2.jpg')}}" class="rounded float-right" alt="theManager2">
+                                    <div class="col text-center">
+                                    <h5 class="text-uppercase text-center">Dr. Sahat Maruli Tua Situmeang, S.H., M.H</h5></div>
+                                </div>
                             </div>
-                            <div class="col"><h5 class="text-uppercase text-center">Dr. Musa Darwin Pane, S.H., M.H</h5></div>
-                            <div class="col"><h5 class="text-uppercase text-center">Dr. Sahat Maruli Tua Situmeang, S.H., M.H</h5></div>
                         </div>
                     </div>
                 </div>

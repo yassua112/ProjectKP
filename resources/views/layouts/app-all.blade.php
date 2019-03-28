@@ -170,6 +170,12 @@ padding-bottom:10px;
 
 	padding-bottom: 30px;
 }
+.link-bidang-praktik:hover {
+	background-color: #ab1818;
+	color: rgb(255,255,255);
+}
+
+
 
 </style>
 <body class="animsition">

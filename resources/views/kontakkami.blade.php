@@ -81,74 +81,92 @@
         <div class="row">
             <!-- left bar -->
             <div class="col-md-9 col-lg-9 p-b-75">
-                <div class="p-r-50 p-r-0-lg">
-                    <div class="item-blog p-b-30">
-                        
-                        <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="{{asset('assets/images/blog-04.jpg')}}" alt="IMG-BLOG">
-                            <span class="dis-block flex-c-m pos1 size20 bg4 s-text1">
-                                Selamat datang di Website Antinomi Law Office
-                            </span>
-                        </a>
-
-                        <div class="item-blog-txt p-t-33">
-                            <p class="p-b-12">
-                                Sebagai pendiri dari Antinomi Law Office pada Tahun 2018, rupanya Ucok Tamba menyadari
-                                akan kekurangan sebagai single partner...
-                            </p>                            
-                        </div>
+                <h4 class="m-text23 t-center" style="color:#ab1818;">
+                Kantor Hukum Antinomi</h4><hr>
+                <p>Jika Anda ingin diwakili oleh firma hukum terbaik untuk kasus Anda maka jangan ragu untuk kirimkan email kepada kami atau mengisi form di bawah ini :</p>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                     </div>
-                    <hr>
-                    <h2 class="m-text23 p-t-10 p-b-34 text-center">
-                        MOTTO ANTINOMI LAW OFFICE
-                    </h2>
-                    <div class="wrap-tags flex-w justify-content-center ">
-                        <a class="tag-item">
-                            <p class="m-text11"> PROFESIONAL </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text10"> FAST TEAMWORK </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text12"> QUICK INFO CENTER </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text15"> LIGAT </p>
-                        </a>                    
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                     </div>
-                    <div class="raw">
-                        <div class="p-t-50">
-                            <h2 class="m-text20 text-center">
-                                THE FOUNDER
-                            </h2>
-                            <div class="mx-auto">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
-                            </div>
-                        </div>
-                    
-                        <!-- The founder Barr -->
-                        <h2 class="m-text20 text-center p-t-20">
-                                LAW OFFICE MANAGER
-                                </h2>
-                        <div class="row p-l-20 " >                        
-                            <div class="col-md-7 col-lg-6 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">                        
-                            </div>
-                            <div class="col-md-4 col-lg-5 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
-                            </div>                    
-                        </div>                                           
-                    </div>                
-                </div>         
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputState">State</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label for="inputZip">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Check me out
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
             </div>
 
             <!-- Right Barr-->
-            @include('layouts.right-bar')
-        </div>
-    </div>
+            <div class="col-md-3 col-lg-3">
+        <h4 class="m-text23 t-center" style="color:#ab1818;">
+            Lokasi Kantor
+        </h4>
+        <hr>
+          <div class="row">
+            <div class="col-2 p-l-2">
+              <i class="fa fa-home" style="font-size:48px;color:#ab1818"></i>
+            </div>
+            <div class="col-10 p-l-25">
+              <h5 style="color:#ab1818">Alamat</h5>
+              <h6 style="color:#ab1818">Jl. Wira Angun-Angun No. 21, Kota Bandung</h6>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-2 p-l-2">
+              <i class="fa fa-envelope" style="font-size:40px;color:#ab1818"></i>
+            </div>
+            <div class="col-10 p-l-25">
+              <h5 style="color:#ab1818">No. Telp / WA</h5>
+              <h6 style="color:#ab1818">085294419970</h6>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-2 p-l-2">
+              <i class="fa fa-phone" style="font-size:48px;color:#ab1818"></i>
+            </div>
+            <div class="col-10 p-l-25">
+              <h5 style="color:#ab1818">Email</h5>
+              <h6 style="color:#ab1818">antinomilawoffice@yahoo.com</h6>
+            </div>
+          </div>
+
+
 </section>
 
 <!-- Footer -->

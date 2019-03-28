@@ -30,69 +30,33 @@
 <div class="container" style="margin-top:40px">
     <div class="row">
         <div class="col-md-9">
-              <div class="panel panel-default">
-               <div class="panel-body">
-                  <h3>Latih Balita Anda Dalam Merangsang Saraf Motorik</h3>
-                    <div class="info-meta">
-                        <ul class="list-inline">
-                            <li><i class="fa fa-clock-o"></i> Jan 5, 2016 </li>
-                            <li><i class="fa fa-eye"></i>21k</li>
-                            <li><i class="fa fa-heart-o"></i>372</li>
-                            <li><i class="fa fa-user"></i> Posting by Ilmu Detil</li>
-                            <li class="pull-right">Category : Education</li>
-                        </ul>
-                    </div>
-                  <hr>
-                  
-                    <div class = "media">
-                       <a class = "pull-left" href = "#">
-                          <img class = "media-object " src = "images/education.jpg" width="100%" height="200px" >
-                       </a>
-                       <div class = "media-body">
-                          <p>A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles).
-                          A simple shell for an h1 to appropriately space out and segment sections of content on a page.
-                          </p> 
-                          <p>It can utilize the h1's default small element, as well as most other components (with additional styles).
-                            A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles). A simple shell for an h1 to appropriately space out and segment sections of content on a page.
-                         </p>
-                       </div>
-                        <p style="text-align:right;">
-                            <a href="artikel_edukasi.html">
-                                <button class="btn btn-primary">Read More</button>
-                            </a>
-                        </p>
-                    </div>
-                    <hr>
-                    <h3>Tip dan Trik dalam memilih laptop untuk penyuka game</h3>
-                    <div class="info-meta">
-                        <ul class="list-inline">
-                            <li><i class="fa fa-clock-o"></i> Jan 5, 2016 </li>
-                            <li><i class="fa fa-eye"></i>21k</li>
-                            <li><i class="fa fa-heart-o"></i>372</li>
-                            <li><i class="fa fa-user"></i> Posting by Ilmu Detil</li>
-                            <li class="pull-right">Category : Technology</li>
-                        </ul>
-                    </div>
-                  <hr>
-                  
-                    <div class = "media">
-                       <a class = "pull-left" href = "#">
-                          <img class = "media-object" src = "images/technology.jpg" width="300px" height="200px">
-                       </a>
-                       
-                       <div class = "media-body">
-                          <p>A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles).
-                          A simple shell for an h1 to appropriately space out and segment sections of content on a page.
-                          </p> 
-                          <p>It can utilize the h1's default small element, as well as most other components (with additional styles).
-                            A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small element, as well as most other components (with additional styles). A simple shell for an h1 to appropriately space out and segment sections of content on a page.
-                         </p>  
-                       </div>
-                        <p style="text-align:right;">
-                            <button class="btn btn-primary">Read More</button>
-                        </p>
-                    </div>
-               </div>
+            <div class="media">
+                <img src="{{asset('assets/images/profile-manager.jpg')}}" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
+            <div class="media">
+                <img src="{{asset('assets/images/profile-manager.jpg')}}" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
+            <div class="media">
+                <img src="{{asset('assets/images/profile-manager.jpg')}}" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
+            <div class="media">
+                <img src="{{asset('assets/images/profile-manager.jpg')}}" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
             </div>
         </div>  
         <div class="col-md-3 col-lg-3 p-b-75">

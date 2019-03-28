@@ -83,90 +83,84 @@
             <div class="col-md-9 col-lg-9 p-b-75">
                 <h4 class="m-text23 t-center" style="color:#ab1818;">
                 Kantor Hukum Antinomi</h4><hr>
-                <p>Jika Anda ingin diwakili oleh firma hukum terbaik untuk kasus Anda maka jangan ragu untuk kirimkan email kepada kami atau mengisi form di bawah ini :</p>
+                <p>Jika Anda ingin diwakili oleh firma hukum terbaik untuk kasus Anda maka jangan ragu untuk kirimkan email kepada kami atau mengisi form di bawah ini :</p><br>
                 <form>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Email</label>
-                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputPassword4">Password</label>
-                      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                    </div>
+                  <div class="form-group">
+                    <label for="exampleInputNama">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="exampleInputNama" placeholder="Masukkan Nama Lengkap">
                   </div>
                   <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <label for="exampleEmail">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Masukkan Email">
                   </div>
                   <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputCity">City</label>
-                      <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="form-group col-md-4">
-                      <label for="inputState">State</label>
-                      <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                      <label for="inputZip">Zip</label>
-                      <input type="text" class="form-control" id="inputZip">
-                    </div>
+                    <label for="exampleEmail">Subjek</label>
+                    <input type="text" class="form-control" id="exampleSubjek" placeholder="Masukkan Subjek Anda">
                   </div>
                   <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Check me out
-                      </label>
-                    </div>
+                    <label for="exampleFormControlPesan">Pesan</label>
+                    <textarea class="form-control" id="exampleFormControlPesan" rows="3"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary">Sign in</button>
+                  <button type="submit" class="btn btn-primary">Kirim</button>
                 </form>
             </div>
 
             <!-- Right Barr-->
             <div class="col-md-3 col-lg-3">
+                <h4 class="m-text23 t-center" style="color:#ab1818;">
+                    Lokasi Kantor
+                </h4>
+                <hr>
+                <div class="row">
+                    <div class="col-2 p-l-2">
+                      <i class="fa fa-home" style="font-size:48px;color:#ab1818"></i>
+                    </div>
+                    <div class="col-10 p-l-25">
+                      <h5 style="color:#ab1818">Alamat</h5>
+                      <h6 style="color:#ab1818">Jl. Wira Angun-Angun No. 21, Kota Bandung</h6>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-2 p-l-2">
+                      <i class="fa fa-envelope" style="font-size:40px;color:#ab1818"></i>
+                    </div>
+                    <div class="col-10 p-l-25">
+                      <h5 style="color:#ab1818">No. Telp / WA</h5>
+                      <h6 style="color:#ab1818">085294419970</h6>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-2 p-l-2">
+                      <i class="fa fa-phone" style="font-size:48px;color:#ab1818"></i>
+                    </div>
+                    <div class="col-10 p-l-25">
+                      <h5 style="color:#ab1818">Email</h5>
+                      <h6 style="color:#ab1818">antinomilawoffice@yahoo.com</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h4 class="m-text23 t-center" style="color:#ab1818;">
-            Lokasi Kantor
-        </h4>
-        <hr>
-          <div class="row">
-            <div class="col-2 p-l-2">
-              <i class="fa fa-home" style="font-size:48px;color:#ab1818"></i>
-            </div>
-            <div class="col-10 p-l-25">
-              <h5 style="color:#ab1818">Alamat</h5>
-              <h6 style="color:#ab1818">Jl. Wira Angun-Angun No. 21, Kota Bandung</h6>
-            </div>
-          </div><br>
-          <div class="row">
-            <div class="col-2 p-l-2">
-              <i class="fa fa-envelope" style="font-size:40px;color:#ab1818"></i>
-            </div>
-            <div class="col-10 p-l-25">
-              <h5 style="color:#ab1818">No. Telp / WA</h5>
-              <h6 style="color:#ab1818">085294419970</h6>
-            </div>
-          </div><br>
-          <div class="row">
-            <div class="col-2 p-l-2">
-              <i class="fa fa-phone" style="font-size:48px;color:#ab1818"></i>
-            </div>
-            <div class="col-10 p-l-25">
-              <h5 style="color:#ab1818">Email</h5>
-              <h6 style="color:#ab1818">antinomilawoffice@yahoo.com</h6>
-            </div>
-          </div>
+            Kami Berlokasi di Kota Bandung</h4><hr>
+        <h6 class="t-center" style="color:#ab1818">
+        Jl. Wira Angun-Angun No. 21, Kota Bandung</h6><hr>
 
+        <div id="googleMap" style="width:100%;height:400px;"></div><br>
 
+        <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+<!--Google Maps-->
+    </div>
 </section>
 
 <!-- Footer -->

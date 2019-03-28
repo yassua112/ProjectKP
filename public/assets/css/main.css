@@ -701,7 +701,7 @@ iframe {
 .main_menu>li>a {
     font-family: Montserrat-Regular;
     font-size: 15px;
-    color: #333333;
+    color: #ab1818;
     padding: 0;
     border-bottom: 1px solid transparent;
 }
@@ -712,7 +712,7 @@ li.sale-noti>a {
 
 .main_menu>li:hover>a {
     text-decoration: none;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #ab1818;
 }
 
 .main_menu li {

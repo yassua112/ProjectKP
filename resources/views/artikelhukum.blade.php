@@ -94,43 +94,136 @@
                     </div>
                </div>
             </div>
-         </div>  
-        <div class="col-md-3">
-            <div class="panel panel-default">
-               <div class="panel-heading"><h4 class="text-center">Latest News</h4></div>
-               <div class="panel-body">
-                    <div class="recent">
-                        <a href="#"><img class="img-responsive" src="images/sport.jpg" alt="" /></a>                
-                        <div class="info-meta">
-                            <ul class="list-inline">
-                                <li><i class="fa fa-clock-o"></i> Jan 5, 2016 </a></li>
-                                <li><i class="fa fa-eye"></i>21k</li>
-                                <li><i class="fa fa-heart-o"></i>372</li>
-                            </ul>
-                        </div>
-                        <h4>
-                            <a href="">Pertandingan Basket NBA berlangsung sangat sengit</a>
-                        </h4>
-                    </div>
-                    
-                    <div class="recent">
-                        <a href="#"><img class="img-responsive" src="images/technology.jpg" alt="" /></a>                           
-                        <div class="info-meta">
-                            <ul class="list-inline">
-                                <li><i class="fa fa-clock-o"></i> Jan 5, 2016</li>
-                                <li><i class="fa fa-eye"></i>21k</li>
-                                <li><i class="fa fa-heart-o"></i>372</li>
-                            </ul>
-                        </div>
-                        <h4 class="entry-title">
-                            <a href="">Tip dan Trik dalam memilih laptop untuk penyuka game</a>
-                        </h4>
-                    </div><!--recent-->
+        </div>  
+        <div class="col-md-3 col-lg-3 p-b-75">
+                <div class="rightbar">
+                    <h4 class="m-text10 p-t-5 p-b-5">
+                        Artikel Terbaru
+                    </h4>
                 </div>
-            </div>      
-        </div>          
+                <hr>
+                <ul>
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Cara Mengajukan Gugatan Cerai Isteri Kepada Suami di Pengadilan Agama
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Tindak Pidana Lingkungan Hidup yang Mengancam Perusahaan
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Pencemaran Nama Baik Lewat Media Sosial Internet
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Mempekerjakan Anak Di Bawah Umur Bisa Dipidana
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Mewakil di pengadilan
+                        </a>
+                    </li>
+                </ul>
+                
+                <br>
+                <br>
+                <div class="rightbar">
+                    <h4 class="m-text10 p-t-5 p-b-5">
+                        Artikel Terpopuler
+                    </h4>
+                </div>
+
+                <ul>
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Mempekerjakan Anak Di Bawah Umur Bisa Dipidana
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Tinjauan Hukum Tentang Judi
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Tanggung Jawab Pemilik PT Atas Keuangan Perusahaan
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Akibat Hukum jika Anggota CV Meninggal Dunia
+                        </a>
+                    </li>
+                </ul>
+            </div>          
     </div>          
 </div>
+<!--
+<div class="col-sm-9">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Blog Title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                            Aliquam in felis sit amet augue.
+                        </p>
+                        <div class="text-center">
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> Readmore</a>
+                            <a href="#"><span class="glyphicon glyphicon-comment"></span> 12 Comments</a>
+                            <a href="#"><span class="glyphicon glyphicon-share"></span> 11 Shares</a>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Blog Title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                            Aliquam in felis sit amet augue.
+                        </p>
+                        <div class="text-center">
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> Readmore</a>
+                            <a href="#"><span class="glyphicon glyphicon-comment"></span> 2 Comments</a>
+                            <a href="#"><span class="glyphicon glyphicon-share"></span> 211 Shares</a>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Blog Title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                            Aliquam in felis sit amet augue.
+                        </p>
+                        <div class="text-center">
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span> Readmore</a>
+                            <a href="#"><span class="glyphicon glyphicon-comment"></span> 7 Comments</a>
+                            <a href="#"><span class="glyphicon glyphicon-share"></span> 67 Shares</a>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>-->
 
 <!-- Footer -->
 @include('layouts.footer')

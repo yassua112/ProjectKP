@@ -119,6 +119,7 @@
                             <p class="m-text15"> LIGAT </p>
                         </a>                    
                     </div>
+                    <hr>
                     <div class="raw">
                         <div class="p-t-50">
                             <h2 class="m-text20 text-center">

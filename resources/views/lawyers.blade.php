@@ -39,7 +39,8 @@
                         <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
+                                    Nama : Pertamina
                                 </div>
                             </div>
                         </div>
@@ -57,11 +58,11 @@
                         </a>
                         <p>CEO at Google</p>
                         <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm1">See Profile</button>
+                        <div class="modal fade bd-example-modal-sm1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    ...2
                                 </div>
                             </div>
                         </div>
@@ -79,11 +80,11 @@
                         </a>
                         <p>CEO at Google</p>
                         <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm2">See Profile</button>
+                        <div class="modal fade bd-example-modal-sm2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    ...3
                                 </div>
                             </div>
                         </div>
@@ -101,11 +102,11 @@
                         </a>
                         <p>CEO at Google</p>
                         <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm3">See Profile</button>
+                        <div class="modal fade bd-example-modal-sm3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    ...4
                                 </div>
                             </div>
                         </div>
@@ -123,11 +124,11 @@
                         </a>
                         <p>CEO at Google</p>
                         <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm4">See Profile</button>
+                        <div class="modal fade bd-example-modal-sm4" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    ...5
                                 </div>
                             </div>
                         </div>
@@ -145,11 +146,11 @@
                         </a>
                         <p>CEO at Google</p>
                         <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm5">See Profile</button>
+                        <div class="modal fade bd-example-modal-sm5" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    ...6
                                 </div>
                             </div>
                         </div>
@@ -167,11 +168,11 @@
                         </a>
                         <p>CEO at Google</p>
                         <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm6">See Profile</button>
+                        <div class="modal fade bd-example-modal-sm6" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    ...7
                                 </div>
                             </div>
                         </div>
@@ -189,11 +190,11 @@
                         </a>
                         <p>CEO at Google</p>
                         <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm7">See Profile</button>
+                        <div class="modal fade bd-example-modal-sm7" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    ...8
                                 </div>
                             </div>
                         </div>
@@ -211,11 +212,11 @@
                         </a>
                         <p>CEO at Google</p>
                         <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm8">See Profile</button>
+                        <div class="modal fade bd-example-modal-sm8" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    ...9
                                 </div>
                             </div>
                         </div>
@@ -223,13 +224,13 @@
                 </div>
             </div>
         </div>
-                    
+
                 </div>
             </div>
 
-            <!-- Right Barr-->            
+            <!-- Right Barr-->
             @include('layouts.right-bar')
-            
+
         </div>
     </div>
 </section>

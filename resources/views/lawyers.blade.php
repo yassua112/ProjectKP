@@ -23,15 +23,44 @@
                 <div class="p-r-50 p-r-0-lg">
                 <div class="container">
             <div class="row">
+                <div class="raw">
+                        <div class="p-t-50">
+                            <h2 class="m-text20 text-center">
+                                THE FOUNDER
+                            </h2>
+                            <div class="mx-auto p-t-10">
+                                <img src="{{asset('assets/images/profile-founder.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
+                            </div>
+                            <a href="#">
+                            <h5 class="text-uppercase text-center">Ucok Orlando Parulian Tamba, S.H., M.H</h5>
+                            </a>
+                        </div>
+
+                        <h2 class="m-text20 text-center p-t-50">
+                                LAW OFFICE MANAGER
+                                </h2>
+                        <div class="row p-l-18 p-r-17 p-t-10">
+                            <div class="col-md-7 col-lg-6">
+                                <div class="single-feedback">
+                                    <img align="center" src="{{asset('assets/images/profile-manager.jpg')}}" class="rounded float-left" alt="theManager1">
+                                    <div class="col text-center">
+                                    <h5 class="text-uppercase text-center">Dr. Musa Darwin Pane, S.H., M.H</h5></div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-6">
+                                <div class="single-feedback p-r-10">
+                                    <img align="center" src="{{asset('assets/images/profile-manager2.jpg')}}" class="rounded float-right" alt="theManager2">
+                                    <div class="col text-center">
+                                    <h5 class="text-uppercase text-center">Dr. Sahat Maruli Tua Situmeang, S.H., M.H</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
-                        <p>
-                            Accessories Here you can find the best computer accessory for your laptop, monitor,
-                            printer, scanner, speaker, projector, hardware and more. laptop accessory.
-                        </p>
+                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
                         <a href="#">
-                            <h5 class="text-uppercase">Mark Alviro Wiens</h5>
+                            <h5 class="text-uppercase text-center">Chrisman Damanik, Amd., S.H</h5>
                         </a>
                         <p>CEO at Google</p>
                         <hr>
@@ -48,13 +77,10 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
-                        <p>
-                            Accessories Here you can find the best computer accessory for your laptop, monitor,
-                            printer, scanner, speaker, projector, hardware and more. laptop accessory.
-                        </p>
+                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
+                        
                         <a href="#">
-                            <h5 class="text-uppercase">Mark Alviro Wiens</h5>
+                            <h5 class="text-uppercase">Dahman Sinaga, S.H</h5>
                         </a>
                         <p>CEO at Google</p>
                         <hr>
@@ -70,13 +96,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
-                        <p>
-                            Accessories Here you can find the best computer accessory for your laptop, monitor,
-                            printer, scanner, speaker, projector, hardware and more. laptop accessory.
-                        </p>
+                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
                         <a href="#">
-                            <h5 class="text-uppercase">Mark Alviro Wiens</h5>
+                            <h5 class="text-uppercase">Anton Saeful Hidayat, S.H</h5>
                         </a>
                         <p>CEO at Google</p>
                         <hr>
@@ -92,13 +114,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
-                        <p>
-                            Accessories Here you can find the best computer accessory for your laptop, monitor,
-                            printer, scanner, speaker, projector, hardware and more. laptop accessory.
-                        </p>
+                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
                         <a href="#">
-                            <h5 class="text-uppercase">Mark Alviro Wiens</h5>
+                            <h5 class="text-uppercase text-center">Marco Van Bastem Malau, S.H</h5>
                         </a>
                         <p>CEO at Google</p>
                         <hr>
@@ -114,13 +132,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
-                        <p>
-                            Accessories Here you can find the best computer accessory for your laptop, monitor,
-                            printer, scanner, speaker, projector, hardware and more. laptop accessory.
-                        </p>
+                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
                         <a href="#">
-                            <h5 class="text-uppercase">Mark Alviro Wiens</h5>
+                            <h5 class="text-uppercase">Andreas D.L.A Situmeang, S.H</h5>
                         </a>
                         <p>CEO at Google</p>
                         <hr>
@@ -136,13 +150,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
-                        <p>
-                            Accessories Here you can find the best computer accessory for your laptop, monitor,
-                            printer, scanner, speaker, projector, hardware and more. laptop accessory.
-                        </p>
+                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
                         <a href="#">
-                            <h5 class="text-uppercase">Mark Alviro Wiens</h5>
+                            <h5 class="text-uppercase">Art Tra Gusti, S.H., CLA</h5>
                         </a>
                         <p>CEO at Google</p>
                         <hr>
@@ -158,13 +168,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
-                        <p>
-                            Accessories Here you can find the best computer accessory for your laptop, monitor,
-                            printer, scanner, speaker, projector, hardware and more. laptop accessory.
-                        </p>
+                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
                         <a href="#">
-                            <h5 class="text-uppercase">Mark Alviro Wiens</h5>
+                            <h5 class="text-uppercase">Neysa Myanda, S.H., M.H</h5>
                         </a>
                         <p>CEO at Google</p>
                         <hr>

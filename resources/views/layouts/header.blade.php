@@ -25,11 +25,13 @@
 					<img src="{{asset('assets/images/icons/logo.png')}}" alt="IMG-LOGO">
 				</a>
 
+				
+
 				<!-- Menu -->
 				<div class="wrap_menu">
 					<nav class="menu">
 						<ul class="main_menu">
-							<li class="sale-noti">
+							<li>
 								<a href="{{route('home')}}">HOME</a>
 							</li>
 

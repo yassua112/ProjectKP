@@ -13,7 +13,7 @@
 
 
 @section('content')
-<!-- Slide1 -->
+<!-- Jumbotron Dokumentasi -->
 <section class="slide1">
     <div class="wrap-slick1">
         <div class="slick1">
@@ -25,8 +25,6 @@
         </div>
     </div>
 </section>
-
-
 
 <!-- Counten -->
 <section class="bgwhite p-t-60">
@@ -41,12 +39,15 @@
                     </div>
                     <div class="raw">
                         <div class="row p-l-20">
-                            <div class="col-md-7 col-lg-6 p-b-75">
+                            <div class="col-md-7 col-lg-6 p-b-2">
 
                                 <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
                             </div>
-                            <div class="col-md-7 col-lg-6 p-b-75">
+                            <div class="col-md-7 col-lg-6 p-b-2">
                                 <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
+                            </div>
+                            <div class="col text-center p-r-70 p-t-25">
+                                <button type="button" class="btn btn-primary">Lihat Lainnya</button>
                             </div>
                         </div>
                     </div>
@@ -59,12 +60,15 @@
                     </div>
                     <div class="raw">
                         <div class="row p-l-20">
-                            <div class="col-md-7 col-lg-6 p-b-75">
+                            <div class="col-md-7 col-lg-6 p-b-2">
 
                                 <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
                             </div>
-                            <div class="col-md-7 col-lg-6 p-b-75">
+                            <div class="col-md-7 col-lg-6 p-b-2">
                                 <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
+                            </div>
+                            <div class="col text-center p-r-70 p-t-25">
+                                <button type="button" class="btn btn-primary">Lihat Lainnya</button>
                             </div>
                         </div>
                     </div>
@@ -77,12 +81,15 @@
                     </div>
                     <div class="raw">
                         <div class="row p-l-20">
-                            <div class="col-md-7 col-lg-6 p-b-75">
+                            <div class="col-md-7 col-lg-6 p-b-2">
 
                                 <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
                             </div>
-                            <div class="col-md-7 col-lg-6 p-b-75">
+                            <div class="col-md-7 col-lg-6 p-b-2">
                                 <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
+                            </div>
+                            <div class="col text-center p-r-70 p-t-25">
+                                <button type="button" class="btn btn-primary">Lihat Lainnya</button>
                             </div>
                         </div>
                     </div>
@@ -95,12 +102,15 @@
                     </div>
                     <div class="raw">
                         <div class="row p-l-20">
-                            <div class="col-md-7 col-lg-6 p-b-75">
+                            <div class="col-md-7 col-lg-6 p-b-2">
 
                                 <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
                             </div>
-                            <div class="col-md-7 col-lg-6 p-b-75">
+                            <div class="col-md-7 col-lg-6 p-b-2">
                                 <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
+                            </div>
+                            <div class="col text-center p-r-70 p-t-25">
+                                <button type="button" class="btn btn-primary">Centered button</button>
                             </div>
                         </div>
                     </div>
@@ -108,7 +118,45 @@
             </div>
 
             <!-- Right Barr-->
-            @include('layouts.right-bar')
+            <div class="col-md-3 col-lg-3 p-b-75">
+                <div class="rightbar">
+                    <h4 class="m-text10 p-t-5 p-b-5">
+                        Dokumentasi Terbaru
+                    </h4>
+                </div>
+                <hr>
+                <ul>
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Memperjuangkan Hak Keadilan Ahli Waris di Komnas HAM
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Memohon Praperadilan Melawan Ditreskrimum Polda Jabar sebagai Penasihat Hukum
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Perjuangan terhadap Hak Ketua ORI Terhadap Pihak Garuda Maskapai
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Berbincang-bincang dalam Rangka Advokasi Korban Kejahatan
+                        </a>
+                    </li>
+
+                    <li class="p-t-6 p-b-8 ">
+                        <a href="#" class="s-text13 p-t-5 p-b-5">
+                            Mewakil di pengadilan
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

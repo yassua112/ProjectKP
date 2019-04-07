@@ -81,69 +81,116 @@
         <div class="row">
             <!-- left bar -->
             <div class="col-md-9 col-lg-9 p-b-75">
-                <div class="p-r-50 p-r-0-lg">
-                    <div class="item-blog p-b-30">
-                        
-                        <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="{{asset('assets/images/blog-04.jpg')}}" alt="IMG-BLOG">
-                            <span class="dis-block flex-c-m pos1 size20 bg4 s-text1">
-                                Selamat datang di Website Antinomi Law Office
-                            </span>
-                        </a>
-
-                        <div class="item-blog-txt p-t-33">
-                            <p class="p-b-12">
-                                Sebagai pendiri dari Antinomi Law Office pada Tahun 2018, rupanya Ucok Tamba menyadari
-                                akan kekurangan sebagai single partner...
-                            </p>                            
-                        </div>
+                <!--<div class="row">
+                  <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
                     </div>
-                    <hr>
-                    <h2 class="m-text23 p-t-10 p-b-34 text-center">
-                        MOTTO ANTINOMI LAW OFFICE
-                    </h2>
-                    <div class="wrap-tags flex-w justify-content-center ">
-                        <a class="tag-item">
-                            <p class="m-text11"> PROFESIONAL </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text10"> FAST TEAMWORK </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text12"> QUICK INFO CENTER </p>
-                        </a>
-
-                        <a class="tag-item">
-                            <p class="m-text15"> LIGAT </p>
-                        </a>                    
+                  </div>
+                  <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+                      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
                     </div>
-                    <div class="raw">
-                        <div class="p-t-50">
-                            <h2 class="m-text20 text-center">
-                                THE FOUNDER
-                            </h2>
-                            <div class="mx-auto">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
-                            </div>
-                        </div>
-                    
-                        <!-- The founder Barr -->
-                        <h2 class="m-text20 text-center p-t-20">
-                                LAW OFFICE MANAGER
-                                </h2>
-                        <div class="row p-l-20 " >                        
-                            <div class="col-md-7 col-lg-6 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">                        
-                            </div>
-                            <div class="col-md-4 col-lg-5 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
-                            </div>                    
-                        </div>                                           
-                    </div>                
-                </div>         
+                  </div>
+                </div> -->
+                <h2>Bidang Praktik Hukum</h2><hr>
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between link-bidang-praktik">
+                      <h5 class="mb-1 link-bidang-praktik">KEUANGAN & PERBANKAN</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">PERUSAHAAN & NIAGA</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">ARBITRASI</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">PASAR MODAL</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">LITIGASI</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">PERDAGANGAN INTERNASIONAL</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">PENANAMAN MODAL ASING & JOINT VENTURE</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">PIDANA</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">AGRARIA</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">PERDATA</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">HAK ATAS KEKAYAAN INTELEKTUAl</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">PERTAMBANGAN & ENERGI</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">KESEHATAN</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">ASURANSI</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 link-bidang-praktik">TELEKOMUNIKASI</h5>
+                    </div>
+                  </a>
+
+                </div>
+                <hr>
+                <h2 align="center">Hubungi Kami</h2>
+                <hr>
+                <h4>Apabila Saudara memiliki pertanyaan terkait jasa hukum kami, silahkan hubungi kami :</h4>
+                <span class="border">
+                    Email Kami : antinomilawoffice@yahoo.com <br>
+                    No. Telp : 085294419970 <br>
+                    No. WA : 085294419970 <br>
+                </span>
+
             </div>
+
+
 
             <!-- Right Barr-->
             @include('layouts.right-bar')

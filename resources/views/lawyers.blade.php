@@ -56,9 +56,10 @@
                             </div>
                         </div>
                     </div>
-                <div class="col-lg-4">
+                    
+                    <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
+                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
                         <a href="#">
                             <h5 class="text-uppercase text-center">Chrisman Damanik, Amd., S.H</h5>
                         </a>
@@ -76,7 +77,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
+                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
                         
                         <a href="#">
                             <h5 class="text-uppercase">Dahman Sinaga, S.H</h5>
@@ -87,7 +88,8 @@
                         <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
-                                    ...
+                                    kylo
+                                    
                                 </div>
                             </div>
                         </div>
@@ -95,7 +97,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
+                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
                         <a href="#">
                             <h5 class="text-uppercase">Anton Saeful Hidayat, S.H</h5>
                         </a>
@@ -113,7 +115,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
+                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
                         <a href="#">
                             <h5 class="text-uppercase text-center">Marco Van Bastem Malau, S.H</h5>
                         </a>
@@ -131,7 +133,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
+                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
                         <a href="#">
                             <h5 class="text-uppercase">Andreas D.L.A Situmeang, S.H</h5>
                         </a>
@@ -149,7 +151,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
+                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
                         <a href="#">
                             <h5 class="text-uppercase">Art Tra Gusti, S.H., CLA</h5>
                         </a>
@@ -167,7 +169,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="single-feedback">
-                        <img align="center" src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" class="rounded float-right" alt="theManager2">
+                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
                         <a href="#">
                             <h5 class="text-uppercase">Neysa Myanda, S.H., M.H</h5>
                         </a>

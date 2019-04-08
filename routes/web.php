@@ -31,10 +31,12 @@ Route::get('/kontak-kami',function(){
     return view('kontakkami');
 })->name('kontakkami');
 
-Route::get('/artikel-hukum',function() {
-	return view('artikelhukum');
-})->name('artikelhukum');
 
 Route::get('/dokumentasi-kegiatan',function() {
 	return view('dokumentasi');
 })->name('dokumentasi');
+
+
+//Halaman Bagian Artikel
+Route::get('/artikel-hukum','ArtikelHukumController@index');
+Route::get('/artikel-hukum/detail-artikel','DetailArtikelController@index');

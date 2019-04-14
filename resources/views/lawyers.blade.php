@@ -75,12 +75,12 @@
                                         <div class="col-md-7 col-lg-6">
                                             <div class="single-feedback p-r-10">
                                                 <div class="row">
-                                                <div class="mx-auto">
-                                                <img align="center"
-                                                    src="{{asset('assets/images/profile-manager2.jpg')}}"
-                                                    class="rounded float-right" alt="theManager2">
+                                                    <div class="mx-auto">
+                                                        <img align="center"
+                                                            src="{{asset('assets/images/profile-manager2.jpg')}}"
+                                                            class="rounded float-right" alt="theManager2">
+                                                    </div>
                                                 </div>
-                                                </div>    
                                                 <div class="col text-center">
                                                     <h5 class="text-uppercase text-center">Dr. Sahat Maruli Tua
                                                         Situmeang,
@@ -92,22 +92,56 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
-                                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
-                                            class="rounded float-right" alt="theManager2">
-                                        <a href="#">
-                                            <h5 class="text-uppercase text-center">Chrisman Damanik, Amd., S.H</h5>
-                                        </a>
-                                        <p>CEO at Google</p>
-                                        <hr>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                            data-target=".bd-example-modal-sm">See Profile</button>
-                                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
-                                            aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-sm">
-                                                <div class="modal-content">
-                                                    <img src="https://colorlib.com/preview/theme/repair/img/t1.png"
-                                                        alt="">
-                                                    Nama : Pertamina
+                                        <div class="row">
+                                            <div class="col align-self-center">
+                                                <div class="mx-auto">
+                                                    <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
+                                                        class="rounded " alt="theManager2" width="100" height="100">
+                                                </div>
+                                                <a href="#">
+                                                    <h5 class="text-uppercase text-center">Chrisman Damanik, Amd., S.H
+                                                    </h5>
+                                                </a>
+                                                <p>CEO at Google</p>
+                                                <hr>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target=".bd-example-modal-sm">See Profile</button>
+                                                <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+                                                    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <img src="https://colorlib.com/preview/theme/repair/img/t1.png"
+                                                                alt="">
+                                                        </div>
+                                                        Nama : Pertamina
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="single-feedback">
+                                        <div class="row">
+                                            <div class="col align-self-center">
+                                                <div class="mx-auto">
+                                                    <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
+                                                        class="rounded " alt="theManager2" width="100" height="100">
+                                                </div>
+                                                <a href="#">
+                                                    <h5 class="text-uppercase">Dahman Sinaga, S.H</h5>
+                                                </a>
+                                                <p>CEO at Google</p>
+                                                <hr>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target=".bd-example-modal-sm1">See Profile</button>
+                                                <div class="modal fade bd-example-modal-sm1" tabindex="-1" role="dialog"
+                                                    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            ...2
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -116,29 +150,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
-                                            class="rounded float-right" alt="theManager2">
-
-                                        <a href="#">
-                                            <h5 class="text-uppercase">Dahman Sinaga, S.H</h5>
-                                        </a>
-                                        <p>CEO at Google</p>
-                                        <hr>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                            data-target=".bd-example-modal-sm1">See Profile</button>
-                                        <div class="modal fade bd-example-modal-sm1" tabindex="-1" role="dialog"
-                                            aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-sm">
-                                                <div class="modal-content">
-                                                    ...2
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-feedback">
-                                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
-                                            class="rounded float-right" alt="theManager2">
+                                            class="rounded " alt="theManager2" width="100" height="100">
                                         <a href="#">
                                             <h5 class="text-uppercase">Anton Saeful Hidayat, S.H</h5>
                                         </a>
@@ -159,7 +171,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
-                                            class="rounded float-right" alt="theManager2">
+                                            class="rounded " alt="theManager2" width="100" height="100">
                                         <a href="#">
                                             <h5 class="text-uppercase text-center">Marco Van Bastem Malau, S.H</h5>
                                         </a>
@@ -180,7 +192,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
-                                            class="rounded float-right" alt="theManager2">
+                                            class="rounded " alt="theManager2" width="100" height="100">
                                         <a href="#">
                                             <h5 class="text-uppercase">Andreas D.L.A Situmeang, S.H</h5>
                                         </a>
@@ -201,7 +213,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
-                                            class="rounded float-right" alt="theManager2">
+                                            class="rounded " alt="theManager2" width="100" height="100">
                                         <a href="#">
                                             <h5 class="text-uppercase">Art Tra Gusti, S.H., CLA</h5>
                                         </a>
@@ -222,7 +234,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
-                                            class="rounded float-right" alt="theManager2">
+                                            class="rounded " alt="theManager2" width="100" height="100">
                                         <a href="#">
                                             <h5 class="text-uppercase">Neysa Myanda, S.H., M.H</h5>
                                         </a>
@@ -242,13 +254,10 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
-                                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
+                                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
+                                            class="rounded " alt="theManager2" width="100" height="100">
                                         <p>
-                                            Accessories Here you can find the best computer accessory for your
-                                            laptop,
-                                            monitor,
-                                            printer, scanner, speaker, projector, hardware and more. laptop
-                                            accessory.
+                                            
                                         </p>
                                         <a href="#">
                                             <h5 class="text-uppercase">Mark Alviro Wiens</h5>
@@ -269,13 +278,10 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
-                                        <img src="https://colorlib.com/preview/theme/repair/img/t1.png" alt="">
+                                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
+                                            class="rounded " alt="theManager2" width="100" height="100">
                                         <p>
-                                            Accessories Here you can find the best computer accessory for your
-                                            laptop,
-                                            monitor,
-                                            printer, scanner, speaker, projector, hardware and more. laptop
-                                            accessory.
+                                            
                                         </p>
                                         <a href="#">
                                             <h5 class="text-uppercase">Mark Alviro Wiens</h5>

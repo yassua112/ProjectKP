@@ -52,7 +52,7 @@
 							</li>
 
 							<li>
-								<a href="artikel-hukum">ARTIKEL HUKUM</a>
+								<a href="{{route('artikelhukum')}}">ARTIKEL HUKUM</a>
 							</li>
 
 							<li>

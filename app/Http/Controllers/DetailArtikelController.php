@@ -11,7 +11,6 @@ class DetailArtikelController extends Controller
 	public function index()
 	{
 		return view('detailartikel');
-
 	}
 }
 ?>

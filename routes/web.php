@@ -38,5 +38,5 @@ Route::get('/dokumentasi-kegiatan',function() {
 
 
 //Halaman Bagian Artikel
-Route::get('/artikel-hukum','ArtikelHukumController@index');
+Route::get('/artikel-hukum','ArtikelHukumController@index')->name('artikelhukum');
 Route::get('/artikel-hukum/detail-artikel','DetailArtikelController@index');

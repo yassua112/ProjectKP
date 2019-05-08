@@ -101,12 +101,14 @@
                 </div> -->
                 <h2>Bidang Praktik Hukum</h2><hr>
                 <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                  @foreach($data as $item)
+                  <a href="{{url('bidang-hukum/'.$item->id_desk)}}" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
                     <div class="d-flex w-100 justify-content-between link-bidang-praktik">
-                      <h5 class="mb-1 link-bidang-praktik">KEUANGAN & PERBANKAN</h5>
+                      <h5 class="mb-1 link-bidang-praktik">{{$item->bidang}}</h5>
                     </div>
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
+                  @endforeach
+                  <!-- <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1 link-bidang-praktik">PERUSAHAAN & NIAGA</h5>
                     </div>
@@ -175,7 +177,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1 link-bidang-praktik">TELEKOMUNIKASI</h5>
                     </div>
-                  </a>
+                  </a> -->
 
                 </div>
                 <hr>

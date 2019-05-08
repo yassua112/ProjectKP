@@ -11,17 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
+Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');
+
 
 Route::get('/lawyers',function(){
     return view('lawyers');
 })->name('lawyers');
 
-Route::get('/bidang-hukum',function() {
-	return view('bidanghukum');
-})->name('bidanghukum');
 
 Route::get('/tentang-kami', function () {
     return view('tentangkami');

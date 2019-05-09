@@ -35,7 +35,7 @@
                                             class="rounded mx-auto d-block" alt="theManager1">
 
                                         <div class="mx-auto">
-                                            <a href="#">
+                                            <a href="lawyers/founder">
                                                 <h5 class="text-uppercase text-center">Ucok Orlando Parulian Tamba,S.H.,
                                                     M.H
                                                 </h5>
@@ -257,7 +257,7 @@
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
                                             class="rounded " alt="theManager2" width="100" height="100">
                                         <p>
-                                            
+
                                         </p>
                                         <a href="#">
                                             <h5 class="text-uppercase">Mark Alviro Wiens</h5>
@@ -281,7 +281,7 @@
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
                                             class="rounded " alt="theManager2" width="100" height="100">
                                         <p>
-                                            
+
                                         </p>
                                         <a href="#">
                                             <h5 class="text-uppercase">Mark Alviro Wiens</h5>

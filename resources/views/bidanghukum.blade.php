@@ -107,77 +107,7 @@
                       <h5 class="mb-1 link-bidang-praktik">{{$item->bidang}}</h5>
                     </div>
                   </a>
-                  @endforeach
-                  <!-- <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">PERUSAHAAN & NIAGA</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">ARBITRASI</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">PASAR MODAL</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">LITIGASI</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">PERDAGANGAN INTERNASIONAL</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">PENANAMAN MODAL ASING & JOINT VENTURE</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">PIDANA</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">AGRARIA</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">PERDATA</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">HAK ATAS KEKAYAAN INTELEKTUAl</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">PERTAMBANGAN & ENERGI</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">KESEHATAN</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">ASURANSI</h5>
-                    </div>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1 link-bidang-praktik">TELEKOMUNIKASI</h5>
-                    </div>
-                  </a> -->
+                  @endforeach                 
 
                 </div>
                 <hr>

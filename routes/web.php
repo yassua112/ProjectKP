@@ -16,9 +16,7 @@ Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
 Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');
 
 
-Route::get('/lawyers',function(){
-    return view('lawyers');
-})->name('lawyers');
+
 
 
 Route::get('/tentang-kami', function () {
@@ -29,10 +27,16 @@ Route::get('/kontak-kami',function(){
     return view('kontakkami');
 })->name('kontakkami');
 
-Route::get('/artikel-hukum',function() {
-	return view('artikelhukum');
-})->name('artikelhukum');
 
 Route::get('/dokumentasi-kegiatan',function() {
 	return view('dokumentasi');
 })->name('dokumentasi');
+
+
+//Halaman Bagian Artikel
+Route::get('/artikel-hukum','ArtikelHukumController@index')->name('artikelhukum');
+Route::get('/artikel-hukum/detail-artikel','DetailArtikelController@index');
+
+//Halaman Bagian Lawyer
+Route::get('/lawyers','LawyersController@index')->name('lawyers');
+Route::get('/lawyers/founder','DetailLawyersController@index');

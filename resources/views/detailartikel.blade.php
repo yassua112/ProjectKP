@@ -33,29 +33,9 @@
             <div class="media">
                 <img src="{{asset('assets/images/profile-manager.jpg')}}" class="mr-3" alt="...">
                 <div class="media-body">
-                    <a href="artikel-hukum/detail-artikel"><h5 class="mt-0">Cara Mengajukan Gugatan Cerai Istri Kepada Suami di Pengadilan Agama</h5></a><br>
-                Bahwa Pengadilan Agama berwenang memeriksa dan mengadiki perkara cerai bagi perkawinan yang dilakukan menurut agama islam yang diakui sah oleh hukum negara Indonesia. salah satu ciri utama bahwa perkawinan dilakukan secara agama islam dan sah secara hukum negara Indonesia adalah <button><a href="artikel-hukum/detail-artikel">Selengkapnya</a></button>
-                </div>
-            </div><br>
-            <div class="media">
-                <img src="{{asset('assets/images/profile-manager.jpg')}}" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0">Tindak Pidana Lingkungan Hidup yang Mengancam Perusahaan</h5><br>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                </div>
-            </div><br>
-            <div class="media">
-                <img src="{{asset('assets/images/profile-manager.jpg')}}" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0">Pencemaran Nama Baik Lewat Media Sosial Internet</h5><br>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                </div>
-            </div><br>
-            <div class="media">
-                <img src="{{asset('assets/images/profile-manager.jpg')}}" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0">Mempekerjakan Anak di Bawah Umur Bisa Dipidana</h5><br>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <h5 class="mt-0">Cara Mengajukan Gugatan Cerai Istri Kepada Suami di Pengadilan Agama</h5><br>
+                <p>Bahwa Pengadilan Agama berwenang memeriksa dan mengadiki perkara cerai bagi perkawinan yang dilakukan menurut agama islam yang diakui sah oleh hukum negara Indonesia. salah satu ciri utama bahwa perkawinan dilakukan secara agama islam dan sah secara hukum negara Indonesia adalah Buku Nikah yang dikeluarkan oleh kantor Urusan Agama (KUA). Sehingga semua perkawinan warga negara Indonesia yang mempunyai Buku Nikah, maka saat akan melakukan perceraian harus diajukan di Pengadilan Agama setempat.</p><br>
+                <p>Bahwa gugatan cerai di Pengadilan Agama tersebut dapat diajukan baik oleh Suami kepada Istrinya maupun oleh Istri kepada Suaminya. Gugatan yang diajukan Suami kepada Istrinya disebut dengan Permohonan Cerai Talak, dimana nantinya suami menjadi Pemohon dan Istri menjadi Termohon. Sedangkan terhadap gugatan cerai yang diajukan oleh Istri kepada Suaminya disebut Gugatan Perceraian, dimana istri sebagai Penggugat dan suami sebagai Tergugat.</p><br>
                 </div>
             </div><br>
         </div>  

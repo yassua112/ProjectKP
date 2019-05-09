@@ -35,7 +35,7 @@
                                             class="rounded mx-auto d-block" alt="theManager1">
 
                                         <div class="mx-auto">
-                                            <a href="#">
+                                            <a href="lawyers/founder">
                                                 <h5 class="text-uppercase text-center">Ucok Orlando Parulian Tamba,S.H.,
                                                     M.H
                                                 </h5>
@@ -51,135 +51,6 @@
                                         LAW OFFICE MANAGER
                                     </h2>
                                 </div>
-<<<<<<< HEAD
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                    <div class="single-feedback">
-                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
-                        <a href="#">
-                            <h5 class="text-uppercase text-center">Chrisman Damanik, Amd., S.H</h5>
-                        </a>
-                        <p>CEO at Google</p>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    ...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-feedback">
-                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
-                        
-                        <a href="#">
-                            <h5 class="text-uppercase">Dahman Sinaga, S.H</h5>
-                        </a>
-                        <p>CEO at Google</p>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    kylo
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-feedback">
-                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
-                        <a href="#">
-                            <h5 class="text-uppercase">Anton Saeful Hidayat, S.H</h5>
-                        </a>
-                        <p>CEO at Google</p>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    ...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-feedback">
-                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
-                        <a href="#">
-                            <h5 class="text-uppercase text-center">Marco Van Bastem Malau, S.H</h5>
-                        </a>
-                        <p>CEO at Google</p>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    ...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-feedback">
-                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
-                        <a href="#">
-                            <h5 class="text-uppercase">Andreas D.L.A Situmeang, S.H</h5>
-                        </a>
-                        <p>CEO at Google</p>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    ...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-feedback">
-                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
-                        <a href="#">
-                            <h5 class="text-uppercase">Art Tra Gusti, S.H., CLA</h5>
-                        </a>
-                        <p>CEO at Google</p>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    ...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-feedback">
-                        <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}" alt="theManager2">
-                        <a href="#">
-                            <h5 class="text-uppercase">Neysa Myanda, S.H., M.H</h5>
-                        </a>
-                        <p>CEO at Google</p>
-                        <hr>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">See Profile</button>
-                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    ...
-=======
                                 <div class="row">
                                     <div class="row p-l-18 p-r-17 p-t-10">
                                         <div class="col-md-7 col-lg-6">
@@ -359,7 +230,6 @@
                                             </div>
                                         </div>
                                     </div>
->>>>>>> 3156458827eef5056196fd1d643d04a2519379a6
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
@@ -462,7 +332,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

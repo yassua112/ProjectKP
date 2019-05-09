@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('/lawyers',function(){
-    return view('lawyers');
-})->name('lawyers');
+
 
 Route::get('/bidang-hukum',function() {
 	return view('bidanghukum');
@@ -40,3 +38,7 @@ Route::get('/dokumentasi-kegiatan',function() {
 //Halaman Bagian Artikel
 Route::get('/artikel-hukum','ArtikelHukumController@index')->name('artikelhukum');
 Route::get('/artikel-hukum/detail-artikel','DetailArtikelController@index');
+
+//Halaman Bagian Lawyer
+Route::get('/lawyers','LawyersController@index')->name('lawyers');
+Route::get('/lawyers/founder','DetailLawyersController@index');

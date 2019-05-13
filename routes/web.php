@@ -14,8 +14,8 @@
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
 Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');
-
-
+Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
+Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
 
 
 
@@ -38,5 +38,5 @@ Route::get('/artikel-hukum','ArtikelHukumController@index')->name('artikelhukum'
 Route::get('/artikel-hukum/detail-artikel','DetailArtikelController@index');
 
 //Halaman Bagian Lawyer
-Route::get('/lawyers','LawyersController@index')->name('lawyers');
-Route::get('/lawyers/founder','DetailLawyersController@index');
+
+

@@ -176,7 +176,6 @@
     * The callback parameter executes the initMap() function
     -->
         <div id="map" style="width: 100%; height: 400px;">
-
         </div>
 </section>
 

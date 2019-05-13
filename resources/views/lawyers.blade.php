@@ -90,37 +90,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                @foreach($data as $item)
                                 <div class="col-lg-4">
                                     <div class="single-feedback">
                                         <div class="row">
                                             <div class="col align-self-center">
                                                 <div class="mx-auto">
-                                                    <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
+                                                    <img src="{{asset('assets/images/' .$item->foto)}}"
                                                         class="rounded " alt="theManager2" width="100" height="100">
                                                 </div>
-                                                <a href="#">
-                                                    <h5 class="text-uppercase text-center">Chrisman Damanik, Amd., S.H
+                                                <a href="{{url('lawyers/'.$item->nip)}}">
+                                                    <h5 class="text-uppercase text-center">{{$item->nama}}
                                                     </h5>
                                                 </a>
-                                                <p>CEO at Google</p>
-                                                <hr>
-                                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                    data-target=".bd-example-modal-sm">See Profile</button>
-                                                <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
-                                                    aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-sm">
-                                                        <div class="modal-content">
-                                                            <img src="https://colorlib.com/preview/theme/repair/img/t1.png"
-                                                                alt="">
-                                                        </div>
-                                                        Nama : Pertamina
-                                                    </div>
-                                                </div>
+                                                <p>{{$item->nip}}</p>                                                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                @endforeach
+                                <!-- <div class="col-lg-4">
                                     <div class="single-feedback">
                                         <div class="row">
                                             <div class="col align-self-center">
@@ -257,7 +246,7 @@
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
                                             class="rounded " alt="theManager2" width="100" height="100">
                                         <p>
-
+                                            
                                         </p>
                                         <a href="#">
                                             <h5 class="text-uppercase">Mark Alviro Wiens</h5>
@@ -281,7 +270,7 @@
                                         <img src="{{asset('assets/images/profile-chrisman-damanik.jpg')}}"
                                             class="rounded " alt="theManager2" width="100" height="100">
                                         <p>
-
+                                            
                                         </p>
                                         <a href="#">
                                             <h5 class="text-uppercase">Mark Alviro Wiens</h5>
@@ -299,7 +288,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

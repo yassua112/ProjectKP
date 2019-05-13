@@ -10,11 +10,9 @@ class ArtikelHukumController extends Controller
 {
 	public function index()
 	{
-		// mengambil data dari table artikel hukum
-		$artikelhukum = DB::table('tb_artikelhukum')->get();
-
+		
 		// mengirim data artikel hukum ke view index
-		return view('artikelhukum',['tb_artikelhukum'=>$artikelhukum]);
+		return view('detailartikel');
 
 	}
 }

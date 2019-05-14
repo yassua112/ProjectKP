@@ -23,6 +23,27 @@ Route::get('/tentang-kami', function () {
     return view('tentangkami');
 })->name('tentangkami');
 
+Route::get('/dashboard', function () {
+    return view('dashboard.wall-dashboard');
+})->name('wall-dashboard');
+
+Route::get('/dashboard/data', function () {
+    return view('dashboard.data');
+})->name('data');
+
+Route::get('/dashboard/form', function () {
+    return view('dashboard.form');
+})->name('form');
+
+Route::get('/dashboard/layout', function () {
+    return view('dashboard.layout');
+})->name('layout');
+
+Route::get('/dashboard/table', function () {
+    return view('dashboard.table');
+})->name('table');
+
+
 Route::get('/kontak-kami',function(){
     return view('kontakkami');
 })->name('kontakkami');

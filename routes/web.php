@@ -20,10 +20,12 @@ Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show')
 
 
 Route::get('/tentang-kami', function () {
+
     return view('tentangkami');
 })->name('tentangkami');
 
 Route::get('/dashboard', function () {
+    
     return view('dashboard.wall-dashboard');
 })->name('wall-dashboard');
 

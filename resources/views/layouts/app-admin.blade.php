@@ -61,7 +61,7 @@
                                 </li>
                                 <li><a href="{{route('form')}}"><i class="fa fa-edit"></i> Forms </a>
                                 </li>
-                                <li><a><i class="fa fa-file-image-o"></i> UI Elements</a>
+                                <li><a href="{{route('gambar')}}"><i class="fa fa-file-image-o"></i> Pictures</a>
                                 </li>
                                 <li><a href="{{route('table')}}"><i class="fa fa-table"></i> Tables </a>
                                 </li>
@@ -234,22 +234,26 @@
                 </div>
             </div>
             <!-- /top navigation -->
+
+            <!-- page content -->
             <div class="right_col" role="main">
             @yield('content')
             </div>
+            <!-- /page content -->
+
             <!-- footer content -->
-            <footer>
-                
-                    <div class="pull-right">
-                        Copyright by : Team KP LawOffice 2019 <a href="https://www.instagram.com/opsie_dupsie"><i
-                                class="fa fa-heart"></i></a>
-                    </div>
-                    <div class="clearfix"></div>
-                
-            </footer>
+        <footer>
+            
+                <div class="pull-right">
+                    Copyright by : Team KP LawOffice 2019 <a href="https://www.instagram.com/opsie_dupsie"><i
+                            class="fa fa-heart"></i></a>
+                </div>
+                <div class="clearfix"></div>
+            
+        </footer>
             <!-- /footer content -->
-        </div>
     </div>
+</div>
 
     <!-- jQuery -->
     <script type="text/javascript" src="{{asset('vendor/gentella/jquery/dist/jquery.min.js')}}"></script>

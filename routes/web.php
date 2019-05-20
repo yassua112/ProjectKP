@@ -29,6 +29,12 @@ Route::get('/dashboard', function () {
     return view('dashboard.wall-dashboard');
 })->name('wall-dashboard');
 
+Route::get('/dashboard/gambar', function () {
+    
+    return view('dashboard.gambar');
+})->name('gambar');
+
+
 Route::get('/dashboard/data', function () {
     return view('dashboard.data');
 })->name('data');

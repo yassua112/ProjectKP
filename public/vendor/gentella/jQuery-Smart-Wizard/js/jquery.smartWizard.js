@@ -22,8 +22,9 @@ function SmartWizard(target, options) {
     this.loader = $('<div>Loading</div>').addClass("loader");
     this.buttons = {
         next : $('<a>'+options.labelNext+'</a>').attr("href","#").addClass("buttonNext"),
-        previous : $('<a>'+options.labelPrevious+'</a>').attr("href","#").addClass("buttonPrevious"),
-        finish  : $('<a>'+options.labelFinish+'</a>').attr("href","#").addClass("buttonFinish")
+        upload  : $('<a>'+options.labelFinish+'</a>').attr("href","#").addClass("buttonFinish"),
+        previous : $('<a>'+options.labelPrevious+'</a>').attr("href","#").addClass("buttonPrevious")
+    
     };
 
     /*
@@ -52,7 +53,7 @@ function SmartWizard(target, options) {
         $this.elmStepContainer.append(allDivs);
         elmActionBar.append($this.loader);
         $this.target.append($this.elmStepContainer);
-        elmActionBar.append($this.buttons.finish)
+        elmActionBar.append($this.buttons.upload)
                     .append($this.buttons.next)
                     .append($this.buttons.previous);
         $this.target.append(elmActionBar);
@@ -66,7 +67,7 @@ function SmartWizard(target, options) {
             $this.goBackward();
             return false;
         });
-        $($this.buttons.finish).click(function() {
+        $($this.buttons.upload).click(function() {
             if(!$(this).hasClass('buttonDisabled')){
                 if($.isFunction($this.options.onFinish)) {
                     var context = { fromStep: $this.curStepIdx + 1 };
@@ -285,14 +286,14 @@ function SmartWizard(target, options) {
         }
         // Finish Button
         if (! $this.steps.hasClass('disabled') || $this.options.enableFinishButton){
-            $($this.buttons.finish).removeClass("buttonDisabled");
+            $($this.buttons.upload).removeClass("buttonDisabled");
             if ($this.options.hideButtonsOnDisabled) {
-                $($this.buttons.finish).show();
+                $($this.buttons.upload).show();
             }
         }else{
-            $($this.buttons.finish).addClass("buttonDisabled");
+            $($this.buttons.upload).addClass("buttonDisabled");
             if ($this.options.hideButtonsOnDisabled) {
-                $($this.buttons.finish).hide();
+                $($this.buttons.upload).hide();
             }
         }
     };
@@ -439,7 +440,7 @@ $.fn.smartWizard.defaults = {
     errorSteps:[],    // Array Steps with errors
     labelNext:'Next',
     labelPrevious:'Previous',
-    labelFinish:'Finish',
+    labelFinish:'Upload',
     noForwardJumping: false,
     onLeaveStep: null, // triggers when leaving a step
     onShowStep: null,  // triggers when showing a step

@@ -23,6 +23,7 @@
         href="{{asset('vendor/gentella/bootstrap-daterangepicker/daterangepicker.css')}}">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{asset('vendor/css/custom.min.css')}}">
+@yield('style')
 
 </head>
 

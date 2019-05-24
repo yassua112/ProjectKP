@@ -267,6 +267,7 @@
     @yield('script')
     <!-- Custom Theme Scripts -->
     <script type="text/javascript" src="{{asset('vendor/js/custom.min.js')}}"></script>
+    
 
 </body>
 

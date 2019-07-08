@@ -256,7 +256,7 @@
                             </li>
 
                             <li>
-                                <a href="{{route('artikelhukum')}}">ARTIKEL HUKUM</a>
+                                <a href="{{route('artikel.hukum')}}">ARTIKEL HUKUM</a>
                             </li>
 
                             <li>
@@ -346,7 +346,7 @@
                     </li>
 
                     <li class="item-menu-mobile">
-                        <a href="{{route('artikelhukum')}}">ARTIKEL HUKUM</a>
+                        <a href="{{route('artikel.hukum')}}">ARTIKEL HUKUM</a>
                     </li>
 
                     <li class="item-menu-mobile">

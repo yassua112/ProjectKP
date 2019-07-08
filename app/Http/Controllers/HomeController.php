@@ -13,6 +13,11 @@ class HomeController extends Controller
         return view('index');
     }
 
+    public function artikelhukum(){
+
+        return view('artikel.hukum');
+    }
+
     public function bidang_hukum(){
 
         $bidang = Deskripsi::get();

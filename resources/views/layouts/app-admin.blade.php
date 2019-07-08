@@ -33,7 +33,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="{{route('wall-dashboard')}}" class="site_title"><i class="fa fa-paw"></i>
+                        <a href="{{route('dashboard')}}" class="site_title"><i class="fa fa-paw"></i>
                             <span>DASHBOARD</span></a>
                     </div>
 
@@ -58,9 +58,9 @@
                         <div class="menu_section">
                             <h3>General</h3>
                             <ul class="nav side-menu">
-                                <li><a href="{{route('wall-dashboard')}}"><i class="fa fa-home"></i> Home </a>
+                                <li><a href="{{route('dashboard')}}"><i class="fa fa-home"></i> Home </a>
                                 </li>
-                                <li><a href="{{route('form')}}"><i class="fa fa-edit"></i> Forms </a>
+                                <li><a href="{{route('form.create')}}"><i class="fa fa-edit"></i> Forms </a>
                                 </li>
                                 <li><a href="{{route('gambar')}}"><i class="fa fa-file-image-o"></i> Pictures</a>
                                 </li>

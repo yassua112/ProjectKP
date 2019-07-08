@@ -17,17 +17,15 @@ Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bida
 Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
 Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
 
-
+Route::get('/dashboard','DashboardControler@dashboard')->name('dashboard');
+Route::get('/dashboard/form', 'DashboardControler@form_create')->name('form.create');
+Route::get('/artikelhukum', 'DashboardControler@form_show')->name('artikel.hukum');
+Route::post('/detailartikel', 'DashboardControler@form_pref')->name('detail.artikel');
 
 Route::get('/tentang-kami', function () {
 
     return view('tentangkami');
 })->name('tentangkami');
-
-Route::get('/dashboard', function () {
-    
-    return view('dashboard.wall-dashboard');
-})->name('wall-dashboard');
 
 Route::get('/dashboard/gambar', function () {
     
@@ -39,9 +37,6 @@ Route::get('/dashboard/data', function () {
     return view('dashboard.data');
 })->name('data');
 
-Route::get('/dashboard/form', function () {
-    return view('dashboard.form');
-})->name('form');
 
 Route::get('/dashboard/layout', function () {
     return view('dashboard.layout');
@@ -61,11 +56,5 @@ Route::get('/dokumentasi-kegiatan',function() {
 	return view('dokumentasi');
 })->name('dokumentasi');
 
-
-//Halaman Bagian Artikel
-Route::get('/artikel-hukum','ArtikelHukumController@index')->name('artikelhukum');
-Route::get('/artikel-hukum/detail-artikel','DetailArtikelController@index');
-
-//Halaman Bagian Lawyer
 
 

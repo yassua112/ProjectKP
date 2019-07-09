@@ -11,6 +11,10 @@
 |
 */
 
+
+Auth::routes();
+Route::get('/auth/login', 'AdminController@index')->name('login');
+
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
 Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');

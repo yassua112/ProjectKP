@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\artikel;
+use App\Artikel;
 use App\admin_web;
 
 class DashboardControler extends Controller
@@ -25,12 +25,18 @@ class DashboardControler extends Controller
                 
         $title = artikel::get();        
 
-    return view('dashboard.form', compact('title'));     
-}
+        return view('dashboard.form', compact('title'));     
+    }
 
-    public function form_pref(){
+    public function form_pref(Request $request){
 
-        return view('detailartikel');     
+        $artikel = new Artikel;
+        $artikel->id_jdl_artikel = 1;
+        $artikel->judul_artikel = $request->title;
+        $artikel->id_admin = 1;
+        $artikel->save();
+        
+        return redirect()->route('form.create');     
     }
     
 }

@@ -27,6 +27,8 @@ Route::get('/tentang-kami', function () {
     return view('tentangkami');
 })->name('tentangkami');
 
+
+//dari sisi admin website
 Route::get('/dashboard/gambar', function () {
     
     return view('dashboard.gambar');
@@ -42,10 +44,11 @@ Route::get('/dashboard/layout', function () {
     return view('dashboard.layout');
 })->name('layout');
 
-Route::get('/dashboard/table', function () {
-    return view('dashboard.table');
-})->name('table');
 
+
+Route::get('/dashboard/table','BidangHukumController@index')->name('table');
+Route::get('/dashboard/table/create','BidangHukumController@create')->name('table.create');
+Route::get('/dashboard/table/{id}/edit','BidangHukumController@edit');
 
 Route::get('/kontak-kami',function(){
     return view('kontakkami');

@@ -12,17 +12,19 @@ class TableSelebihnya extends Migration
      * @return void
      */
     public function up()
-    {
+    {       
+
         Schema::create('bidang_hukum', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('id_bid_hukum')->unsigned()->nullable()->index();
-            $table->string('nama_bid_hukum',100);                       
+            $table->string('nama_bid_hukum',100);
+            $table->text('keterangan');
             $table->integer('id_admin')->unsigned();
             $table->timestamps();
             $table->foreign('id_admin')->references('id_admin')->on('admin_web');
             
-        }); 
-        
+        });
+
         Schema::create('det_bid_hukum', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('id_det_bid_hukum')->unsigned()->nullable()->index();

@@ -12,7 +12,7 @@ class DashboardControler extends AdminController
     //
     public function dashboard(){
         
-        return view('dashboard.wall-dashboard');
+        return view('dashboard.index');
     }
 
     // public function form_show(){

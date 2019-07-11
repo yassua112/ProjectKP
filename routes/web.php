@@ -16,9 +16,13 @@
 Auth::routes();
 Route::group(array('prefix' => 'admin'),function(){
     
-    Route::post('/dashboard','Admin\DashboardControler@dashboard')->name('dashboard');
+    Route::get('/dashboard','Admin\DashboardControler@dashboard')->name('admin.dashboard');
 
 });
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
+
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
 Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');

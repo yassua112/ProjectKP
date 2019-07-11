@@ -76,10 +76,7 @@
                     <div class="item-blog p-b-30">
                         
                         <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="{{asset('assets/images/blog-04.jpg')}}" alt="IMG-BLOG">
-                            <span class="dis-block flex-c-m pos1 size20 bg4 s-text1">
-                                Selamat datang di Website Antinomi Law Office
-                            </span>
+                            <img src="{{asset('assets/images/logoantinomi.jpg')}}" alt="IMG-BLOG">
                         </a>
 
                         <div class="item-blog-txt p-t-33">

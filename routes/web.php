@@ -12,19 +12,24 @@
 */
 
 
-Auth::routes();
-Route::get('/auth/login', 'AdminController@index')->name('login');
 
+Auth::routes();
+Route::group(array('prefix' => 'admin'),function(){
+    
+    Route::post('/dashboard','Admin\DashboardControler@dashboard')->name('dashboard');
+
+});
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
 Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');
 Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
 Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
 
-Route::get('/dashboard','DashboardControler@dashboard')->name('dashboard');
-Route::get('/dashboard/form', 'DashboardControler@form_create')->name('form.create');
-Route::get('/artikelhukum', 'DashboardControler@form_show')->name('artikel.hukum');
-Route::post('/detailartikel', 'DashboardControler@form_pref')->name('detail.artikel');
+
+    
+    Route::get('/dashboard/form', 'DashboardControler@form_create')->name('form.create');
+    Route::get('/artikelhukum', 'DashboardControler@form_show')->name('artikel.hukum');
+    Route::post('/detailartikel', 'DashboardControler@form_pref')->name('detail.artikel');
 
 Route::get('/tentang-kami', function () {
 

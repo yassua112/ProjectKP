@@ -22,7 +22,7 @@ class LoginController extends Controller
     protected function redirectTo()
     {
         if(auth()->user()->hasRole('1')){
-        return '/dashboard/wall-dashboard';
+        return '/dashboard';
         }else if(auth()->user()->hasRole('2')){
         return '/';
         }else {

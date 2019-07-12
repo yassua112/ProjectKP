@@ -1,17 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Artikel;
 use App\admin_web;
 
-class DashboardControler extends Controller
+class DashboardControler extends AdminController
 {
     //
     public function dashboard(){
-
-        return view('dashboard.wall-dashboard');
+        
+        return view('dashboard.index');
     }
 
     // public function form_show(){

@@ -33,7 +33,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="{{route('dashboard')}}" class="site_title"><i class="fa fa-paw"></i>
+                        <a href="{{route('admin.dashboard')}}" class="site_title"><i class="fa fa-paw"></i>
                             <span>DASHBOARD</span></a>
                     </div>
 
@@ -58,7 +58,7 @@
                         <div class="menu_section">
                             <h3>General</h3>
                             <ul class="nav side-menu">
-                                <li><a href="{{route('dashboard')}}"><i class="fa fa-home"></i> Home </a>
+                                <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i> Home </a>
                                 </li>
                                 <li><a href="{{route('form.create')}}"><i class="fa fa-edit"></i> Artikel </a>
                                 </li>
@@ -133,7 +133,7 @@
                         <a data-toggle="tooltip" data-placement="top" title="Lock">
                             <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
                         </a>
-                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="{{ route('logout') }}">
                             <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                         </a>
                     </div>
@@ -156,7 +156,7 @@
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                    <li><a href="login.html">
+                                    <li><a href="{{ route('logout') }}">
                                             <i class="fa fa-sign-out pull-right">
                                             </i> Log Out</a></li>
                                 </ul>

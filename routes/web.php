@@ -14,11 +14,11 @@
 
 
 Auth::routes();
-Route::group(array('prefix' => 'admin'),function(){
+
     
     Route::get('/dashboard','Admin\DashboardControler@dashboard')->name('admin.dashboard');
 
-});
+
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 

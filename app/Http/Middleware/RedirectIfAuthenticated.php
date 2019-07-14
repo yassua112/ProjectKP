@@ -20,7 +20,7 @@ class RedirectIfAuthenticated
       // dd('jihad');
       if (Auth::guard($guard)->check()) {
         if(auth()->user()->hasRole('1')){
-          return redirect('/admin/dashboard');
+          return redirect('/dashboard');
         }else if(auth()->user()->hasRole('2')){
           return redirect('/');
         }else {

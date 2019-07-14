@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Artikel;
-use App\admin_web;
+use App\User;
+use App\Lawyers;
 
 class DashboardControler extends AdminController
 {
@@ -24,20 +25,25 @@ class DashboardControler extends AdminController
 
     public function form_create(){
                 
-        $title = artikel::get();        
+        $title = Artikel::get();        
 
-        return view('dashboard.form', compact('title'));     
+        return view('dashboard.form', compact('title','ckedtor'));     
     }
 
     public function form_pref(Request $request){
-
-        $artikel = new Artikel;
-        $artikel->id_jdl_artikel = 1;
+        $user = auth()->user();
+        
+        $artikel = new Artikel;                
         $artikel->judul_artikel = $request->title;
-        $artikel->id_admin = 1;
+        $artikel->isi_artikel = $request->ckedtor;
+        $artikel->id_admin = $user->id_admin;
+        $artikel->username =$user->username;
+        $artikel->foto = 'profile-manager.jpg'; 	
         $artikel->save();
         
         return redirect()->route('form.create');     
     }
+
+    
     
 }

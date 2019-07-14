@@ -96,14 +96,15 @@
                                         <div class="row">
                                             <div class="col align-self-center">
                                                 <div class="mx-auto">
-                                                    <img src="{{asset('assets/images/' .$item->foto)}}"
+                                                    <img src="{{asset('assets/images/' .$item->Foto)}}"
                                                         class="rounded " alt="theManager2" width="100" height="100">
                                                 </div>
-                                                <a href="{{url('lawyers/'.$item->nip)}}">
+                                                <a href="{{url('lawyers/'.$item->NIP)}}">
                                                     <h5 class="text-uppercase text-center">{{$item->nama}}
                                                     </h5>
                                                 </a>
-                                                <p>{{$item->nip}}</p>                                                
+                                                <p>{{$item->NIP}}</p>
+
                                             </div>
                                         </div>
                                     </div>

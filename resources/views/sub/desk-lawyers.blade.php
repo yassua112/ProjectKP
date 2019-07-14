@@ -15,11 +15,11 @@
             <!-- left barr -->
             <div class="col-md-9 col-lg-9 p-b-75">            
                 <div class="mx-auto">
-                    <img src="{{asset('assets/images/' .$data->foto)}}" class="rounded " alt="theManager2" width="100"
+                    <img src="{{asset('assets/images/' .$data->Foto)}}" class="rounded " alt="theManager2" width="100"
                         height="100">
                 </div>
             
-                {{$data->cv}}
+                {{$data->pendidikan}}
             </div>
             <!-- Right Barr-->
             @include('layouts.right-bar')

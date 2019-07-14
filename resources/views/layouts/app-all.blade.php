@@ -227,7 +227,7 @@
             <div class="wrap_header">
                 <!-- Logo -->
                 <a href="{{asset('/')}}" class="logo">
-                    <img src="{{asset('assets/images/icons/logo.png')}}" alt="IMG-LOGO">
+                    <img src="{{asset('assets/images/logoantinomi.jpg')}}" alt="IMG-LOGO">
                     
                 </a>
 

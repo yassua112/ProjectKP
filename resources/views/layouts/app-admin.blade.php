@@ -60,11 +60,11 @@
                             <ul class="nav side-menu">
                                 <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i> Home </a>
                                 </li>
-                                <li><a href="{{route('form.create')}}"><i class="fa fa-edit"></i> Forms </a>
+                                <li><a href="{{route('form.create')}}"><i class="fa fa-edit"></i> Artikel </a>
                                 </li>
-                                <li><a href="{{route('gambar')}}"><i class="fa fa-file-image-o"></i> Pictures</a>
+                                <li><a href="{{route('gambar')}}"><i class="fa fa-file-image-o"></i> Dokumentasi</a>
                                 </li>
-                                <li><a href="{{route('table')}}"><i class="fa fa-table"></i> Tables </a>
+                                <li><a href="{{route('table')}}"><i class="fa fa-table"></i> Bidang Hukum </a>
                                 </li>
                                 <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Presentation </a>
                                 </li>

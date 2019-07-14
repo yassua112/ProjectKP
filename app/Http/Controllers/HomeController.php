@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Deskripsi;
 use App\Lawyers;
 use App\Artikel;
@@ -12,7 +13,7 @@ class HomeController extends Controller
 
     public function artikelhukum(){
         
-        $artikel =Artikel::get();
+        $artikel =Artikel::paginate(5);    
         return view('artikelhukum',['data'=>$artikel]);
     }
 

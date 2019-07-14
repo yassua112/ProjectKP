@@ -34,6 +34,10 @@ Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show')
 Route::get('/artikelhukum', 'HomeController@artikelhukum')->name('artikel.hukum');
 Route::get('/artikelhukum/{id}', 'HomeController@artikel_show')->name('artikel.show');    
 
+
+
+
+
 Route::get('/tentang-kami', function () {
 
     return view('tentangkami');

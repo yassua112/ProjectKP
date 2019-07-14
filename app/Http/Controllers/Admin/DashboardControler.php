@@ -31,12 +31,13 @@ class DashboardControler extends AdminController
     }
 
     public function form_pref(Request $request){
+        $user = auth()->user();
         
-        $artikel = new Artikel;
-        $admin = new User;        
+        $artikel = new Artikel;                
         $artikel->judul_artikel = $request->title;
         $artikel->isi_artikel = $request->ckedtor;
-        $artikel->id_admin = 1 ;
+        $artikel->id_admin = $user->id_admin;
+        $artikel->username =$user->username;
         $artikel->foto = 'profile-manager.jpg'; 	
         $artikel->save();
         

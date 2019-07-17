@@ -179,8 +179,6 @@
 
     #footer {
         clear: left;
-        width: 100%;
-        margin-left: 5px;
         background-color: #ab1818;
         border: 1px #a0b1a0 solid;
         padding: 5px;
@@ -190,7 +188,6 @@
         color: #ffffff;
         line-height: 1.5;
         text-transform: uppercase;
-
         padding-bottom: 30px;
     }
 

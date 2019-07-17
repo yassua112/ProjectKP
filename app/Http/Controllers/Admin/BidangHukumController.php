@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -16,10 +16,11 @@ class BidangHukumController extends Controller
     public function bidH_create()
     {
         $bidangHukum = BidangHukum::get();
-    	return view('dashboard.inputbidanghukum',compact('nama_bid_hukum','keterangan'));
+    	return view('dashboard.create.inputbidanghukum',compact('nama_bid_hukum','keterangan'));
     //	\App\BidangHukum::create($request->all());
     //	return redirect('/dashboard.table')->with('sukses','Data berhasil diinputkan!');
     }
+    
     public function bidang_pref(Request $request)    {
         $user = auth()->user();
         $bidanghukum = new BidangHukum;
@@ -33,7 +34,7 @@ class BidangHukumController extends Controller
 
     public function edit($id) {
         $bidanghukum = BidangHukum::find($id); // menemukan id data yang dicari untuk diedit
-        return view('dashboard.editbidanghukum', compact('bidanghukum'));
+        return view('dashboard.edit.editbidanghukum', compact('bidanghukum'));
     }
 
     public function update(Request $request,$id){ 
@@ -42,10 +43,9 @@ class BidangHukumController extends Controller
             'keterangan'     =>  'required'
         ]);
         $bidanghukum = BidangHukum::find($id);
-        // dd($request,$id);       
-      
+        // dd($request,$id);      
         $bidanghukum->nama_bid_hukum=$request->get('nama_bid_hukum');
-        $bidanghukum->keterangan=$request->keterangan;
+        $bidanghukum->keterangan=$request->get('keterangan');
         $bidanghukum->save();
         return redirect()->route('table')->with('sukses','Data berhasil diUpdate!');
     }
@@ -54,7 +54,13 @@ class BidangHukumController extends Controller
     {
         $bidanghukum = BidangHukum::find($id);
         $bidanghukum->delete();
-        return redirect()->route('table')->with('success', 'Data Deleted');
+        return redirect()->route('table')->with('sukses', 'Data Berhasil Di hapus');
     }
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     
 }

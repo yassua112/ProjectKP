@@ -14,6 +14,7 @@
 
 
 Auth::routes();
+
 Route::get('/dashboard','Admin\DashboardControler@dashboard')->name('admin.dashboard');
 Route::get('/', 'HomeController@index')->name('home');
 
@@ -21,13 +22,26 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/dashboard/form', 'Admin\DashboardControler@form_create')->name('form.create');
 Route::post('/detailartikel', 'Admin\DashboardControler@form_pref')->name('detail.artikel');
 
-Route::get('/dashboard/table','BidangHukumController@index')->name('table');
 
-Route::get('/dashboard/table/create','BidangHukumController@bidH_create')->name('table.create');
-Route::post('/bidang-hukum','BidangHukumController@bidang_pref')->name('table.pref');
-Route::get('/dashboard/table/{id}/edit','BidangHukumController@edit')->name('table.show');
-Route::post('/dashboard/table/{id}/update','BidangHukumController@update')->name('table.update');
-Route::get('/dashboard/table/{id}/delete','BidangHukumController@destroy');
+// bidang hukum---------------------------------------------------------------------------------------
+Route::get('/dashboard/table','Admin\BidangHukumController@index')->name('table');
+Route::get('/dashboard/table/create','Admin\BidangHukumController@bidH_create')->name('table.create');
+Route::post('/bidang-hukum','Admin\BidangHukumController@bidang_pref')->name('table.pref');
+Route::get('/dashboard/table/{id}/edit','Admin\BidangHukumController@edit')->name('table.show');
+Route::post('/dashboard/table/{id}/update','Admin\BidangHukumController@update')->name('table.update');
+Route::get('/dashboard/table/{id}/delete','Admin\BidangHukumController@destroy')->name('table.dalate');
+//----------------------------------------------------------------------------------------------------
+
+// kariawan---------------------------------------------------------------------------------------
+Route::get('/dashboard/data','Admin\KariawanController@index')->name('data');
+Route::get('/dashboard/data/create','Admin\KariawanController@createForm')->name('kariawan.create');
+Route::post('/dashboard/data','Admin\KariawanController@postkariawan')->name('kariawan.post');
+
+
+Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
+Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
+
+
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
@@ -35,8 +49,7 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 
-Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
-Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
+
 
 
 Route::get('/artikelhukum', 'HomeController@artikelhukum')->name('artikel.hukum');
@@ -57,11 +70,6 @@ Route::get('/dashboard/gambar', function () {
     
     return view('dashboard.gambar');
 })->name('gambar');
-
-
-Route::get('/dashboard/data', function () {
-    return view('dashboard.data');
-})->name('data');
 
 
 Route::get('/dashboard/layout', function () {

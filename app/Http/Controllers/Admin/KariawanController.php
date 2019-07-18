@@ -43,20 +43,15 @@ class KariawanController extends Controller
             $image =$request ->file('FotoKariawan');
             $filename='kariawan'.time().'.'.$image->getClientOriginalExtension();
             $location = public_path('images/kariawan/'.$filename);
-            // Image::make($image)->resize(500,200)->save($location);
+            Image::make($image)->resize(500,200)->save($location);
             $lawyers->Foto=$filename;
-        }
+        }else{
         $lawyers->Foto='handeler-kariawan.jpg';
+        }
+       
         
-        dd($lawyers);
-        
-        //$lawyers->save();
+        $lawyers->save();
         return redirect()->route('kariawan')->with('sukses','Data berhasil diTambahkan!');
-    }
-
-    public function __construct()
-    {
-        $this->middleware('auth');
     }
 
 }

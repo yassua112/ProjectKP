@@ -44,11 +44,6 @@ class DashboardControler extends AdminController
         return redirect()->route('form.create');     
     }
     
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    
+ 
     
 }

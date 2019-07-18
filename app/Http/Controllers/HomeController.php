@@ -41,4 +41,6 @@ class HomeController extends Controller
         $nama = Lawyers::where('NIP',$id)->first();
         return view('sub.desk-lawyers',['data'=>$nama]);
     }
+
+   
 }

@@ -20,7 +20,7 @@
 					    <label for="exampleFormControlTextarea1">Keterangan</label>
 					    <textarea name="keterangan" class="form-control" id="exampleFormControlTextarea1" rows="3" >{{$bidanghukum->keterangan}}</textarea>
 					  </div>
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  <a href="{{route('table')}}" class="btn btn-primary btn-sm">Close</a>
 						<button type="submit" class="btn btn-warning">Update</button>
 				</form>
 			</div>

@@ -133,7 +133,7 @@
             </div>
 </div>
 
-@section('script')
+
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.3"></script>
-@stop
+

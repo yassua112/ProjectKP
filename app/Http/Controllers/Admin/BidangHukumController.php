@@ -57,10 +57,6 @@ class BidangHukumController extends Controller
         return redirect()->route('table')->with('sukses', 'Data Berhasil Di hapus');
     }
     
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
+   
     
 }

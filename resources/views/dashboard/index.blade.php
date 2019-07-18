@@ -249,8 +249,6 @@
 <script type="text/javascript" src="{{asset('vendor/gentella/Flot/jquery.flot.time.js')}}"></script>
 <script type="text/javascript" src="{{asset('vendor/gentella/Flot/jquery.flot.stack.js')}}"></script>
 <script type="text/javascript" src="{{asset('vendor/gentella/jquery.flot.resize.js')}}"></script>
-
-
 <!-- DateJS -->
 <script type="text/javascript" src="{{asset('vendor/gentella/DateJS/build/date.js')}}"></script>
 

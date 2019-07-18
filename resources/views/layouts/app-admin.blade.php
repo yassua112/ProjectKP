@@ -264,10 +264,14 @@
     <script type="text/javascript" src="{{asset('vendor/gentella/fastclick/lib/fastclick.js')}}"></script>
     <!-- NProgress -->
     <script type="text/javascript" src="{{asset('vendor/gentella/nprogress/nprogress.js')}}"></script>
+    
     @yield('script')
     <!-- Custom Theme Scripts -->
     <script type="text/javascript" src="{{asset('vendor/js/custom.min.js')}}"></script>
     
+    
+
+
 
 </body>
 

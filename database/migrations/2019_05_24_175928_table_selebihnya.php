@@ -21,7 +21,7 @@ class TableSelebihnya extends Migration
             $table->text('keterangan');
             $table->integer('id_admin')->unsigned();
             $table->timestamps();
-            $table->foreign('id_admin')->references('id_admin')->on('admin_web');
+            $table->foreign('id_admin')->references('id_admin')->on('users');
             
         });
 
@@ -42,7 +42,7 @@ class TableSelebihnya extends Migration
             $table->date('tanggal_upload');            
             $table->integer('id_admin')->unsigned();
             $table->timestamps();
-            $table->foreign('id_admin')->references('id_admin')->on('admin_web');
+            $table->foreign('id_admin')->references('id_admin')->on('users');
             
         });
 
@@ -58,7 +58,7 @@ class TableSelebihnya extends Migration
             $table->integer('id_dokumentasi')->unsigned();
             $table->integer('id_admin')->unsigned();
             $table->timestamps();
-            $table->foreign('id_admin')->references('id_admin')->on('admin_web');
+            $table->foreign('id_admin')->references('id_admin')->on('users');
             $table->foreign('id_dokumentasi')->references('id_dokumentasi')->on('Dokumentasi');
             
         });
@@ -72,7 +72,7 @@ class TableSelebihnya extends Migration
             $table->longText('deskripsi_konsultasi');
             $table->integer('id_admin')->unsigned();
             $table->timestamps();
-            $table->foreign('id_admin')->references('id_admin')->on('admin_web');
+            $table->foreign('id_admin')->references('id_admin')->on('users');
             
         });    
     }

@@ -23,8 +23,8 @@
 			<th>{{$bidanghukum->nama_bid_hukum}}</th>
 			<th>{{$bidanghukum->keterangan}}</th>
 			<th>
-				<a href="/dashboard/table/{{$bidanghukum->id_bid_hukum}}/edit" class="btn btn-warning btn-sm">Edit</a>
-				<a href="/dashboard/table/{{$bidanghukum->id_bid_hukum}}/delete" class="btn btn-danger btn-sm">Delete</a>
+				<a href="/dashboard/table/{{$bidanghukum->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
+				<a href="/dashboard/table/{{$bidanghukum->id}}/delete" class="btn btn-danger btn-sm">Delete</a>
 			</th>
 		</tr>
 		@endforeach

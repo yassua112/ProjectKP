@@ -23,7 +23,7 @@ class DetArtikel extends Migration
             $table->integer('id_admin')->unsigned();
             $table->timestamps();
             $table->foreign('id_jdl_artikel')->references('id_jdl_artikel')->on('artikel');
-            $table->foreign('id_admin')->references('id_admin')->on('admin_web');
+            $table->foreign('id_admin')->references('id_admin')->on('users');
             
         });
     }

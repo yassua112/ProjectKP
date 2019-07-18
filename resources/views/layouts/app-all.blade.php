@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Welcome To Antinomi Lawyers Office</title>
+    <title>Antinomi Law Office - KANTOR HUKUM | KONSULTAN HUKUM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="{{asset('assets/images/icons/favicon.png')}}" />
+    <link rel="icon" type="image/png" href="{{asset('assets/images/icons/logo.png')}}" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}">
     <!--===============================================================================================-->
@@ -205,20 +205,16 @@
         <div class="container-menu-header">
             <div class="topbar">
                 <div class="topbar-social">
-                    <a href="#" class="topbar-social-item fa fa-facebook"></a>
-                    <a href="#" class="topbar-social-item fa fa-instagram"></a>
-                    <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+                    <a target="_blank" href="https://www.facebook.com/Antinomi-Law-Office-587240734669479/" class="topbar-social-item fa fa-facebook"></a>
+                    <a target="_blank" href="https://www.instagram.com/antinomilawoffice9194/?hl=id" class="topbar-social-item fa fa-instagram"></a>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=antinomi+law+office" class="topbar-social-item fa fa-youtube-play"></a>
+                    <a target="_blank" href="https://twitter.com/search?q=antinomi%20law%20office&src=typed_query" class="topbar-social-item fa fa-twitter"></a>
+                    
                 </div>
 
-                <span class="topbar-child1">
-                    Law Office
+                <span class="topbar-child1 font-weight-bold">
+                    KANTOR PENGACARA | KONSULTAN HUKUM
                 </span>
-
-                <div class="topbar-child2">
-                    <span class="topbar-email">
-                        fashe@example.com
-                    </span>
-                </div>
             </div>
 
             <div class="wrap_header">

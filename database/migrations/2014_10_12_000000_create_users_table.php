@@ -13,7 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('admin_web', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('id_admin')->unsigned()->nullable()->index();
             $table->string('username',20)->unique();
@@ -37,7 +37,7 @@ class CreateUsersTable extends Migration
     public function down()
     {
         
-        Schema::dropIfExists('admin_web');
+        Schema::dropIfExists('users');
         
 
 

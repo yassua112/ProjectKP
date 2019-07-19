@@ -91,7 +91,13 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
                             Select image to upload:
-                                <input type="file" name="FotoKariawan" id="fileToUpload" class="btn btn-success required">
+                                <input type="file" name="FotoKariawan" id="fileToUpload" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                            Select Your CV file:
+                                <input type="file" name="CVfile" id="fileToUpload" >
                             </div>
                         </div>
                         <div class="row">

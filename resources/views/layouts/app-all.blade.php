@@ -195,6 +195,7 @@
         background-color: #ab1818;
         color: rgb(255, 255, 255);
     }
+
 </style>
 
 <body class="animsition">
@@ -205,11 +206,15 @@
         <div class="container-menu-header">
             <div class="topbar">
                 <div class="topbar-social">
-                    <a target="_blank" href="https://www.facebook.com/Antinomi-Law-Office-587240734669479/" class="topbar-social-item fa fa-facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/antinomilawoffice9194/?hl=id" class="topbar-social-item fa fa-instagram"></a>
-                    <a target="_blank" href="https://www.youtube.com/results?search_query=antinomi+law+office" class="topbar-social-item fa fa-youtube-play"></a>
-                    <a target="_blank" href="https://twitter.com/search?q=antinomi%20law%20office&src=typed_query" class="topbar-social-item fa fa-twitter"></a>
-                    
+                    <a target="_blank" href="https://www.facebook.com/Antinomi-Law-Office-587240734669479/"
+                        class="topbar-social-item fa fa-facebook"></a>
+                    <a target="_blank" href="https://www.instagram.com/antinomilawoffice9194/?hl=id"
+                        class="topbar-social-item fa fa-instagram"></a>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=antinomi+law+office"
+                        class="topbar-social-item fa fa-youtube-play"></a>
+                    <a target="_blank" href="https://twitter.com/search?q=antinomi%20law%20office&src=typed_query"
+                        class="topbar-social-item fa fa-twitter"></a>
+
                 </div>
 
                 <span class="topbar-child1 font-weight-bold">
@@ -221,7 +226,7 @@
                 <!-- Logo -->
                 <a href="{{asset('/')}}" class="logo">
                     <img src="{{asset('assets/images/logoantinomi.jpg')}}" alt="IMG-LOGO">
-                    
+
                 </a>
 
                 <!-- Menu -->
@@ -259,16 +264,39 @@
                     </nav>
                 </div>
 
+                @guest
                 <!-- Header Icon -->
+                @if (Route::has('register'))
                 <div class="header-icons">
                     <a href="{{url('login')}}" class="header-wrapicon1 dis-block">
                         <img src="{{asset('assets/images/icons/icon-header-01.png')}}" class="header-icon1" alt="ICON">
                     </a>
                 </div>
+                @endif
+                @else
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
             </div>
         </div>
         <!-- Login -->
-        
+        @endguest
+        </ul>
         <!-- Header Mobile -->
         <div class="wrap_header_mobile">
             <!-- Logo moblie -->
@@ -362,7 +390,7 @@
 
     <!--===============================================================================================-->
     @yield('script')
-    
+
     <!--===============================================================================================-->
     <script src="{{asset('assets/js/main.js')}}"></script>
     <!--===============================================================================================-->

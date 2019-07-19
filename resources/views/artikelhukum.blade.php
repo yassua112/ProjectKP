@@ -37,7 +37,7 @@
                     <a href="{{url('artikelhukum/'.$item->judul_artikel)}}">
                         <h5 class="mt-0">{{$item->judul_artikel}}</h5>
                     </a><br>
-                    {{ substr(strip_tags($item->isi_artikel), 0, 200) }}
+                    {{ substr(strip_tags($item->isi_artikel), 0, 200)}}
                     
                     <button><a href="{{url('artikelhukum/'.$item->judul_artikel)}}">
                     <div class="text-primary">

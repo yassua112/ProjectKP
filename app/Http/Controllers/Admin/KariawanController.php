@@ -37,21 +37,30 @@ class KariawanController extends Controller
         $lawyers->SekilasTentang=$request->tentang;
         $lawyers->id_admin=$user->id_admin;
 
-
+        //file CV
+        $nama=$request->nama;
+        $file=$request->file('CVfile');
+        $namefile=$nama.'.'.$file->getClientOriginalExtension();
+        $destination=public_path('cv-folder/');
+        $file->move($destination,$namefile);
+        $lawyers->fileCV=$namefile;
         //save images
         if($request->hasFile('FotoKariawan')){
             $image =$request ->file('FotoKariawan');
             $filename='kariawan'.time().'.'.$image->getClientOriginalExtension();
             $location = public_path('images/kariawan/'.$filename);
-            Image::make($image)->resize(500,200)->save($location);
+            Image::make($image)->resize(300,300)->save($location);
             $lawyers->Foto=$filename;
+            $lawyers->save();
         }else{
         $lawyers->Foto='handeler-kariawan.jpg';
-        }
-       
-        
         $lawyers->save();
-        return redirect()->route('kariawan')->with('sukses','Data berhasil diTambahkan!');
+        }
+        //save file
+        
+        //dd($namefile);
+        //$lawyers->save();
+        return redirect()->route('data')->with('sukses','Data berhasil diTambahkan!');
     }
 
 }

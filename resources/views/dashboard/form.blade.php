@@ -2,22 +2,26 @@
 
 @section('content')
 
-@section('css')
 
-@stop
 
-<div class="">
-    <div class="page-title">
-        <div class="title_right">
-            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                <div class="input-group">
-                    <span class="input-group-btn">
-                    </span>
-                </div>
+<div class='conteiner'>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            @if ($message = Session::get('sukses'))
+            <div class="alert alert-success alert-block">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>{{ $message }}</strong>
             </div>
+            @endif
         </div>
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            Please check the form below for errors
+        </div>
+        @endif
+
     </div>
-    <div class="clearfix"></div>
 
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -26,47 +30,61 @@
                     <h2>Post Article<small>Sessions</small></h2>
                     <hr>
                     <h3>Judul artikel</h3>
-
-                    <form action="{{route('detail.artikel')}}" method="POST" id="wizardForm">
+                    <form action="{{route('detail.artikel')}}" method="POST" id="wizardForm"
+                        enctype="multipart/form-data">
                         @csrf
-                        <div class="form-group">
-                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                <textarea class="resizable_textarea form-control"
-                                    placeholder="Isi dengan caption yang akan di tampilkan di documentasi"
-                                    name="title"></textarea>
-                            </div>
+                        <div class="row col-sm-12">
                             <div class="form-group">
-                        <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <br />
-                        <br />  
-                        
-                        <div class="form-group">
-                        <textarea class="ckeditor" id="ckedtor" name="ckedtor"></textarea>
-                        <div class="form-group">
-                        
-                        
-                        <div class="form-group">
-                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4">
-                                <button class="btn btn-primary" type="button">Cancel</button>
-                                <button class="btn btn-primary" type="reset">Reset</button>
-                                <button type="submit" class="btn btn-success">Submit</button>
+                                <textarea
+                                    class="resizable_textarea form-control{{ $errors->has('title') ? ' is-invalid' : '' }}"
+                                    placeholder="Isi dengan caption yang akan di tampilkan di documentasi" name="title"
+                                    require value="{{ old('title') }}"></textarea>
+                                @if ($errors->has('title'))
+                                <span class=" p-3 mb-2 bg-danger text-danger">
+                                    <strong>{{ $errors->first('title') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="row col-sm-12">
+                                <div class="form-group">
+                                    <h3>Isi Artikel</h3>
+                                    <textarea
+                                        class="ckeditor form-control{{ $errors->has('ckedtor') ? ' is-invalid' : '' }}"
+                                        id="ckedtor" name="ckedtor" value="{{ old('ckedtor') }}"></textarea>
+                                    @if ($errors->has('ckedtor'))
+                                    <span class=" p-3 mb-2 bg-danger text-danger">
+                                        <strong>{{ $errors->first('ckedtor') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="row col-sm-12">
+                                <input type="file" name="fotocover" require>
+                                @if ($errors->has('fotocover'))
+                                <span class=" p-3 mb-2 bg-danger text-danger">
+                                    <strong>{{ $errors->first('fotocover') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                            <div class="row col-sm-12">
+                                <div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4">
+                                        <button class="btn btn-primary" type="button">Cancel</button>
+                                        <button class="btn btn-primary" type="reset">Reset</button>
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
+
     </div>
-
 </div>
-
-
+</div>
 
 
 @stop
@@ -83,6 +101,8 @@
 </script>
 <script type="text/javascript" src="{{asset('vendor/gentella/jquery.hotkeys/jquery.hotkeys.js')}}"></script>
 <script type="text/javascript" src="{{asset('vendor/gentella/google-code-prettify/src/prettify.js')}}"></script>
+<script type="text/javascript" src="{{asset('vendor/gentella/parsleyjs/dist/parsley.min.js')}}"></script>
+
 
 
 

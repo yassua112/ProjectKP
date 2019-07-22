@@ -32,7 +32,7 @@
     <div class="row">
         <div class="col-md-9">
             <div class="media">
-                <img src="{{asset('assets/images/' .$item->foto)}}" class="mr-3" alt="...">
+                <img src="{{asset('images/cover/' .$item->foto)}}" class="mr-3" alt="...">
                 <div class="media-body">
                     <a href="{{url('artikelhukum/'.$item->judul_artikel)}}">
                         <h5 class="mt-0">{{$item->judul_artikel}}</h5>

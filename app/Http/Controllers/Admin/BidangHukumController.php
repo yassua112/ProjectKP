@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use App\BidangHukum;
 
-class BidangHukumController extends Controller
+class BidangHukumController extends AdminController
 {
     public function index()
     {

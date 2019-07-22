@@ -15,12 +15,13 @@
 
 Auth::routes();
 
-Route::get('/dashboard','Admin\DashboardControler@dashboard')->name('admin.dashboard');
+Route::get('/dashboard','Admin\DashboardController@index')->name('admin.dashboard');
 Route::get('/', 'HomeController@index')->name('home');
 
 
-Route::get('/dashboard/form', 'Admin\DashboardControler@form_create')->name('form.create');
-Route::post('/detailartikel', 'Admin\DashboardControler@form_pref')->name('detail.artikel');
+
+Route::get('/dashboard/form', 'Admin\ArtikelController@form_create')->name('form.create');
+Route::post('/detailartikel', 'Admin\ArtikelController@form_pref')->name('detail.artikel');
 
 
 // bidang hukum---------------------------------------------------------------------------------------
@@ -33,9 +34,12 @@ Route::get('/dashboard/table/{id}/delete','Admin\BidangHukumController@destroy')
 //----------------------------------------------------------------------------------------------------
 
 // kariawan---------------------------------------------------------------------------------------
-Route::get('/dashboard/data','Admin\KariawanController@index')->name('data');
-Route::get('/dashboard/data/create','Admin\KariawanController@createForm')->name('kariawan.create');
-Route::post('/dashboard/data','Admin\KariawanController@postkariawan')->name('kariawan.post');
+Route::get('/dashboard/data','Admin\LawyersController@index')->name('data');
+Route::get('/dashboard/data/create','Admin\LawyersController@createForm')->name('kariawan.create');
+Route::post('/dashboard/data','Admin\LawyersController@postkariawan')->name('kariawan.post');
+Route::get('dasboard/data/{id}/edit','Admin\LawyersController@edit')->name('kariawan.show');
+
+
 
 
 Route::get('/lawyers','HomeController@lawyers')->name('lawyers');

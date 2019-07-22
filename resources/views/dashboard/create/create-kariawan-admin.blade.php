@@ -26,14 +26,23 @@
 
 @section('content')
 <div class="contenier">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        @if ($message = Session::get('sukses'))
+        <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>{{ $message }}</strong>
+        </div>
+        @endif
+    </div>
     <div class="clearfix"></div>
     <div class="row">
         <div class="x_content">
             <div class="col-md-6 col-xs-12">
                 <div class="x-panel">
                     <!-- start form for validation -->
-                    <form id="demo-form" data-parsley-validate enctype="multipart/form-data" method="POST" action="{{route('data')}}" id="form">
-                    @csrf
+                    <form id="demo-form" data-parsley-validate enctype="multipart/form-data" method="POST"
+                        action="{{route('data')}}" id="form">
+                        @csrf
                         <div class=row>
                             <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                                 <label for="fullname">Full Name * :</label>
@@ -90,19 +99,19 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                            Select image to upload:
-                                <input type="file" name="FotoKariawan" id="fileToUpload" >
+                                Select image to upload:
+                                <input type="file" name="FotoKariawan" id="fileToUpload">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                            Select Your CV file:
-                                <input type="file" name="CVfile" id="fileToUpload" >
+                                Select Your CV file:
+                                <input type="file" name="CVfile" id="fileToUpload">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -116,16 +125,9 @@
 
 @section('script')
 <!-- iCheck -->
-    <script type="text/javascript" src="{{asset('vendor/gentella/iCheck/icheck.min.js')}}"></script>
-    <!-- Parsley -->
-    <script type="text/javascript" src="{{asset('vendor/gentella/parsleyjs/dist/parsley.min.js')}}"></script>
-
-    <script>
-    // just for the demos, avoids form submit
-    $.is_numeric(#NoHp){
-        false:"selain angka di tolak"
-    }
-    </script>
+<script type="text/javascript" src="{{asset('vendor/gentella/iCheck/icheck.min.js')}}"></script>
+<!-- Parsley -->
+<script type="text/javascript" src="{{asset('vendor/gentella/parsleyjs/dist/parsley.min.js')}}"></script>
 
 
 @stop

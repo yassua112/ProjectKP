@@ -13,218 +13,76 @@
             </div>
         </div>
     </div>
-    <div class="clearfix"></div>
 
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="dashboard_graph">
+            <h3>Data Bidang Hukum</h3>
+            <table class="table table-hover">
+                <tr>
+                    <th>No</th>
+                    <th>Nama Bidang</th>
+                    <th>Keterangan</th>
+                </tr>
+                <?php $no=0 ;?>
+                @foreach($data_bidang_hukum as $bidanghukum)
+                <tr>
+                <?php $no++ ;?>
+                    <th>{{$no}}</th>
+                    <th>{{$bidanghukum->nama_bid_hukum}}</th>
+                    <th>{{ substr(strip_tags($bidanghukum->keterangan), 0, 50)}}</th>
+                </tr>
+                @endforeach
+            </table>
+            <hr>
 
-                <div class="row x_title">
-                    <div class="col-md-6">
-                        <h3>Network Activities <small>Graph title sub-title</small></h3>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="reportrange" class="pull-right"
-                            style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                            <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                        </div>
-                    </div>
-                </div>
+            <h3>Data Dokumentasi</h3>
+            <table style="border-collapse: collapse;" border="1">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Kegiatan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><a href="#">Gugatan Ahli Waris terhadap hak warisan</a></td></tr>
+                </tbody>
+            </table>
+            <hr>
+            
+            <h3>Data Judul Artikel</h3>
+            <table style="border-collapse: collapse;" border="1">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Artikel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><a href="#">Gugatan Ahli Waris terhadap hak warisan</a></td></tr>
+                </tbody>
+            </table>
+            <hr>
 
-                <div class="col-md-9 col-sm-9 col-xs-12">
-                    <div id="chart_plot_01" class="demo-placeholder"></div>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
-                    <div class="x_title">
-                        <h2>Top Campaign Performance</h2>
-                        <div class="clearfix"></div>
-                    </div>
+            <h3>Data Lawyers</h3>
+            <table class="table table-hover">
+                <tr>
+                    <th>No</th>
+                    <th>Nama Lawyers dan Gelar</th>
+                </tr>
+                <?php $no=0 ;?>
+                @foreach($lawyers as $item)
+                <tr>
+                <?php $no++ ;?>
+                    <th>{{$no}}</th>
+                    <th>{{$item->nama}}</th>
+                </tr>
+                @endforeach
 
-                    <div class="col-md-12 col-sm-12 col-xs-6">
-                        <div>
-                            <p>Facebook Campaign</p>
-                            <div class="">
-                                <div class="progress progress_sm" style="width: 76%;">
-                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>Twitter Campaign</p>
-                            <div class="">
-                                <div class="progress progress_sm" style="width: 76%;">
-                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-6">
-                        <div>
-                            <p>Conventional Media</p>
-                            <div class="">
-                                <div class="progress progress_sm" style="width: 76%;">
-                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <p>Bill boards</p>
-                            <div class="">
-                                <div class="progress progress_sm" style="width: 76%;">
-                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-
-                <div class="clearfix"></div>
-            </div>
         </div>
-
     </div>
     <br>
-    <div class="row">
-        <div class="col-md-6  col-sm-6 col-xs-12">
-            <div class="x_panel">
-                <div class="x_title">
-                    <h2>Daily active users <small>Sessions</small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Settings 1</a>
-                                </li>
-                                <li><a href="#">Settings 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                    <ul class="list-unstyled timeline">
-                        <li>
-                            <div class="block">
-                                <div class="tags">
-                                    <a href="" class="tag">
-                                        <span>Entertainment</span>
-                                    </a>
-                                </div>
-                                <div class="block_content">
-                                    <h2 class="title">
-                                        <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                    </h2>
-                                    <div class="byline">
-                                        <span>13 hours ago</span> by <a>Jane Smith</a>
-                                    </div>
-                                    <p class="excerpt">Film festivals used to be do-or-die moments for movie makers.
-                                        They
-                                        were where you met the producers that could fund your project, and if the
-                                        buyers
-                                        liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="block">
-                                <div class="tags">
-                                    <a href="" class="tag">
-                                        <span>Entertainment</span>
-                                    </a>
-                                </div>
-                                <div class="block_content">
-                                    <h2 class="title">
-                                        <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                    </h2>
-                                    <div class="byline">
-                                        <span>13 hours ago</span> by <a>Jane Smith</a>
-                                    </div>
-                                    <p class="excerpt">Film festivals used to be do-or-die moments for movie makers.
-                                        They
-                                        were where you met the producers that could fund your project, and if the
-                                        buyers
-                                        liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="block">
-                                <div class="tags">
-                                    <a href="" class="tag">
-                                        <span>Entertainment</span>
-                                    </a>
-                                </div>
-                                <div class="block_content">
-                                    <h2 class="title">
-                                        <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                    </h2>
-                                    <div class="byline">
-                                        <span>13 hours ago</span> by <a>Jane Smith</a>
-                                    </div>
-                                    <p class="excerpt">Film festivals used to be do-or-die moments for movie makers.
-                                        They
-                                        were where you met the producers that could fund your project, and if the
-                                        buyers
-                                        liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="x_panel">
-                <div class="x_title">
-                    <h2>Daily active users <small>Sessions</small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Settings 1</a>
-                                </li>
-                                <li><a href="#">Settings 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
 
-                    <div class="bs-example" data-example-id="simple-jumbotron">
-                        <div class="jumbotron">
-                            <h1>Hello, world!</h1>
-                            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra
-                                attention to
-                                featured content or information.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 

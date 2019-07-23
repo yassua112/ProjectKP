@@ -66,7 +66,7 @@
                                 </li>
                                 <li><a href="{{route('table')}}"><i class="fa fa-table"></i> Bidang Hukum </a>
                                 </li>
-                                <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan Kariawan </a>
+                                <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan Lawyers </a>
                                 </li>
                                 <li><a href="{{route('layout')}}"><i class="fa fa-clone"></i>Layouts </a>
 
@@ -205,7 +205,7 @@
             <!-- /page content -->
 
             <!-- footer content -->
-        <footer>
+        <!--<footer>
             
                 <div class="pull-right">
                     Copyright by : Team KP LawOffice 2019 <a href="https://www.instagram.com/opsie_dupsie"><i
@@ -213,7 +213,7 @@
                 </div>
                 <div class="clearfix"></div>
             
-        </footer>
+        </footer>-->
             <!-- /footer content -->
     </div>
 </div>

@@ -96,7 +96,7 @@
                                         <div class="row">
                                             <div class="col align-self-center">
                                                 <div class="mx-auto">
-                                                    <img src="{{asset('assets/images/' .$item->Foto)}}"
+                                                    <img src="{{asset('assets/images/kariawan/' .$item->Foto)}}"
                                                         class="rounded " alt="theManager2" width="100" height="100">
                                                 </div>
                                                 <a href="{{url('lawyers/'.$item->NIP)}}">

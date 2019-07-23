@@ -11,10 +11,6 @@ use App\Lawyers;
 class ArtikelController extends AdminController
 {
     //
-    public function dashboard(){
-        
-        return view('dashboard.index');
-    }
 
     // public function form_show(){
 
@@ -61,8 +57,8 @@ class ArtikelController extends AdminController
             $artikel->foto=$filename;            
             $artikel->save();
         }
-       
-        return redirect()->route('form.create')->with('sukses','Artikel Berhasil Di Publish');     
+        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
+        return redirect()->route('form.create');     
     }
     
     

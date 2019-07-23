@@ -20,7 +20,6 @@
             Please check the form below for errors
         </div>
         @endif
-
     </div>
 
     <div class="row">

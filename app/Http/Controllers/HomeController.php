@@ -42,5 +42,5 @@ class HomeController extends Controller
         return view('sub.desk-lawyers',['data'=>$nama]);
     }
 
-   
+
 }

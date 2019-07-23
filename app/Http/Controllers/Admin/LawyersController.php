@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\user;
 use Image;
 use App\Lawyers;
+use Alert;
 class LawyersController extends AdminController
 {
     public function index(){ //metjod viwe dari tampilan utama dashboard penambahan kariawan

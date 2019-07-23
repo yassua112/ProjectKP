@@ -273,14 +273,7 @@
 
             <!-- Button show menu -->
             <div class="btn-show-menu">
-                <!-- Header Icon mobile -->
-                <div class="header-icons-mobile">
-                    <a href="{{url('login')}}" class="header-wrapicon1 dis-block">
-                        <img src="{{asset('assets/images/icons/icon-header-01.png')}}" class="header-icon1" alt="ICON">
-                    </a>
-                </div>
-
-                <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+                            <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>

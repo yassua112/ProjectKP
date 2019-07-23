@@ -59,6 +59,6 @@ class BidangHukumController extends AdminController
         return redirect()->route('table');
     }
     
-   
+    
     
 }

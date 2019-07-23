@@ -19,8 +19,8 @@ Route::get('/dashboard','Admin\DashboardController@index')->name('admin.dashboar
 Route::get('/', 'HomeController@index')->name('home');
 
 
-
-Route::get('/dashboard/form', 'Admin\ArtikelController@form_create')->name('form.create');
+Route::get('/dashboard/article', 'Admin\ArtikelController@article_show')->name('article.show');
+Route::get('/dashboard/create/article', 'Admin\ArtikelController@form_create')->name('article.create');
 Route::post('/detailartikel', 'Admin\ArtikelController@form_pref')->name('detail.artikel');
 
 
@@ -44,7 +44,7 @@ Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show')
 
 
 //gambar dokumentasi----------------------------------------------------------------------
-Route::get('/dashboard/gambar/','Admin\DokumentasiController@index')->name('dokumentasi');
+Route::get('/dashboard/gambar/','Admin\DokumentasiController@index')->name('admin.dokumentasi');
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

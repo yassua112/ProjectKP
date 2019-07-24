@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\user;
 use Image;
 use App\Lawyers;
+use\App\Providers\SweetAlertServiceProvider;
 class LawyersController extends AdminController
 {
     public function index(){ //metjod viwe dari tampilan utama dashboard penambahan kariawan
@@ -56,13 +57,22 @@ class LawyersController extends AdminController
         $lawyers->Foto='handeler-kariawan.jpg';
         $lawyers->save(); //data di simpan
         }
-        return redirect()->route('data')->with('sukses','Kariawan Berhasil Di tambahkan');//menampilkan pesan berhasil jika data berhasil di tambahkan
+        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");//menampilkan pesan berhasil jika data berhasil di tambahkan
+        return redirect()->route('data');
+    }
+
+
+    public function view($id){
+        
+        $lawyers= Lawyers::find($id);
+
+        return view('dashboard.view.viewlawyers',['data'=>$lawyers]);
     }
 
     public function edit($id){
         //Penganbilan data sesuai ID
         $lawyers= lawyers::find($id);
-        return view('dashboard.edit.editLawyers',compact('lawyers'));
+        return view('dashboard.edit.editdatalawyers',compact('lawyers'));
 
     }
 
@@ -79,7 +89,7 @@ class LawyersController extends AdminController
             'Foto'=>'requared',
         ]);
         $lawyers=Lawyers::find($id);
-     
+        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
         dd($request,$id);          
     }
 
@@ -87,6 +97,7 @@ class LawyersController extends AdminController
 
         $lawyers=Lawyers::find($id);
         $lawyers->delete();
-        return redirect()->route('data')->with('sukses','Data dengan','$id->nama','berhasil Dihapus');
+        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
+        return redirect()->route('data');
     }
 }

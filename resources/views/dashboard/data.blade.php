@@ -29,20 +29,18 @@
                     <img src="{{asset('images/kariawan/'. $item->Foto)}}" alt="" class="img-circle img-responsive">
                 </div>
             </div>
-            <div class="col-xs-12 bottom text-center">
+            <div class="col-xs-12 bottom ">
                 <div class="col-xs-12 col-sm-6 emphasis">
-                    <button type="button" class="btn btn-success btn-xs"> <i class="fa fa-user">
-                        </i> <i class="fa fa-comments-o"></i> </button>
-                    <button type="button" class="btn btn-primary btn-xs">
-                        <i class="fa fa-user"> </i> View Profile
-                    </button>
+                    <a href="/dashboard/data/{{$item->id}}/delete" class="btn btn-danger btn-xs btn-delete" id='form-delete'> Delete <i class="fa fa-user"></i> <i
+                            class="fa fa-remove"></i></a>
+                    <a href="/dashboard/data/{{$item->id}}/view" class="btn btn-warning btn-xs" > View Profile <i class="fa fa-user"></i> <i class="fa fa-wrench"></i>
+                    </a>
+                    
                 </div>
             </div>
         </div>
     </div>
     @endforeach
-
 </div>
 
 @endsection
-

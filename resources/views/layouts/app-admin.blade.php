@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>| DASHBOARD | </title>
+    <title>| DASHBOARD |</title>
 
     <link rel="stylesheet" type="text/css" href="{{asset('vendor/gentella/bootstrap/dist/css/bootstrap.min.css')}}">
     <!--===============================================================================================-->
@@ -22,8 +22,10 @@
     <link rel="stylesheet" type="text/css"
         href="{{asset('vendor/gentella/bootstrap-daterangepicker/daterangepicker.css')}}">
     <!--===============================================================================================-->
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
     <link rel="stylesheet" type="text/css" href="{{asset('vendor/css/custom.min.css')}}">
-@yield('style')
+    @yield('style')
 
 </head>
 
@@ -46,7 +48,7 @@
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <h2>{{ Auth::user()->name }}</h2>
+                            <h2>{{ Auth::user()->username }}</h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -60,20 +62,26 @@
                             <ul class="nav side-menu">
                                 <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i> Home </a>
                                 </li>
-                                <li><a href="{{route('form.create')}}"><i class="fa fa-edit"></i> Artikel </a>
+                                <li><a href="{{route('article.show')}}"><i class="fa fa-edit"></i> Artikel </a>
                                 </li>
-                                <li><a href="{{route('gambar')}}"><i class="fa fa-file-image-o"></i> Dokumentasi</a>
+                                <li><a href="{{route('admin.dokumentasi')}}"><i class="fa fa-file-image-o"></i>
+                                        Dokumentasi</a>
                                 </li>
                                 <li><a href="{{route('table')}}"><i class="fa fa-table"></i> Bidang Hukum </a>
                                 </li>
+<<<<<<< HEAD
                                 <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan Lawyers </a>
+=======
+                                <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan
+                                        Lawyers </a>
+>>>>>>> ed13ead32df1df73d469ddd75722201365dda44e
                                 </li>
                                 <li><a href="{{route('layout')}}"><i class="fa fa-clone"></i>Layouts </a>
 
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                     <!-- /sidebar menu -->
 
@@ -96,25 +104,25 @@
                 </div>
             </div>
             <!-- top navigation -->
-           
+
             <div class="top_nav">
                 <div class="nav_menu">
                     <nav>
                         <div class="nav toggle">
                             <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                         </div>
-                        
+
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
-                            
-                                
+
+
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                                     aria-expanded="false">
-                                    {{ Auth::user()->name }}
+                                    {{ Auth::user()->username }}
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
-                                
-                           
+
+
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
                                     <li><a href="{{ route('logout') }}">
                                             <i class="fa fa-sign-out pull-right">
@@ -124,99 +132,45 @@
                             <li role="presentation" class="dropdown">
                                 <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
                                     aria-expanded="false">
-                                    <i class="fa fa-envelope-o"></i>
-                                    <span class="badge bg-green">6</span>
-                                </a>
-                                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                                    <li>
-                                        <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                                            <span>
-                                                <span>John Smith</span>
-                                                <span class="time">3 mins ago</span>
-                                            </span>
-                                            <span class="message">
-                                                Film festivals used to be do-or-die moments for movie makers. They were
-                                                where...
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                                            <span>
-                                                <span>John Smith</span>
-                                                <span class="time">3 mins ago</span>
-                                            </span>
-                                            <span class="message">
-                                                Film festivals used to be do-or-die moments for movie makers. They were
-                                                where...
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                                            <span>
-                                                <span>John Smith</span>
-                                                <span class="time">3 mins ago</span>
-                                            </span>
-                                            <span class="message">
-                                                Film festivals used to be do-or-die moments for movie makers. They were
-                                                where...
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                                            <span>
-                                                <span>John Smith</span>
-                                                <span class="time">3 mins ago</span>
-                                            </span>
-                                            <span class="message">
-                                                Film festivals used to be do-or-die moments for movie makers. They were
-                                                where...
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="text-center">
-                                            <a>
-                                                <strong>See All Alerts</strong>
-                                                <i class="fa fa-angle-right"></i>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    <i class="fa fa-envelope-o"></i>                                   
+                                </a>                               
                             </li>
                         </ul>
-                       
                     </nav>
                 </div>
             </div>
-            
             <!-- /top navigation -->
 
             <!-- page content -->
             <div class="right_col" role="main">
-            @yield('content')
+                @yield('content')
             </div>
             <!-- /page content -->
 
             <!-- footer content -->
+<<<<<<< HEAD
         <!--<footer>
             
+=======
+            <footer>
+
+>>>>>>> ed13ead32df1df73d469ddd75722201365dda44e
                 <div class="pull-right">
-                    Copyright by : Team KP LawOffice 2019 <a href="https://www.instagram.com/opsie_dupsie"><i
+                    Copyright by : Team KP Antinomi LawOffice 2019 <a href="https://www.instagram.com/lamhotdiarta"><i
                             class="fa fa-heart"></i></a>
                 </div>
                 <div class="clearfix"></div>
+<<<<<<< HEAD
             
         </footer>-->
+=======
+
+            </footer>
+>>>>>>> ed13ead32df1df73d469ddd75722201365dda44e
             <!-- /footer content -->
+
+        </div>
     </div>
-</div>
 
     <!-- jQuery -->
     <script type="text/javascript" src="{{asset('vendor/gentella/jquery/dist/jquery.min.js')}}"></script>
@@ -226,15 +180,19 @@
     <script type="text/javascript" src="{{asset('vendor/gentella/fastclick/lib/fastclick.js')}}"></script>
     <!-- NProgress -->
     <script type="text/javascript" src="{{asset('vendor/gentella/nprogress/nprogress.js')}}"></script>
-    
-   
+ 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
     <!-- Custom Theme Scripts -->
     <script type="text/javascript" src="{{asset('vendor/js/custom.min.js')}}"></script>
+
+   
+
     @yield('script')
-    
+    @include('sweet::alert')
 
 
 
 </body>
+
 
 </html>

@@ -19,8 +19,8 @@ Route::get('/dashboard','Admin\DashboardController@index')->name('admin.dashboar
 Route::get('/', 'HomeController@index')->name('home');
 
 
-
-Route::get('/dashboard/form', 'Admin\ArtikelController@form_create')->name('form.create');
+Route::get('/dashboard/article', 'Admin\ArtikelController@article_show')->name('article.show');
+Route::get('/dashboard/create/article', 'Admin\ArtikelController@form_create')->name('article.create');
 Route::post('/detailartikel', 'Admin\ArtikelController@form_pref')->name('detail.artikel');
 
 
@@ -37,13 +37,14 @@ Route::get('/dashboard/table/{id}/delete','Admin\BidangHukumController@destroy')
 Route::get('/dashboard/data','Admin\LawyersController@index')->name('data');
 Route::get('/dashboard/data/create','Admin\LawyersController@createForm')->name('kariawan.create');
 Route::post('/dashboard/data','Admin\LawyersController@postkariawan')->name('kariawan.post');
-Route::get('dasboard/data/{id}/edit','Admin\LawyersController@edit')->name('kariawan.show');
-
-
-
+Route::get('/dashboard/data/{id}/view','Admin\LawyersController@view')->name('kariawan.show');
 
 Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
 Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
+
+
+//gambar dokumentasi----------------------------------------------------------------------
+Route::get('/dashboard/gambar/','Admin\DokumentasiController@index')->name('admin.dokumentasi');
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
@@ -70,12 +71,6 @@ Route::get('/tentang-kami', function () {
 
 
 //dari sisi admin website
-Route::get('/dashboard/gambar', function () {
-    
-    return view('dashboard.gambar');
-})->name('gambar');
-
-
 Route::get('/dashboard/layout', function () {
     return view('dashboard.layout');
 })->name('layout');

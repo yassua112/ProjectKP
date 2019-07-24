@@ -38,7 +38,6 @@
         border: 1px solid #e5e5e5;
         background: #fff
     }
-
 </style>
 @stop
 @section('content')
@@ -105,16 +104,12 @@
                                 <div class="col-md-9 col-sm-9 col-xs-12">
                                     <select class="form-control">
                                         <option>Choose option</option>
-                                        <option>Option one</option>
-                                        <option>Option two</option>
-                                        <option>Option three</option>
-                                        <option>Option four</option>
+                                    
                                     </select>
                                 </div>
                             </div>
                 </div>
             </div>
-
         </div>
         <div id="step-2">
             <div class="row">
@@ -193,8 +188,8 @@
                                 <div class="col-md-55">
                                     <div class="thumbnail">
                                         <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="{{asset('vendor/images/media.jpg')}}"
-                                                alt="image" />
+                                            <img style="width: 100%; display: block;"
+                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
                                             <div class="mask">
                                                 <p>Your Text</p>
                                                 <div class="tools tools-bottom">
@@ -212,8 +207,8 @@
                                 <div class="col-md-55">
                                     <div class="thumbnail">
                                         <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="{{asset('vendor/images/media.jpg')}}"
-                                                alt="image" />
+                                            <img style="width: 100%; display: block;"
+                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
                                             <div class="mask">
                                                 <p>Your Text</p>
                                                 <div class="tools tools-bottom">
@@ -231,8 +226,8 @@
                                 <div class="col-md-55">
                                     <div class="thumbnail">
                                         <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="{{asset('vendor/images/media.jpg')}}"
-                                                alt="image" />
+                                            <img style="width: 100%; display: block;"
+                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
                                             <div class="mask">
                                                 <p>Your Text</p>
                                                 <div class="tools tools-bottom">
@@ -250,8 +245,8 @@
                                 <div class="col-md-55">
                                     <div class="thumbnail">
                                         <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="{{asset('vendor/images/media.jpg')}}"
-                                                alt="image" />
+                                            <img style="width: 100%; display: block;"
+                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
                                             <div class="mask">
                                                 <p>Your Text</p>
                                                 <div class="tools tools-bottom">
@@ -269,8 +264,8 @@
                                 <div class="col-md-55">
                                     <div class="thumbnail">
                                         <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="{{asset('vendor/images/media.jpg')}}"
-                                                alt="image" />
+                                            <img style="width: 100%; display: block;"
+                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
                                             <div class="mask">
                                                 <p>Your Text</p>
                                                 <div class="tools tools-bottom">
@@ -326,7 +321,6 @@
         console.log('sukses');
         uploader2.detach().remove();
     });
-
 </script>
 <script type="text/javascript" src="{{asset('vendor/gentella/jQuery-Smart-Wizard/js/jquery.smartWizard.js')}}"></script>
 @stop

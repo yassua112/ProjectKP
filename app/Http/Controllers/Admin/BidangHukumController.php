@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
 use App\BidangHukum;
+use Alert;
 
 class BidangHukumController extends AdminController
 {
@@ -30,8 +30,8 @@ class BidangHukumController extends AdminController
         $bidanghukum->keterangan=$request->keterangan;
         $bidanghukum->id_admin=$user->id_admin;
         $bidanghukum->save();
-
-        return redirect()->route('table.create')->with('sukses','Data berhasil diinputkan!');
+        Alert::success('Berhasil', 'Data Berhasil Di Tambahkan');
+        return redirect()->route('table');
     }
 
     public function edit($id) {
@@ -49,16 +49,18 @@ class BidangHukumController extends AdminController
         $bidanghukum->nama_bid_hukum=$request->get('nama_bid_hukum');
         $bidanghukum->keterangan=$request->get('keterangan');
         $bidanghukum->save();
-        return redirect()->route('table')->with('sukses','Data berhasil diUpdate!');
+        Alert::success('Berhasil', 'Data Berhasil Di Update');
+        return redirect()->route('table');
     }
 
     public function destroy($id)
     {
         $bidanghukum = BidangHukum::find($id);
         $bidanghukum->delete();
-        return redirect()->route('table')->with('sukses', 'Data Berhasil Di hapus');
+        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
+        return redirect()->route('table');
     }
     
-   
+    
     
 }

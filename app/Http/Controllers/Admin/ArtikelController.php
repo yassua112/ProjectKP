@@ -7,33 +7,25 @@ use Image;
 use App\Artikel;
 use App\User;
 use App\Lawyers;
+use\App\Providers\SweetAlertServiceProvider;
 
 class ArtikelController extends AdminController
 {
-    //
-    public function dashboard(){
-        
-        return view('dashboard.index');
-    }
-
-    // public function form_show(){
-
-    //     return view('artikelhukum');     
-    // }
-
+    public function article_show(){
     
+    $title= Artikel::all();
+    
+        return view('dashboard.postArtikel',['data'=>$title]);
+    
+    }
 
     public function form_create(){
-                
-        $title = Artikel::get();        
-
-        return view('dashboard.form', compact('title','ckedtor'));     
+    $title = Artikel::get();
+    return view('dashboard.create.create-article', compact('title','ckedtor'));
     }
 
-   
-
     public function form_pref(Request $request){
-      
+        
         $massage=[
             'required'=>'Ada atribut yangmasih kosong, Silahkan di isi',
             'min'=>'Setidaknya Isi 5 karakter judul/255 karakter untuk isi artikel'
@@ -43,7 +35,7 @@ class ArtikelController extends AdminController
             'ckedtor' => ['required', 'string', 'min:5'],
             'fotocover'=>['required'],            
         ],$massage);
-       
+        
         $user = auth()->user();
         
         $artikel = new Artikel;                
@@ -61,8 +53,8 @@ class ArtikelController extends AdminController
             $artikel->foto=$filename;            
             $artikel->save();
         }
-       
-        return redirect()->route('form.create')->with('sukses','Artikel Berhasil Di Publish');     
+        Alert::success('Berhasil', 'Data Berhasil Di Tambahkan')->persistent("Ok");
+        return redirect()->route('article.show');     
     }
     
     

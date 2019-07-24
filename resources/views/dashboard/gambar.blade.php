@@ -44,8 +44,15 @@
 
 <div class="">
     <div class="page-title">
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            Please check the form below for errors
+        </div>
+        @endif
         <div class="title_right">
             <h2> Upload Gambar Sesuai kategori </h2>
+           
             <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                 <div class="input-group">
                     <span class="input-group-btn">
@@ -55,7 +62,9 @@
         </div>
     </div>
     <div class="clearfix"></div>
-
+    <form action="{{route('create.gambar')}}" method="POST" id="wizardForm"
+                        enctype="multipart/form-data">
+                        @csrf
     <div id="wizard" class="form_wizard wizard_horizontal">
         <ul class="wizard_steps">
             <li>
@@ -84,16 +93,7 @@
                         <small>Step 3 description</small>
                     </span>
                 </a>
-            </li>
-            <li>
-                <a href="#step-4">
-                    <span class="step_no">4</span>
-                    <span class="step_descr">
-                        Step 4<br />
-                        <small>Step 4 description</small>
-                    </span>
-                </a>
-            </li>
+            </li>         
         </ul>
         <div id="step-1">
             <div class="row">
@@ -102,9 +102,10 @@
                             <hr />
                             <div class="form-group">
                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <select class="form-control">
-                                        <option>Choose option</option>
-                                    
+                                    <select class="form-control" name="category" required>
+                                    @foreach($data as $item)
+                                        <option>{{$item->nama_bid_hukum}}</option>
+                                    @endforeach                                    
                                     </select>
                                 </div>
                             </div>
@@ -118,8 +119,8 @@
                             <hr />
                             <div class="form-group">
                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <textarea class="resizable_textarea form-control"
-                                        placeholder="Isi dengan caption yang akan di tampilkan di documentasi"></textarea>
+                                    <textarea class="resizable_textarea form-control" name="caption"
+                                        placeholder="Isi dengan caption yang akan di tampilkan di documentasi" required></textarea>
                                 </div>
                             </div>
                 </div>
@@ -139,8 +140,8 @@
                                         <div class="col-sm-12 images-upload">
                                             <div class="uploader2">
                                                 <img class="img none" src="{{asset('vendor/images/add.png')}}" />
-                                                <input type="file" name="userprofile_picture[]" class="filePhoto"
-                                                    id="filePhoto" />
+                                                <input type="file" name="fotodokumentasi[]" class="filePhoto"
+                                                    id="filePhoto" required/>
                                                 <button type="button" class="btn  btn-info btn-delete last hidden"
                                                     style="position: relative;top: -290px; left: 31%;z-index:2">
                                                     <i class="fa fa-trash"></i> Delete
@@ -154,142 +155,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="step-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="x_panel">
-                        <div class="x_title">
-                            <h2>Media Gallery <small> gallery design </small></h2>
-                            <ul class="nav navbar-right panel_toolbox">
-                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Settings 1</a>
-                                        </li>
-                                        <li><a href="#">Settings 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                </li>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="x_content">
-
-                            <div class="row">
-
-                                <p>PRIVIEW GAMBAR YANG AKAN DI UPLOAD</p>
-
-                                <div class="col-md-55">
-                                    <div class="thumbnail">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;"
-                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
-                                            <div class="mask">
-                                                <p>Your Text</p>
-                                                <div class="tools tools-bottom">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                    <a href="#"><i class="fa fa-pencil"></i></a>
-                                                    <a href="#"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <p>Snow and Ice Incoming for the South</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-55">
-                                    <div class="thumbnail">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;"
-                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
-                                            <div class="mask">
-                                                <p>Your Text</p>
-                                                <div class="tools tools-bottom">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                    <a href="#"><i class="fa fa-pencil"></i></a>
-                                                    <a href="#"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <p>Snow and Ice Incoming for the South</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-55">
-                                    <div class="thumbnail">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;"
-                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
-                                            <div class="mask">
-                                                <p>Your Text</p>
-                                                <div class="tools tools-bottom">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                    <a href="#"><i class="fa fa-pencil"></i></a>
-                                                    <a href="#"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <p>Snow and Ice Incoming for the South</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-55">
-                                    <div class="thumbnail">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;"
-                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
-                                            <div class="mask">
-                                                <p>Your Text</p>
-                                                <div class="tools tools-bottom">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                    <a href="#"><i class="fa fa-pencil"></i></a>
-                                                    <a href="#"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <p>Snow and Ice Incoming for the South</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-55">
-                                    <div class="thumbnail">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;"
-                                                src="{{asset('vendor/images/media.jpg')}}" alt="image" />
-                                            <div class="mask">
-                                                <p>Your Text</p>
-                                                <div class="tools tools-bottom">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                    <a href="#"><i class="fa fa-pencil"></i></a>
-                                                    <a href="#"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <p>Snow and Ice Incoming for the South</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>    
     </div>
+    </form>
+</div>
 
-</div>
-</div>
 
 @stop
 @section('script')

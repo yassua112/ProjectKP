@@ -45,6 +45,7 @@ Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show')
 
 //gambar dokumentasi----------------------------------------------------------------------
 Route::get('/dashboard/gambar/','Admin\DokumentasiController@index')->name('admin.dokumentasi');
+Route::post('/dashboard/gambar/','Admin\DokumentasiController@create')->name('create.gambar');
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

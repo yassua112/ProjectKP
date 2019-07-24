@@ -35,7 +35,8 @@
                 <img src="{{asset('images/cover/' .$item->foto)}}" class="mr-3" alt="...">
                 <div class="media-body">
                     <a href="{{url('artikelhukum/'.$item->judul_artikel)}}">
-                        <h5 class="mt-0">{{$item->judul_artikel}}</h5>
+                        <h1>{{$item->judul_artikel}}</h1>                        
+                        <p><i class='fa fa-edit'>by : {{$item->username}}  </i>   <i class='fa fa-clock-o'>  update:{{ substr(strip_tags($item->created_at), 0, 10) }}</i></p>
                     </a><br>
                     {{ substr(strip_tags($item->isi_artikel), 0, 200)}}
                     
@@ -44,9 +45,8 @@
                     Selengkapnya....
                     </div>
                     
-                    </a></button>
+                    </a></button>                  
                     
-                    <p class="p-t-20 p-l-250"><i class='fa fa-edit'>by : {{$item->username}}  </i> <i class='fa fa-clock-o'>  update:{{ substr(strip_tags($item->created_at), 0, 10) }}</i></p>
                     
                 </div>
             </div><br>

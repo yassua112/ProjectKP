@@ -19,4 +19,5 @@ class AdminController extends Controller
         $this->middleware(Admin::class);
     }
     
+    
 }

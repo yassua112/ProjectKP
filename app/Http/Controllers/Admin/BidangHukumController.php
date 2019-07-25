@@ -26,7 +26,7 @@ class BidangHukumController extends AdminController
         $bidanghukum = new BidangHukum;
         $bidanghukum->nama_bid_hukum = $request->nama_bid_hukum;
         $bidanghukum->keterangan=$request->keterangan;
-        $bidanghukum->id_admin=$user->id_admin;
+        $bidanghukum->id_admin=$user->id;
         $bidanghukum->save();
         Alert::success('Berhasil', 'Data Berhasil Di Tambahkan');
         return redirect()->route('table');

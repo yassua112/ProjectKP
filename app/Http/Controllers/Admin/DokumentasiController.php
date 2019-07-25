@@ -5,13 +5,19 @@ use App\Dokumentasi;
 use App\BidangHukum;
 use App\User;
 use Alert;
+use Image;
 class DokumentasiController extends AdminController {
 
 
-    public function index() {
+    public function index() {       
+        $dokumentasi=Dokumentasi::get();      
+        return view('dashboard.gambar',['data'=>$dokumentasi]);
+    }
 
-        $bidanghukum=BidangHukum::get(); 
-        return view('dashboard.gambar',['data'=>$bidanghukum],compact('category','caption'));
+    public function dokCreat(){
+        
+        $bidanghukum=BidangHukum::get();
+        return view('dashboard.create.create-dokumentasi',['data'=>$bidanghukum],compact('category','caption'));
     }
 
     public function create(Request $request){
@@ -24,19 +30,18 @@ class DokumentasiController extends AdminController {
                 // dd($request);
     if($request->hasfile('fotodokumentasi'))
         {
-
             foreach($request->file('fotodokumentasi') as $image)
-            {
-                $name=$image->getClientOriginalName();
-                $image->move(public_path().'images/dokumentasi/', $name);  
-                $data[] = $name;  
+            {                
+                $filename='dokumentasi'.time().'.'.$image->getClientOriginalExtension();
+                $location = public_path('images/dokumentasi/'.$filename);
+                Image::make($image)->resize(300,300)->save($location);
+                $data[] = $filename;  
             }
         }
         $user=auth()->user();
-
         $form= new Dokumentasi();
         $form->foto=json_encode($data);
-        $form->id_admin =$user ->id;
+        $form->id_admin =$user->id;
         $form->judul_dokumentasi =$request->category;
         $form->keterangan =$request->caption;
         $form->save();

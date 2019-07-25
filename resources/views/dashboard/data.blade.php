@@ -4,7 +4,8 @@
 
 <div class="row">
     <h1 class="text-center">Data Lawyer Dan Admin</h1>
-    <a href="{{route('kariawan.create')}}" class="btn btn-primary btn-sm">Tambah data Lawyer dan Admin</a>
+    <a href="{{route('kariawan.create')}}" class="btn btn-primary btn-sm">Tambah data Lawyer </a>
+    <a href="{{route('register')}}" class="btn btn-primary btn-sm">Tambah data Admin</a>
 </div>
 <hr />
 <br />

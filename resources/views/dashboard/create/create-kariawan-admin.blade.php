@@ -36,7 +36,9 @@
     </div>
     <div class="clearfix"></div>
     <div class="row">
+    <label><h2>Tambah Kariawan</h2></label>
         <div class="x_content">
+       
             <div class="col-md-6 col-xs-12">
                 <div class="x-panel">
                     <!-- start form for validation -->

@@ -36,7 +36,7 @@ class LawyersController extends AdminController
         $lawyers->NIP=$request->Nip;
         $lawyers->gender=$request->gender;
         $lawyers->SekilasTentang=$request->tentang;
-        $lawyers->id_admin=$user->id_admin;
+        $lawyers->id_admin=$user->id;
 
         //sintak untuk upload file CV
         $nama=$request->nama;

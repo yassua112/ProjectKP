@@ -48,7 +48,7 @@
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <h2>{{ Auth::user()->username }}</h2>
+                            <h2>{{ Auth::user()->name }}</h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -114,7 +114,7 @@
 
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                                     aria-expanded="false">
-                                    {{ Auth::user()->username }}
+                                    {{ Auth::user()->name }}
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
 

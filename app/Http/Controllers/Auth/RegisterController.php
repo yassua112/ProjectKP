@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/dashboard';
 
     /**
      * Create a new controller instance.
@@ -37,7 +37,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
     }
 
     /**
@@ -74,7 +74,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'username'=>$data['username'],
             'email' => $data['email'],
-            'role'=>'3',
+            'role'=>'1',
             'password' => hash::make($data['password']),
         ]);
         

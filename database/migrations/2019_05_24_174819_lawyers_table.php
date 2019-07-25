@@ -14,15 +14,18 @@ class LawyersTable extends Migration
     public function up()
     {
         Schema::create('lawyers', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('id_lawyers')->unsigned()->nullable()->index();
+            $table->bigIncrements('id');            
             $table->string('nama',25);        
             $table->string('NIP',15)->unique();
-            $table->longtext('pendidikan');
-            $table->longText('pengalaman');
-            $table->integer('id_admin')->unsigned();
+            $table->string('email',15)->unique();
+            $table->string('NoHp',255);
+            $table->string('gender',25);
+            $table->longText('SekilasTentang');
+            $table->string('Foto',255);
+            $table->string('fileCV',255);
+            $table->bigInteger('id_admin')->unsigned()->index();
             $table->timestamps();
-            $table->foreign('id_admin')->references('id_admin')->on('users');
+            $table->foreign('id')->references('id')->on('users');
             
         });
 

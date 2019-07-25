@@ -41,7 +41,7 @@ class ArtikelController extends AdminController
         $artikel = new Artikel;                
         $artikel->judul_artikel = $request->title;
         $artikel->isi_artikel = $request->ckedtor;
-        $artikel->id_admin = $user->id_admin;
+        $artikel->id_admin = $user->id;
         $artikel->username =$user->username;
         
 

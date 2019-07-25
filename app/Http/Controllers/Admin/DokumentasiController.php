@@ -48,4 +48,12 @@ class DokumentasiController extends AdminController {
         Alert::success('Berhasil', 'Data Berhasil Di Tambahkan')->persistent("Ok");
         return redirect()->route('admin.dokumentasi');
     }
+
+    public function hapus($id){
+        $dokumentasi=Dokumentasi::find($id);
+        $dokumentasi->delete();
+        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
+        return redirect()->route('admin.dokumentasi');
+        
+    }
 }

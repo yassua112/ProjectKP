@@ -22,7 +22,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/dashboard/article', 'Admin\ArtikelController@article_show')->name('article.show');
 Route::get('/dashboard/create/article', 'Admin\ArtikelController@form_create')->name('article.create');
 Route::post('/detailartikel', 'Admin\ArtikelController@form_pref')->name('detail.artikel');
-
+Route::get('/dashboard/artikel/{id}/delete','Admin\ArtikelController@hapus')->name('artikel.hapus');
 
 // bidang hukum---------------------------------------------------------------------------------------
 Route::get('/dashboard/table','Admin\BidangHukumController@index')->name('table');
@@ -30,7 +30,7 @@ Route::get('/dashboard/table/create','Admin\BidangHukumController@bidH_create')-
 Route::post('/bidang-hukum','Admin\BidangHukumController@bidang_pref')->name('table.pref');
 Route::get('/dashboard/table/{id}/edit','Admin\BidangHukumController@edit')->name('table.show');
 Route::post('/dashboard/table/{id}/update','Admin\BidangHukumController@update')->name('table.update');
-Route::get('/dashboard/table/{id}/delete','Admin\BidangHukumController@destroy')->name('table.dalate');
+Route::get('/dashboard/table/{id}/delete','Admin\BidangHukumController@hapus')->name('tabel.hapus');
 //----------------------------------------------------------------------------------------------------
 
 // kariawan---------------------------------------------------------------------------------------
@@ -38,6 +38,7 @@ Route::get('/dashboard/data','Admin\LawyersController@index')->name('data');
 Route::get('/dashboard/data/create','Admin\LawyersController@createForm')->name('kariawan.create');
 Route::post('/dashboard/data','Admin\LawyersController@postkariawan')->name('kariawan.post');
 Route::get('/dashboard/data/{id}/view','Admin\LawyersController@view')->name('kariawan.show');
+Route::get('/dashboard/data/{id}/delete','Admin\LawyersController@hapus')->name('data.hapus');
 
 Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
 Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
@@ -47,6 +48,7 @@ Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show')
 Route::get('/dashboard/gambar/','Admin\DokumentasiController@index')->name('admin.dokumentasi');
 Route::get('/dashboard/gambar/create','Admin\DokumentasiController@dokCreat')->name('admin.gambar');
 Route::post('/dashboard/gambar/create','Admin\DokumentasiController@create')->name('create.gambar');
+Route::get('/dashboard/gambar/{id}/delete','Admin\DokumentasiController@hapus')->name('gambar.hapus');
 
 
 

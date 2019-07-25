@@ -57,5 +57,11 @@ class ArtikelController extends AdminController
         return redirect()->route('article.show');     
     }
     
+    public function hapus($id){
+        $artikel=Artikel::find($id);
+        $artikel->delete();
+        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
+        return redirect()->route('article.show');        
+    }
     
 }

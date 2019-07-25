@@ -51,7 +51,7 @@ class BidangHukumController extends AdminController
         return redirect()->route('table');
     }
 
-    public function destroy($id)
+    public function hapus($id)
     {
         $bidanghukum = BidangHukum::find($id);
         $bidanghukum->delete();

@@ -33,7 +33,7 @@
                 <th>{{$item->keterangan}}</th>
                 <th>
                     <a href="#" class="btn btn-warning btn-sm">Edit</a>
-                    <a href="#" class="btn btn-danger btn-sm delete-btn first"
+                    <a href="/dashboard/gambar/{{$item->id}}/delete" class="btn btn-danger btn-sm delete-btn first"
                         onclick="return confirm('Apakah Anda Ingin Menghasus Data INI ??')">Delete</a>
                 </th>
             </tr>

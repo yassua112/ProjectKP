@@ -51,7 +51,8 @@ Route::get('/dashboard/data/{id}/view','Admin\LawyersController@view')->name('ka
 Route::get('/dashboard/data/{id}/edit','Admin\LawyersController@edit')->name('kariawan.show');
 Route::post('/dashboard/data/{id}/update','Admin\LawyersController@update')->name('kariawan.update');
 Route::get('/dashboard/data/{id}/delete','Admin\LawyersController@hapus')->name('data.hapus');
-
+//download file kariawan ---------------------------------------------------------------------------
+Route::get('/dashboard/lawyers/{fileCV}/download','HomeController@download')->name('data.download');
 
 
 

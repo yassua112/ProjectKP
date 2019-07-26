@@ -8,6 +8,26 @@
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/noui/nouislider.min.css')}}">
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+ 
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+</style>
+
 @stop
 
 
@@ -33,23 +53,26 @@
             <!-- left bar -->
             <div class="col-md-9 col-lg-9 p-b-75">
                 @foreach ($data as $item)
-                <div class="p-r-50 p-r-0-lg">
+                <div class="p-r-0-lg">
                     <div class="item-blog p-b-30">
                         <p>Nama Kegiatan / Aktivitas : {{$item->judul_dokumentasi}}</p>
                         <p>Deskripsi : {{$item->keterangan}}</p>
                     </div>
-                    <div class="row">
+                    <div class="row p-l-20">
+                    
+                        @foreach(json_decode($item->foto) as $foto)
                         <div class="row p-l-20">
-                            @foreach(json_decode($item->foto) as $foto)
-                            <div class="col-md-7 col-lg-6 p-b-2">
-                                <img src="{{asset('images/dokumentasi/' .$foto)}}" class="rounded float-left"
+                            <div class="col-lg-6">
+                           
+                                <img src="{{asset('images/dokumentasi/' .$foto)}}" class="rounded float-left zoom"
                                     width="200" height="200">
-                            </div>
-                            @endforeach
-                            <div class="col text-center p-r-70 p-t-25">
-                                <button type="button" class="btn btn-primary">Lihat Lainnya</button>
+                                    
+                                <div style="width: 0px; height: 200px; border: 1px #000 solid;"></div>
+
                             </div>
                         </div>
+                        @endforeach
+
                     </div>
                 </div>
                 <hr>

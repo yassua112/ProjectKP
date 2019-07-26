@@ -151,7 +151,7 @@
             <footer>
 
                 <div class="pull-right">
-                    Copyright by : Team KP Antinomi LawOffice 2019 <a href="https://www.instagram.com/lamhotdiarta"><i
+                    Copyright by : Team KP Antinomi LawOffice 2019 <a href="https://i.pinimg.com/originals/92/a1/ae/92a1aeb48005aa1b88f71ac4b52243d9.gif"><i
                             class="fa fa-heart"></i></a>
                 </div>
                 <div class="clearfix"></div>

@@ -24,7 +24,7 @@ class DokumentasiController extends AdminController {
         $this->validate($request, [
 
             'fotodokumentasi' => 'required',
-            'fotodokumentasi.*' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            'fotodokumentasi.*' => 'image|mimes:jpeg,png,jpg,gif,svg,[3]',
             'caption'=>['required', 'string', 'max:255'],
     ]);
                 // dd($request);

@@ -6,6 +6,7 @@ use App\Deskripsi;
 use App\Lawyers;
 use App\Artikel;
 use App\Dokumentasi;
+use Response;
 class HomeController extends Controller
 {
     public function index(){
@@ -59,5 +60,10 @@ class HomeController extends Controller
         return view('sub.desk-lawyers',['data'=>$nama]);
     }
 
+    // public function download($id){
+
+    //     $download = Lawyers::table('fileCV')->where('fileCV',$id)->get();
+    //     return view ('lawyers',compact('downloads'));
+    // }
 
 }

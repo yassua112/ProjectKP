@@ -23,10 +23,10 @@
                 <hr />
                 <h4> Jenis Kelamin <i class ="fa fa-male"> : {{$data->gender}} </i> </h4>
                 <hr />
-               
+
                 <h4>{{$data->SekilasTentang}}</h4>
                 <h4>Berikut in adalah cv dari {{$data->nama}}</h4><br>
-                <button><a href="url{{asset('cv-folder/'. $data->fileCV)}}">Unduh</a></button>
+                <button><a href="" download='{{$data->fileCV}}'>Unduh</a></button>
             </div>
             <!-- Right Barr-->
             @include('layouts.right-bar')

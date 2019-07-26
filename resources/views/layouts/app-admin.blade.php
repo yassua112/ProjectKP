@@ -69,12 +69,12 @@
                                 </li>
                                 <li><a href="{{route('table')}}"><i class="fa fa-table"></i> Bidang Hukum </a>
                                 </li>
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
                                 <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan Lawyers </a>
-=======
+<!-- ======= -->
                                 <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan
                                         Lawyers </a>
->>>>>>> ed13ead32df1df73d469ddd75722201365dda44e
+<!-- >>>>>>> ed13ead32df1df73d469ddd75722201365dda44e -->
                                 </li>
                                 <li><a href="{{route('layout')}}"><i class="fa fa-clone"></i>Layouts </a>
 
@@ -148,7 +148,7 @@
             <!-- /page content -->
 
             <!-- footer content -->
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
         <!--<footer>
             
 =======

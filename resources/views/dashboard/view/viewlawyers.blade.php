@@ -1,5 +1,9 @@
 @extends('layouts.app-admin')
 
+@section('css')
+<link rel="stylesheet" type="text/css" href="{{asset('vendor/css/custom.min.css')}}">
+
+
 @section('content')
 
 <div class="div">
@@ -35,7 +39,7 @@
                             </li>
                         </ul>
 
-                        <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
+                        <a href="/dashboard/data/{{$data->id}}/edit"class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
                         <br />
                     </div>
                     

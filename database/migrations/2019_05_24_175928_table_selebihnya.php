@@ -28,8 +28,8 @@ class TableSelebihnya extends Migration
         Schema::create('dokumentasi', function (Blueprint $table) {
             $table->bigIncrements('id');            
             $table->string('judul_dokumentasi',100);
-            $table->string('caption',255);
-            $table->date('tanggal_upload');            
+            $table->string('keterangan',255);
+            $table->string('foto',255);        
             $table->bigInteger('id_admin')->unsigned()->index();
             $table->timestamps();
             $table->foreign('id_admin')->references('id')->on('users');

@@ -13,7 +13,7 @@ class LawyersController extends AdminController
     public function index(){ //metjod viwe dari tampilan utama dashboard penambahan kariawan
 
         $lawyers = Lawyers::all();
-
+        
         return view("dashboard.data",['lawyers'=>$lawyers]);
     }
 
@@ -71,26 +71,27 @@ class LawyersController extends AdminController
 
     public function edit($id){
         //Penganbilan data sesuai ID
-        $lawyers= lawyers::find($id);
+        $lawyers= Lawyers::find($id);
         return view('dashboard.edit.editdatalawyers',compact('lawyers'));
 
     }
 
     public function update(Request $request,$id){
-        //memberikan validasi untuk pengisian data yang akan di update
-        $this->validate($request,[
-            'nama'=>'requared',
-            'email'=>'requared',
-            'nohp'=>'requared',
-            'NIP'=>'requared',
-            'gender'=>'requared',
-            'SekilasTentang'=>'requared',
-            'fileCV'=>'requared',
-            'Foto'=>'requared',
-        ]);
+        
         $lawyers=Lawyers::find($id);
-        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
-        dd($request,$id);          
+
+        $lawyers->nama=$request->get('nama');
+        $lawyers->NIP=$request->get('Nip');
+        $lawyers->email=$request->get('email');
+        $lawyers->NoHP=$request->get('nohp');
+        $lawyers->gender=$request->get('gender');
+        $lawyers->SekilasTentang=$request->get('tentang');
+
+        
+        $lawyers->save();
+        Alert::success('Berhasil', 'Data Berhasil Di Edit')->persistent("Ok");
+        // dd($request,$id);         
+        return redirect()->route('data'); 
     }
 
     public function hapus($id){

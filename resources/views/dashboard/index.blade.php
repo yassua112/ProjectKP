@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
         <h3>Data Bidang Hukum</h3>
-        <table class="table table-hover">
+        <table class="table table-responsive">
             <tr>
                 <th>No</th>
                 <th>Nama Bidang</th>
@@ -35,10 +35,14 @@
                 </tr>
             </thead>
             <tbody>
+            <?php $no=0 ;?>
+            @foreach($dokumentasi as $item)
                 <tr>
-                    <td>1</td>
-                    <td><a href="#">Gugatan Ahli Waris terhadap hak warisan</a></td>
+                <?php $no++ ;?>
+                    <td>{{$no}}</td>
+                    <td><a href="#">{{$item->judul_dokumentasi}}</a></td>
                 </tr>
+            @endforeach    
             </tbody>
         </table>
         <hr />

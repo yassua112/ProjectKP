@@ -121,15 +121,7 @@
         <hr>
     </div>
     <div class="col-md-35">
-                <div class="card">
-                    <div class="card-header">Chat Room <span id="total_client" class="float-right"></span></div>
-                    <div class="card-body">
-                        <div id="chat_output" class="pre-scrollable" style="height: 600px">
-                        
-                        </div>
-                        <input id="chat_input" class="form-control" placeholder="Tulis Pesan dan Entar"/>
-                    </div>
-                </div>
+            
             </div>
 </div>
 

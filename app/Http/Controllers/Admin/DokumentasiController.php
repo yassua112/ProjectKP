@@ -38,16 +38,37 @@ class DokumentasiController extends AdminController {
                 $data[] = $filename;  
             }
         }
+
         $user=auth()->user();
         $form= new Dokumentasi();
-        $form->foto=json_encode($data);
-        $form->id_admin =$user->id;
         $form->judul_dokumentasi =$request->category;
         $form->keterangan =$request->caption;
+        $form->foto=json_encode($data);
+        $form->id_admin =$user->id;
         $form->save();
         Alert::success('Berhasil', 'Data Berhasil Di Tambahkan')->persistent("Ok");
         return redirect()->route('admin.dokumentasi');
     }
+
+    public function edit($id) {
+        $dokumentasi = Dokumentasi::find($id); // menemukan id data yang dicari untuk diedit
+        return view('dashboard.edit.editDokumen', compact('dokumentasi'));
+    }
+
+    public function update(Request $request,$id){ 
+        $this->validate($request, [
+            'nama_bid_hukum'    =>  'required',
+            'keterangan'     =>  'required'
+        ]);
+        $bidanghukum = BidangHukum::find($id);
+        // dd($request,$id);      
+        $bidanghukum->nama_bid_hukum=$request->get('nama_bid_hukum');
+        $bidanghukum->keterangan=$request->get('keterangan');
+        $bidanghukum->save();
+        Alert::success('Berhasil', 'Data Berhasil Di Update');
+        return redirect()->route('table');
+    }
+
 
     public function hapus($id){
         $dokumentasi=Dokumentasi::find($id);

@@ -48,7 +48,7 @@ class BidangHukumController extends AdminController
         $bidanghukum->keterangan=$request->get('keterangan');
         $bidanghukum->save();
         Alert::success('Berhasil', 'Data Berhasil Di Update');
-        return redirect()->route('table');
+        return redirect()->route('data');
     }
 
     public function hapus($id)

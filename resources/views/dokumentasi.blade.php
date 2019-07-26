@@ -17,11 +17,11 @@
 <section class="slide1">
     <div class="wrap-slick1">
         <div class="slick1">
-                    <div class="jumbotron">
-                    <h2>Dokumentasi Kegiatan Antinomi Law Office</h2>
-                    <hr width="710px">
-                    <h6>Bagian ini berisi dokumentasi kegiatan dan aktivitas para Lawyers Antinomi Law Office</h6>
-                    </div>
+            <div class="jumbotron">
+                <h2 style="color:#ab1818;">Dokumentasi Kegiatan Antinomi Law Office</h2>
+                <hr width="710px">
+                <h6>Bagian ini berisi dokumentasi kegiatan dan aktivitas para Lawyers Antinomi Law Office</h6>
+            </div>
         </div>
     </div>
 </section>
@@ -32,20 +32,20 @@
         <div class="row">
             <!-- left bar -->
             <div class="col-md-9 col-lg-9 p-b-75">
+                @foreach ($data as $item)
                 <div class="p-r-50 p-r-0-lg">
                     <div class="item-blog p-b-30">
-                        <p>Nama Kegiatan / Aktivitas : Sidang Ahli Waris</p>
-                        <p>Deskripsi : Sidang ini doasfaf eioafhaof hoeahdoaeihf efioahfiahf eafeaihoef oefahiea ifoeh iahfeaif aeoifhea hfaeif</p>
+                        <p>Nama Kegiatan / Aktivitas : {{$item->judul_dokumentasi}}</p>
+                        <p>Deskripsi : {{$item->keterangan}}</p>
                     </div>
-                    <div class="raw">
+                    <div class="row">
                         <div class="row p-l-20">
+                            @foreach(json_decode($item->foto) as $foto)
                             <div class="col-md-7 col-lg-6 p-b-2">
-
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
+                                <img src="{{asset('images/dokumentasi/' .$foto)}}" class="rounded float-left"
+                                    width="200" height="200">
                             </div>
-                            <div class="col-md-7 col-lg-6 p-b-2">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
-                            </div>
+                            @endforeach
                             <div class="col text-center p-r-70 p-t-25">
                                 <button type="button" class="btn btn-primary">Lihat Lainnya</button>
                             </div>
@@ -53,67 +53,9 @@
                     </div>
                 </div>
                 <hr>
-                <div class="p-r-50 p-r-0-lg">
-                    <div class="item-blog p-b-30">
-                        <p>Nama Kegiatan / Aktivitas : Sidang Ahli Waris</p>
-                        <p>Deskripsi : Sidang ini doasfaf eioafhaof hoeahdoaeihf efioahfiahf eafeaihoef oefahiea ifoeh iahfeaif aeoifhea hfaeif</p>
-                    </div>
-                    <div class="raw">
-                        <div class="row p-l-20">
-                            <div class="col-md-7 col-lg-6 p-b-2">
-
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
-                            </div>
-                            <div class="col-md-7 col-lg-6 p-b-2">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
-                            </div>
-                            <div class="col text-center p-r-70 p-t-25">
-                                <button type="button" class="btn btn-primary">Lihat Lainnya</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="p-r-50 p-r-0-lg">
-                    <div class="item-blog p-b-30">
-                        <p>Nama Kegiatan / Aktivitas : Sidang Ahli Waris</p>
-                        <p>Deskripsi : Sidang ini doasfaf eioafhaof hoeahdoaeihf efioahfiahf eafeaihoef oefahiea ifoeh iahfeaif aeoifhea hfaeif</p>
-                    </div>
-                    <div class="raw">
-                        <div class="row p-l-20">
-                            <div class="col-md-7 col-lg-6 p-b-2">
-
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
-                            </div>
-                            <div class="col-md-7 col-lg-6 p-b-2">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
-                            </div>
-                            <div class="col text-center p-r-70 p-t-25">
-                                <button type="button" class="btn btn-primary">Lihat Lainnya</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="p-r-50 p-r-0-lg">
-                    <div class="item-blog p-b-30">
-                        <p>Nama Kegiatan / Aktivitas : Sidang Ahli Waris</p>
-                        <p>Deskripsi : Sidang ini doasfaf eioafhaof hoeahdoaeihf efioahfiahf eafeaihoef oefahiea ifoeh iahfeaif aeoifhea hfaeif</p>
-                    </div>
-                    <div class="raw">
-                        <div class="row p-l-20">
-                            <div class="col-md-7 col-lg-6 p-b-2">
-
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
-                            </div>
-                            <div class="col-md-7 col-lg-6 p-b-2">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">
-                            </div>
-                            <div class="col text-center p-r-70 p-t-25">
-                                <button type="button" class="btn btn-primary">Centered button</button>
-                            </div>
-                        </div>
-                    </div>
+                @endforeach
+                <div class="row">
+                    <div class="mx-auto p-l-20">{!! $data->links(); !!}</div>
                 </div>
             </div>
 
@@ -126,36 +68,14 @@
                 </div>
                 <hr>
                 <ul>
+                    @foreach ($artikel as $data)
                     <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Memperjuangkan Hak Keadilan Ahli Waris di Komnas HAM
+                        <a href="{{url('artikelhukum/'.$data->judul_artikel)}}" class="s-text13 p-t-5 p-b-5">
+                            {{$data->judul_artikel}}
                         </a>
                     </li>
+                    @endforeach
 
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Memohon Praperadilan Melawan Ditreskrimum Polda Jabar sebagai Penasihat Hukum
-                        </a>
-                    </li>
-
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Perjuangan terhadap Hak Ketua ORI Terhadap Pihak Garuda Maskapai
-                        </a>
-                    </li>
-
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Berbincang-bincang dalam Rangka Advokasi Korban Kejahatan
-                        </a>
-                    </li>
-
-                    <li class="p-t-6 p-b-8 ">
-                        <a href="#" class="s-text13 p-t-5 p-b-5">
-                            Mewakil di pengadilan
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
@@ -180,7 +100,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

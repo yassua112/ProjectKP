@@ -96,9 +96,8 @@
                         </div>
                     </div>
                     <hr>
-                    <h2 class="m-text23 p-t-10 p-b-34 text-center">
-                        MOTTO ANTINOMI LAW OFFICE
-                    </h2>
+                    <h4 class="m-text23 t-center" style="color:#ab1818;">
+                    MOTTO ANTINOMI LAW OFFICE</h4>
                     <div class="wrap-tags flex-w justify-content-center ">
 
                         <a class="tag-item">
@@ -115,14 +114,14 @@
 
                         <a class="tag-item">
                             <p class="m-text15"> LIGAT </p>
-                        </a>                    
+                        </a>
                     </div>
                     <hr>
                     <div class="raw">
                         <div class="p-t-50">
-                            <h2 class="m-text20 text-center">
-                                THE FOUNDER
-                            </h2>
+                        <h4 class="m-text23 t-center" style="color:#ab1818;">
+                            THE FOUNDER
+                        </h4>
                             <div class="mx-auto p-t-10">
                                 <img src="{{asset('assets/images/profile-founder.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
                             </div>
@@ -131,9 +130,9 @@
                             </a>
                         </div>
 
-                        <h2 class="m-text20 text-center p-t-50">
-                                LAW OFFICE MANAGER
-                                </h2>
+                        <<h4 class="m-text23 t-center" style="color:#ab1818;">
+                            LAW OFFICE MANAGER
+                        </h4>
                         <div class="row p-l-18 p-r-17 p-t-10">
                             <div class="col-md-7 col-lg-6">
                                 <div class="single-feedback">

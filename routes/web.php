@@ -21,27 +21,40 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/dashboard/article', 'Admin\ArtikelController@article_show')->name('article.show');
 Route::get('/dashboard/create/article', 'Admin\ArtikelController@form_create')->name('article.create');
+
 Route::post('/detailartikel', 'Admin\ArtikelController@form_pref')->name('detail.artikel');
 Route::get('/dashboard/artikel/{id}/delete','Admin\ArtikelController@hapus')->name('artikel.hapus');
+Route::get('/dashboard/artikel/{id}/edit','Admin\ArtikelController@edit')->name('artikel.show');
+Route::post('/dashboard/artikel/{id}/update','Admin\ArtikelController@update')->name('artikel.update');
+
 
 // bidang hukum---------------------------------------------------------------------------------------
 Route::get('/dashboard/table','Admin\BidangHukumController@index')->name('table');
 Route::get('/dashboard/table/create','Admin\BidangHukumController@bidH_create')->name('table.create');
-Route::post('/bidang-hukum','Admin\BidangHukumController@bidang_pref')->name('table.pref');
 Route::get('/dashboard/table/{id}/edit','Admin\BidangHukumController@edit')->name('table.show');
 Route::post('/dashboard/table/{id}/update','Admin\BidangHukumController@update')->name('table.update');
 Route::get('/dashboard/table/{id}/delete','Admin\BidangHukumController@hapus')->name('tabel.hapus');
 //----------------------------------------------------------------------------------------------------
+
+
+Route::post('/bidang-hukum','Admin\BidangHukumController@bidang_pref')->name('table.pref');
+Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
+Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');
+
+
 
 // kariawan---------------------------------------------------------------------------------------
 Route::get('/dashboard/data','Admin\LawyersController@index')->name('data');
 Route::get('/dashboard/data/create','Admin\LawyersController@createForm')->name('kariawan.create');
 Route::post('/dashboard/data','Admin\LawyersController@postkariawan')->name('kariawan.post');
 Route::get('/dashboard/data/{id}/view','Admin\LawyersController@view')->name('kariawan.show');
+Route::get('/dashboard/data/{id}/edit','Admin\LawyersController@edit')->name('kariawan.show');
+Route::post('/dashboard/data/{id}/update','Admin\LawyersController@update')->name('kariawan.update');
 Route::get('/dashboard/data/{id}/delete','Admin\LawyersController@hapus')->name('data.hapus');
 
-Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
-Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
+
+
+
 
 
 //gambar dokumentasi----------------------------------------------------------------------
@@ -49,23 +62,15 @@ Route::get('/dashboard/gambar/','Admin\DokumentasiController@index')->name('admi
 Route::get('/dashboard/gambar/create','Admin\DokumentasiController@dokCreat')->name('admin.gambar');
 Route::post('/dashboard/gambar/create','Admin\DokumentasiController@create')->name('create.gambar');
 Route::get('/dashboard/gambar/{id}/delete','Admin\DokumentasiController@hapus')->name('gambar.hapus');
-
+Route::get('/dashboard/gambar/{id}/edit','Admin\DokumentasiController@edit')->name('gambar.show');
+Route::post('/dashboard/gambar/{id}/update','Admin\DokumentasiController@update')->name('gambar.update');
 
 
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-
-
-
-
-
-
-
-
-Route::get('/artikelhukum', 'HomeController@artikelhukum')->name('artikel.hukum');
-Route::get('/artikelhukum/{id}', 'HomeController@artikel_show')->name('artikel.show');    
+ 
 
 
 
@@ -84,11 +89,6 @@ Route::get('/dashboard/layout', function () {
 
 
 
-Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
-Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');
-
-
-
 
 
 
@@ -98,9 +98,21 @@ Route::get('/kontak-kami',function(){
 })->name('kontakkami');
 
 
-Route::get('/dokumentasi-kegiatan',function() {
-	return view('dokumentasi');
-})->name('dokumentasi');
+/*
+    Sisi Pengunjung Website
+--------------------------- */
+
+Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
+Route::get('/lawyers/ucokrolando','PetinggiController@petinggi1')->name('lawyers.ucok');
+Route::get('/lawyers/musadarwinpane','PetinggiController@petinggi2')->name('lawyers.musa');
+Route::get('/lawyers/sahatmarulitua','PetinggiController@petinggi3')->name('lawyers.maruli');
+Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
+Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
+
+Route::get('/artikelhukum', 'HomeController@artikelhukum')->name('artikel.hukum');
+Route::get('/artikelhukum/{id}', 'HomeController@artikel_show')->name('artikel.show');  
+
+Route::get('/dokumentasi-kegiatan', 'HomeController@dokumentasikegiatan')->name('dokumentasi');
 
 
 

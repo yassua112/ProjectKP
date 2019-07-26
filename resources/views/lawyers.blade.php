@@ -25,9 +25,9 @@
                         <div class="row">
                             <div class="mx-auto">
                                 <div class="row">
-                                    <h2 class="m-text20 mx-auto">
+                                    <h4 class="m-text20 mx-auto" style="color:#ab1818;">
                                         THE FOUNDER
-                                    </h2>
+                                    </h4>
                                 </div>
                                 <div class="row">
                                     <div class="mx-auto">
@@ -35,7 +35,7 @@
                                             class="rounded mx-auto d-block" alt="theManager1">
 
                                         <div class="mx-auto">
-                                            <a href="lawyers/founder">
+                                            <a href="lawyers/ucokrolando">
                                                 <h5 class="text-uppercase text-center">Ucok Orlando Parulian Tamba,S.H.,
                                                     M.H
                                                 </h5>
@@ -47,9 +47,9 @@
                             </div>
                             <div class="row">
                                 <div class=" row mx-auto">
-                                    <h2 class="m-text20 text-center p-t-50">
+                                    <h4 class="m-text20 text-center p-t-50" style="color:#ab1818;">
                                         LAW OFFICE MANAGER
-                                    </h2>
+                                    </h4>
                                 </div>
                                 <div class="row">
                                     <div class="row p-l-18 p-r-17 p-t-10">
@@ -62,12 +62,13 @@
                                                             class="rounded float-left" alt="theManager1">
                                                     </div>
                                                 </div>
-                                                <div class=" row col text-center">
+                                                <div class="row col text-center">
                                                     <div class="mx-auto">
-                                                        <h5 class="text-uppercase text-center">Dr. Musa Darwin Pane,
-                                                            S.H.,
-                                                            M.H
-                                                        </h5>
+                                                        <a href="lawyers/musadarwinpane">
+                                                            <h5 class="text-uppercase text-center">Dr. Musa Darwin Pane,
+                                                                S.H., M.H
+                                                            </h5>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -82,9 +83,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="col text-center">
-                                                    <h5 class="text-uppercase text-center">Dr. Sahat Maruli Tua
-                                                        Situmeang,
-                                                        S.H., M.H</h5>
+                                                <a href="lawyers/sahatmarulitua">
+                                                    <h5 class="text-uppercase text-center">Dr. Sahat Maruli Tua Situmeang, S.H., M.H</h5>
+                                                </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -96,7 +97,7 @@
                                         <div class="row">
                                             <div class="col align-self-center">
                                                 <div class="mx-auto">
-                                                    <img src="{{asset('assets/images/kariawan/' .$item->Foto)}}"
+                                                    <img src="{{asset('images/kariawan/' .$item->Foto)}}"
                                                         class="rounded " alt="theManager2" width="100" height="100">
                                                 </div>
                                                 <a href="{{url('lawyers/'.$item->NIP)}}">

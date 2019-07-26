@@ -56,6 +56,24 @@ class ArtikelController extends AdminController
         Alert::success('Berhasil', 'Data Berhasil Di Tambahkan')->persistent("Ok");
         return redirect()->route('article.show');     
     }
+
+        public function edit($id) {
+        $artikel=Artikel::find($id); // menemukan id data yang dicari untuk diedit
+        return view('dashboard.edit.editArticle', compact('artikel'));
+    }
+
+    public function update(Request $request,$id){ 
+
+      
+
+        $artikel = Artikel::find($id);
+        // dd($request,$id);      
+        $artikel->judul_artikel=$request->get('title');
+        $artikel->isi_artikel=$request->get('ckedtor');
+        $artikel->save();
+        Alert::success('Berhasil', 'Data Berhasil Di Update');
+        return redirect()->route('article.show');
+    }
     
     public function hapus($id){
         $artikel=Artikel::find($id);
@@ -63,5 +81,7 @@ class ArtikelController extends AdminController
         Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
         return redirect()->route('article.show');        
     }
-    
+ 
+
+
 }

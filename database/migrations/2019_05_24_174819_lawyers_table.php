@@ -25,7 +25,7 @@ class LawyersTable extends Migration
             $table->string('fileCV',255);
             $table->bigInteger('id_admin')->unsigned()->index();
             $table->timestamps();
-            $table->foreign('id')->references('id')->on('users');
+            $table->foreign('id_admin')->references('id')->on('users');
             
         });
 

@@ -60,20 +60,24 @@
                         <div class="menu_section">
                             <h3>General</h3>
                             <ul class="nav side-menu">
-                                <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i> Home </a>
+                                <li>
+                                    <a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i> Home </a>
                                 </li>
-                                <li><a href="{{route('article.show')}}"><i class="fa fa-edit"></i> Artikel </a>
+                                <li>
+                                    <a href="{{route('table')}}"><i class="fa fa-table"></i> Bidang Hukum </a>
                                 </li>
-                                <li><a href="{{route('admin.dokumentasi')}}"><i class="fa fa-file-image-o"></i>
-                                        Dokumentasi</a>
+                                <li>
+                                    <a href="{{route('admin.dokumentasi')}}"><i class="fa fa-file-image-o"></i>Dokumentasi</a>
                                 </li>
-                                <li><a href="{{route('table')}}"><i class="fa fa-table"></i> Bidang Hukum </a>
+                                <li>
+                                    <a href="{{route('article.show')}}"><i class="fa fa-edit"></i> Artikel </a>
                                 </li>
-                                <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan
+                                <li>
+                                    <a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan
                                         Lawyers </a>
                                 </li>
-                                <li><a href="{{route('layout')}}"><i class="fa fa-clone"></i>Layouts </a>
-
+                                <li>
+                                    <a href="{{route('layout')}}"><i class="fa fa-clone"></i>Layouts </a>
                                 </li>
                             </ul>
                         </div>

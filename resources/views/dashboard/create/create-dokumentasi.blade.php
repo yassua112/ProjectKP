@@ -52,7 +52,7 @@
         @endif
         <div class="title_right">
             <h2> Upload Gambar Sesuai kategori </h2>
-           
+
             <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                 <div class="input-group">
                     <span class="input-group-btn">
@@ -140,7 +140,7 @@
                                         <div class="col-sm-12 images-upload">
                                             <div class="uploader2">
                                                 <img class="img none" src="{{asset('vendor/images/add.png')}}" />
-                                                <input type="file" name="fotodokumentasi[]" class="filePhoto"
+                                                <input type="file" name="fotodokumentasi[]" class="filePhoto" 
                                                     id="filePhoto" required/>
                                                 <button type="button" class="btn  btn-info btn-delete last hidden"
                                                     style="position: relative;top: -290px; left: 31%;z-index:2">

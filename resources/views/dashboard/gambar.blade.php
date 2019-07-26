@@ -7,15 +7,15 @@
 @endif
     <div class="row">
         <h2> Data Dokumentasi </h2>
-        <a href="{{route('admin.gambar')}}" class="btn btn-primary btn-sm">Tambah data Lawyer </a>
+        <a href="{{route('admin.gambar')}}" class="btn btn-primary btn-sm">Tambah Data Dokumentasi </a>
     </div>
     <div class="row">
         <table class="table table-hover">
             <tr>
                 <th>No</th>
-                <th>cover</th>
-                <th>Bidang Hukum</th>
-                <th>Captions</th>
+                <th>Foto</th>
+                <th>Kegiatan Dokumentasi</th>
+                <th>Deskripsi</th>
                 <th>Aksi</th>
             </tr>
             <?php $no=0 ;?>
@@ -31,8 +31,7 @@
                 @endif
                 <th>{{$item->judul_dokumentasi}}</th>
                 <th>{{$item->keterangan}}</th>
-                <th>
-                    <a href="#" class="btn btn-warning btn-sm">Edit</a>
+                <th>                    
                     <a href="/dashboard/gambar/{{$item->id}}/delete" class="btn btn-danger btn-sm delete-btn first"
                         onclick="return confirm('Apakah Anda Ingin Menghasus Data INI ??')">Delete</a>
                 </th>

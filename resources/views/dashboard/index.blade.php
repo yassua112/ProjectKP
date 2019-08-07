@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
         <h3>Data Bidang Hukum</h3>
-        <table class="table table-hover">
+        <table class="table table-responsive">
             <tr>
                 <th>No</th>
                 <th>Nama Bidang</th>
@@ -23,78 +23,6 @@
         </table>
         <hr />
     </div>
-<!-- <<<<<<< HEAD -->
-
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <h3>Data Bidang Hukum</h3>
-            <table class="table table-hover">
-                <tr>
-                    <th>No</th>
-                    <th>Nama Bidang</th>
-                    <th>Keterangan</th>
-                </tr>
-                <?php $no=0 ;?>
-                @foreach($data_bidang_hukum as $bidanghukum)
-                <tr>
-                <?php $no++ ;?>
-                    <th>{{$no}}</th>
-                    <th>{{$bidanghukum->nama_bid_hukum}}</th>
-                    <th>{{ substr(strip_tags($bidanghukum->keterangan), 0, 50)}}</th>
-                </tr>
-                @endforeach
-            </table>
-            <hr>
-
-            <h3>Data Dokumentasi</h3>
-            <table style="border-collapse: collapse;" border="1">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Judul Kegiatan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td><a href="#">Gugatan Ahli Waris terhadap hak warisan</a></td></tr>
-                </tbody>
-            </table>
-            <hr>
-            
-            <h3>Data Judul Artikel</h3>
-            <table style="border-collapse: collapse;" border="1">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Judul Artikel</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td><a href="#">Gugatan Ahli Waris terhadap hak warisan</a></td></tr>
-                </tbody>
-            </table>
-            <hr>
-
-            <h3>Data Lawyers</h3>
-            <table class="table table-hover">
-                <tr>
-                    <th>No</th>
-                    <th>Nama Lawyers dan Gelar</th>
-                </tr>
-                <?php $no=0 ;?>
-                @foreach($lawyers as $item)
-                <tr>
-                <?php $no++ ;?>
-                    <th>{{$no}}</th>
-                    <th>{{$item->nama}}</th>
-                </tr>
-                @endforeach
-
-
-        </div>
-    </div>
-    <br>
-
-=======
 </div>
 <div class="div">
     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -107,10 +35,14 @@
                 </tr>
             </thead>
             <tbody>
+            <?php $no=0 ;?>
+            @foreach($dokumentasi as $item)
                 <tr>
-                    <td>1</td>
-                    <td><a href="#">Gugatan Ahli Waris terhadap hak warisan</a></td>
+                <?php $no++ ;?>
+                    <td>{{$no}}</td>
+                    <td><a href="#">{{$item->judul_dokumentasi}}</a></td>
                 </tr>
+            @endforeach    
             </tbody>
         </table>
         <hr />
@@ -154,7 +86,6 @@
             @endforeach
         </table>
     </div>
->>>>>>> ed13ead32df1df73d469ddd75722201365dda44e
 </div>
 @stop
 

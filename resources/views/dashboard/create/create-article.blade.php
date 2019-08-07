@@ -1,9 +1,6 @@
 @extends('layouts.app-admin')
 
 @section('content')
-
-
-
 <div class='conteiner'>
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">

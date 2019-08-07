@@ -18,7 +18,7 @@
     <div class="wrap-slick1">
         <div class="slick1">
             <div class="jumbotron">
-                <h2>Artikel Hukum Antinomi Law Office</h2>
+                <h2 style="color:#ab1818;">Artikel Hukum Antinomi Law Office</h2>
                 <hr width="710px">
                 <h6>Kumpulan berita hukum, artikel-artikel hukum terbaru serta pandangan-pandangan Ahli Hukum</h6>
             </div>
@@ -32,10 +32,11 @@
     <div class="row">
         <div class="col-md-9">
             <div class="media">
-                <img src="{{asset('images/cover/' .$item->foto)}}" class="mr-3" alt="...">
+                <img src="{{asset('images/cover/' .$item->foto)}}" class="mr-3" alt="..." width="300" height="200">
                 <div class="media-body">
                     <a href="{{url('artikelhukum/'.$item->judul_artikel)}}">
-                        <h5 class="mt-0">{{$item->judul_artikel}}</h5>
+                        <h3 style="color:#ab1818;">{{$item->judul_artikel}}</h3>                        
+                        <p><i class='fa fa-edit'>by : {{$item->username}}  </i>   <i class='fa fa-clock-o'>  update:{{ substr(strip_tags($item->created_at), 0, 10) }}</i></p>
                     </a><br>
                     {{ substr(strip_tags($item->isi_artikel), 0, 200)}}
                     
@@ -44,9 +45,8 @@
                     Selengkapnya....
                     </div>
                     
-                    </a></button>
+                    </a></button>                  
                     
-                    <p class="p-t-20 p-l-250"><i class='fa fa-edit'>by : {{$item->username}}  </i> <i class='fa fa-clock-o'>  update:{{ substr(strip_tags($item->created_at), 0, 10) }}</i></p>
                     
                 </div>
             </div><br>
@@ -59,7 +59,7 @@
             
         {!! $data->links(); !!}        
     </div>
-</div>
+</div> 
 </div>
 
 
@@ -78,25 +78,21 @@
                             Cara Mengajukan Gugatan Cerai Isteri Kepada Suami di Pengadilan Agama
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Tindak Pidana Lingkungan Hidup yang Mengancam Perusahaan
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Pencemaran Nama Baik Lewat Media Sosial Internet
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Mempekerjakan Anak Di Bawah Umur Bisa Dipidana
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Mewakil di pengadilan
@@ -111,26 +107,22 @@
                         Artikel Terpopuler
                     </h4>
                 </div>
-
                 <ul>
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Mempekerjakan Anak Di Bawah Umur Bisa Dipidana
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Tinjauan Hukum Tentang Judi
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Tanggung Jawab Pemilik PT Atas Keuangan Perusahaan
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Akibat Hukum jika Anggota CV Meninggal Dunia
@@ -159,7 +151,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

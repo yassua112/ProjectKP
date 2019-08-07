@@ -76,7 +76,7 @@
                     <div class="item-blog p-b-30">
                         
                         <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="{{asset('assets/images/logoantinomi.jpg')}}" alt="IMG-BLOG">
+                            <img src="{{asset('assets/images/logoantinomi2.jpg')}}" alt="IMG-BLOG">
                         </a>
 
                         <div class="item-blog-txt p-t-33">
@@ -87,9 +87,9 @@
                         </div>
                     </div>
                     <hr>
-                    <h2 class="m-text23 p-t-10 p-b-34 text-center">
+                    <h4 class="m-text23 p-t-10 p-b-34 text-center" style="color:#ab1818;">
                         MOTTO ANTINOMI LAW OFFICE
-                    </h2>
+                    </h4>
                     <div class="wrap-tags flex-w justify-content-center ">
                         <a class="tag-item">
                             <p class="m-text11"> PROFESIONAL </p>
@@ -109,27 +109,37 @@
                     </div>
                     <div class="raw">
                         <div class="p-t-50">
-                            <h2 class="m-text20 text-center">
+                            <h4 class="m-text20 text-center" style="color:#ab1818;">
                                 THE FOUNDER
-                            </h2>
-                            <div class="mx-auto">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
+                            </h4>
+                            <div class="mx-auto p-t-10">
+                                <img src="{{asset('assets/images/profile-founder.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
+                            </div>
+                            <a href="#">
+                            <h5 class="text-uppercase text-center">Ucok Rolando Parulian Tamba, S.H., M.H</h5>
+                            </a>
+                        </div>
+
+                        <h4 class="m-text20 text-center p-t-50" style="color:#ab1818;">
+                                LAW OFFICE MANAGER
+                                </h4>
+                        <div class="row p-l-18 p-r-17 p-t-10">
+                            <div class="col-md-7 col-lg-6">
+                                <div class="single-feedback">
+                                    <img align="center" src="{{asset('assets/images/profile-manager.jpg')}}" class="rounded float-left" alt="theManager1">
+                                    <div class="col text-center">
+                                    <h5 class="text-uppercase text-center">Dr. Musa Darwin Pane, S.H., M.H</h5></div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-6">
+                                <div class="single-feedback p-r-10">
+                                    <img align="center" src="{{asset('assets/images/profile-manager2.jpg')}}" class="rounded float-right" alt="theManager2">
+                                    <div class="col text-center">
+                                    <h5 class="text-uppercase text-center">Dr. Sahat Maruli Tua Situmeang, S.H., M.H</h5></div>
+                                </div>
                             </div>
                         </div>
-                    
-                        <!-- The founder Barr -->
-                        <h2 class="m-text20 text-center p-t-20">
-                                LAW OFFICE MANAGER
-                                </h2>
-                        <div class="row p-l-20 " >                        
-                            <div class="col-md-7 col-lg-6 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">                        
-                            </div>
-                            <div class="col-md-4 col-lg-5 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
-                            </div>                    
-                        </div>                                           
-                    </div>                
+                    </div>             
                 </div>         
             </div>
 
@@ -158,7 +168,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

@@ -48,7 +48,7 @@
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <h2>{{ Auth::user()->username }}</h2>
+                            <h2>{{ Auth::user()->name }}</h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -60,25 +60,30 @@
                         <div class="menu_section">
                             <h3>General</h3>
                             <ul class="nav side-menu">
-                                <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i> Home </a>
+                                <li>
+                                    <a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i> Home </a>
                                 </li>
-                                <li><a href="{{route('article.show')}}"><i class="fa fa-edit"></i> Artikel </a>
+                                <li>
+                                    <a href="{{route('table')}}"><i class="fa fa-table"></i> Bidang Hukum </a>
                                 </li>
-                                <li><a href="{{route('admin.dokumentasi')}}"><i class="fa fa-file-image-o"></i>
-                                        Dokumentasi</a>
+                                <li>
+                                    <a href="{{route('admin.dokumentasi')}}"><i class="fa fa-file-image-o"></i>Dokumentasi</a>
                                 </li>
-                                <li><a href="{{route('table')}}"><i class="fa fa-table"></i> Bidang Hukum </a>
+                                <li>
+                                    <a href="{{route('article.show')}}"><i class="fa fa-edit"></i> Artikel </a>
                                 </li>
-<!-- <<<<<<< HEAD -->
-                                <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan Lawyers </a>
-<!-- ======= -->
-                                <li><a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan
+                                <li>
+                                    <a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan
                                         Lawyers </a>
-<!-- >>>>>>> ed13ead32df1df73d469ddd75722201365dda44e -->
                                 </li>
-                                <li><a href="{{route('layout')}}"><i class="fa fa-clone"></i>Layouts </a>
+                                <li>
+                                    <a href="{{route('konsultasi')}}"><i class="fa fa-table"></i> Konsultasi Masyarakat </a>
+                                </li>
+                                <li>
+                                    <a href="{{route('layout')}}"><i class="fa fa-clone"></i>Layouts </a>
+                                </li>
 
-                                </li>
+                                
                             </ul>
                         </div>
 
@@ -118,7 +123,7 @@
 
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                                     aria-expanded="false">
-                                    {{ Auth::user()->username }}
+                                    {{ Auth::user()->name }}
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
 
@@ -148,25 +153,15 @@
             <!-- /page content -->
 
             <!-- footer content -->
-<!-- <<<<<<< HEAD -->
-        <!--<footer>
-            
-=======
             <footer>
 
->>>>>>> ed13ead32df1df73d469ddd75722201365dda44e
                 <div class="pull-right">
-                    Copyright by : Team KP Antinomi LawOffice 2019 <a href="https://www.instagram.com/lamhotdiarta"><i
+                    Copyright by : Team KP Antinomi LawOffice 2019 <a href="https://i.pinimg.com/originals/92/a1/ae/92a1aeb48005aa1b88f71ac4b52243d9.gif"><i
                             class="fa fa-heart"></i></a>
                 </div>
                 <div class="clearfix"></div>
-<<<<<<< HEAD
-            
-        </footer>-->
-=======
 
             </footer>
->>>>>>> ed13ead32df1df73d469ddd75722201365dda44e
             <!-- /footer content -->
 
         </div>

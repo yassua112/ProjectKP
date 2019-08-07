@@ -73,11 +73,13 @@
         <div class="row">
             <!-- left bar -->
             <div class="col-md-9 col-lg-9 p-b-75">               
-                <h2>Bidang Praktik Hukum</h2>
+                <h4 class="m-text23 t-center" style="color:#ab1818;">
+                Bidang Praktik Hukum
+                </h4>
                 <hr>
                 <div class="list-group">
                     @foreach($data as $item)
-                    <a href="{{url('bidang-hukum/'.$item->id_desk)}}"
+                    <a href="{{url('bidang-hukum/'.$item->nama_bid_hukum)}}"
                         class="list-group-item list-group-item-action flex-column align-items-start link-bidang-praktik">
                         <div class="d-flex w-100 justify-content-between link-bidang-praktik">
                             <h5 class="mb-1 link-bidang-praktik">{{$item->nama_bid_hukum}}</h5>
@@ -86,10 +88,12 @@
                     @endforeach
 
                 </div>
+                <br>
+                <h4 class="m-text23 t-center" style="color:#ab1818;">
+                    Kantor Hukum Antinomi
+                </h4>
                 <hr>
-                <h2 align="center">Hubungi Kami</h2>
-                <hr>
-                <h4>Apabila Saudara memiliki pertanyaan terkait jasa hukum kami, silahkan hubungi kami :</h4>
+                <p>Apabila Saudara memiliki pertanyaan terkait jasa hukum kami, silahkan hubungi kami :</p>
                 <span class="border">
                     Email Kami : antinomilawoffice@yahoo.com <br>
                     No. Telp : 085294419970 <br>
@@ -124,7 +128,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

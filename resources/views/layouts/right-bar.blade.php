@@ -1,76 +1,33 @@
 <div class="col-md-3 col-lg-3">
     <div class="rightbar">
-        <h4 class="m-text23 p-t-56 p-b-34 ">
+        <h4 class="m-text23 p-t-56 p-b-34" style="color:#ab1818;">
             Mengapa Antinomi Law Office
         </h4>
         <ul class="p-b-54">
             <li class="p-t-4">
-                <div class="btn-group open">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        We're Reliabic Partners
-                        <span class="sr-only">
-                        </span>
-                    </button>
-                    <div class="dropdown-menu bg-primary">
-                        <a class="dropdown-item" href="#">
-                            drop down menu1
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            drop down menu2
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            drop down menu3
-                        </a>
-                    </div>
-                </div>
+                <button class="btn btn-primary btn-block" type="button">
+                   We Are Reliabic Partner
+                </button>
             </li>
             <li class="p-t-4">
-                <div class="btn-group open">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        We've Raputation
-                        <span class="sr-only">
-                        </span>
-                    </button>
-                    <div class="dropdown-menu bg-primary">
-                        <a class="dropdown-item" href="#">
-                            drop down menu1
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            drop down menu2
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            drop down menu3
-                        </a>
-                    </div>
-                </div>
+                <button class="btn btn-primary btn-block" type="button">
+                    We Have Reputation
+                </button>
             </li>
             <li class="p-t-4">
-                <div class="btn-group open">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        We're The Best
-                        <span class="sr-only">
-                        </span>
-                    </button>
-                    <div class="dropdown-menu bg-primary">
-                        <a class="dropdown-item" href="#">
-                            dropdownmenu1
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            dropdownmenu2
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            dropdownmenu3
-                        </a>
-                    </div>
-                </div>
+                <button class="btn btn-primary btn-block" type="button">
+                    We Are The Best
+                </button>
+            </li>
+            <li class="p-t-4">
+                <button class="btn btn-primary btn-block" type="button">
+                    We Have Experience
+                </button>
             </li>
         </ul>
     </div>
     <!-- Block Layanan -->
-    <h4 class="m-text10 p-t-5 p-b-5">
+    <h4 class="m-text10 p-t-5 p-b-5" style="color:#ab1818;">
         Layanan Jasa Hukum Kami
     </h4>
     <hr>
@@ -121,19 +78,10 @@
         <hr>
     </div>
     <div class="col-md-35">
-                <div class="card">
-                    <div class="card-header">Chat Room <span id="total_client" class="float-right"></span></div>
-                    <div class="card-body">
-                        <div id="chat_output" class="pre-scrollable" style="height: 600px">
-                        
-                        </div>
-                        <input id="chat_input" class="form-control" placeholder="Tulis Pesan dan Entar"/>
-                    </div>
-                </div>
+            
             </div>
 </div>
 
 
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.3"></script>
-

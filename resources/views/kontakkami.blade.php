@@ -17,7 +17,6 @@
         width: 100%;
         /* The width is the width of the web page */
     }
-
 </style>
 
 @section('content')
@@ -87,23 +86,24 @@
                 <hr>
                 <p>Jika Anda ingin diwakili oleh firma hukum terbaik untuk kasus Anda maka jangan ragu untuk kirimkan
                     email kepada kami atau mengisi form di bawah ini :</p><br>
-                <form>
+                <form action="{{route('konsultasi.create')}}" method="POST">
+                @csrf
                     <div class="form-group">
                         <label for="exampleInputNama">Nama Lengkap</label>
                         <input type="text" class="form-control" id="exampleInputNama"
-                            placeholder="Masukkan Nama Lengkap">
+                            placeholder="Masukkan Nama Lengkap" name="nama">
                     </div>
                     <div class="form-group">
                         <label for="exampleEmail">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail" placeholder="Masukkan Email">
+                        <input type="email" class="form-control" id="exampleInputEmail" placeholder="Masukkan Email" name="email">
                     </div>
                     <div class="form-group">
                         <label for="exampleEmail">Subjek</label>
-                        <input type="text" class="form-control" id="exampleSubjek" placeholder="Masukkan Subjek Anda">
+                        <input type="text" class="form-control" id="exampleSubjek" placeholder="Masukkan Subjek Anda" name="subjek">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlPesan">Pesan</label>
-                        <textarea class="form-control" id="exampleFormControlPesan" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlPesan" rows="3" name="deskripsi_konsultasi"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Kirim</button>
                 </form>
@@ -179,7 +179,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--Google map-->
 <script type="text/javascript">
@@ -207,7 +206,6 @@
             google.maps.event.addListener(map, 'click', function (event) {
                 addMarker(event.latLng, map);
             });
-
         
             
             // Adds a marker to the map.
@@ -220,9 +218,7 @@
                     map: map
                 });
             }
-
             google.maps.event.addDomListener(window, 'load', initialize);
-
         </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

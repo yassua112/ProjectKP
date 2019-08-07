@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class ArtikelTable extends Migration
 {
     /**
@@ -14,16 +12,17 @@ class ArtikelTable extends Migration
     public function up()
     {
         Schema::create('artikel', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('id_jdl_artikel')->unsigned()->nullable()->index();
-            $table->string('judul_dokumentasi',100);                       
-            $table->integer('id_admin')->unsigned();
+            $table->bigIncrements('id');            
+            $table->string('judul_artikel',100);
+            $table->text('isi_artikel'); 
+            $table->string('foto',255);
+            $table->string('username',255);                      
+            $table->bigInteger('id_admin')->unsigned()->index();
             $table->timestamps();
-            $table->foreign('id_admin')->references('id_admin')->on('users');
+            $table->foreign('id_admin')->references('id')->on('users');
             
         });
     }
-
     /**
      * Reverse the migrations.
      *

@@ -36,7 +36,9 @@
     </div>
     <div class="clearfix"></div>
     <div class="row">
+    <label><h2>Tambah Kariawan</h2></label>
         <div class="x_content">
+       
             <div class="col-md-6 col-xs-12">
                 <div class="x-panel">
                     <!-- start form for validation -->
@@ -91,7 +93,7 @@
                                 <label for="message">Sedikit Tentang Anda :</label>
                                 <textarea id="message" required="required" class="form-control" name="tentang"
                                     data-parsley-trigger="keyup" data-parsley-minlength="20"
-                                    data-parsley-maxlength="100"
+                                    data-parsley-maxlength="500"
                                     data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters "
                                     data-parsley-validation-threshold="10"></textarea>
                                 <br />

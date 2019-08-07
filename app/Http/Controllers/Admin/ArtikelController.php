@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -7,8 +6,7 @@ use Image;
 use App\Artikel;
 use App\User;
 use App\Lawyers;
-use\App\Providers\SweetAlertServiceProvider;
-
+use Alert;
 class ArtikelController extends AdminController
 {
     public function article_show(){
@@ -18,12 +16,10 @@ class ArtikelController extends AdminController
         return view('dashboard.postArtikel',['data'=>$title]);
     
     }
-
-    public function form_create(){
+    public function tambah_artikel(){
     $title = Artikel::get();
     return view('dashboard.create.create-article', compact('title','ckedtor'));
     }
-
     public function form_pref(Request $request){
         
         $massage=[
@@ -41,10 +37,9 @@ class ArtikelController extends AdminController
         $artikel = new Artikel;                
         $artikel->judul_artikel = $request->title;
         $artikel->isi_artikel = $request->ckedtor;
-        $artikel->id_admin = $user->id_admin;
+        $artikel->id_admin = $user->id;
         $artikel->username =$user->username;
         
-
         if($request->hasFile('fotocover')){
             $image =$request ->file('fotocover');
             $filename='cover'.time().'.'.$image->getClientOriginalExtension();
@@ -56,6 +51,26 @@ class ArtikelController extends AdminController
         Alert::success('Berhasil', 'Data Berhasil Di Tambahkan')->persistent("Ok");
         return redirect()->route('article.show');     
     }
+    public function edit_artikel($id) {
+        $artikel=Artikel::find($id); // menemukan id data yang dicari untuk diedit
+        return view('dashboard.edit.editArticle', compact('artikel'));
+    }
+    public function update(Request $request,$id){ 
+      
+        $artikel = Artikel::find($id);
+        // dd($request,$id);      
+        $artikel->judul_artikel=$request->get('title');
+        $artikel->isi_artikel=$request->get('ckedtor');
+        $artikel->save();
+        Alert::success('Berhasil', 'Data Berhasil Di Update');
+        return redirect()->route('article.show');
+    }
     
-    
+    public function hapus_artikel($id){
+        $artikel=Artikel::find($id);
+        $artikel->delete();
+        Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
+        return redirect()->route('article.show');        
+    }
+ 
 }

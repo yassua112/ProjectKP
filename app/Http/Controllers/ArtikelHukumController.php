@@ -1,11 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
-
 class ArtikelHukumController extends Controller
 {
 	public function index()
@@ -13,7 +9,6 @@ class ArtikelHukumController extends Controller
 		
 		// mengirim data artikel hukum ke view index
 		return view('detailartikel');
-
 	}
 }
 ?>

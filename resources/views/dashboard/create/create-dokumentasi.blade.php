@@ -12,7 +12,10 @@
         border-radius: 25px;
         margin: 1%;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 268244db5e532b16b46617a7e32bcc435c6fb931
     .filePhoto {
         position: relative;
         width: 100%;
@@ -23,7 +26,10 @@
         opacity: 0;
         cursor: pointer;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 268244db5e532b16b46617a7e32bcc435c6fb931
     .uploader2 img {
         /* position:absolute; */
         width: 100%;
@@ -32,7 +38,10 @@
         border: none;
         border-radius: 25px;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 268244db5e532b16b46617a7e32bcc435c6fb931
     .uploadzone {
         min-height: 400px;
         border: 1px solid #e5e5e5;
@@ -165,7 +174,10 @@
 @section('script')
 <script>
     var image = $('#image .images-space .images-upload .uploader2').clone();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 268244db5e532b16b46617a7e32bcc435c6fb931
     $(document).on('change', '.filePhoto', function (e) {
         var fileUpload = $(this);
         var img = $(this).siblings('.img');
@@ -183,7 +195,10 @@
         btn_delete.removeClass('hidden');
         btn_delete.removeClass('last');
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 268244db5e532b16b46617a7e32bcc435c6fb931
     $('#image .images-space').on('click', '.btn-delete', function (event) {
         let uploader2 = $(this).parents('.uploader2');
         let img = $(this).closest(".uploader2").find(".img");

@@ -76,7 +76,7 @@
                     <div class="item-blog p-b-30">
                         
                         <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="{{asset('assets/images/logoantinomi.jpg')}}" alt="IMG-BLOG">
+                            <img src="{{asset('assets/images/logoantinomi2.jpg')}}" alt="IMG-BLOG">
                         </a>
 
                         <div class="item-blog-txt p-t-33">
@@ -168,7 +168,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

@@ -78,25 +78,21 @@
                             Cara Mengajukan Gugatan Cerai Isteri Kepada Suami di Pengadilan Agama
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Tindak Pidana Lingkungan Hidup yang Mengancam Perusahaan
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Pencemaran Nama Baik Lewat Media Sosial Internet
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Mempekerjakan Anak Di Bawah Umur Bisa Dipidana
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Mewakil di pengadilan
@@ -111,26 +107,22 @@
                         Artikel Terpopuler
                     </h4>
                 </div>
-
                 <ul>
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Mempekerjakan Anak Di Bawah Umur Bisa Dipidana
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Tinjauan Hukum Tentang Judi
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Tanggung Jawab Pemilik PT Atas Keuangan Perusahaan
                         </a>
                     </li>
-
                     <li class="p-t-6 p-b-8 ">
                         <a href="#" class="s-text13 p-t-5 p-b-5">
                             Akibat Hukum jika Anggota CV Meninggal Dunia
@@ -159,7 +151,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

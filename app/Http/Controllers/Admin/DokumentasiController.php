@@ -7,22 +7,17 @@ use App\User;
 use Alert;
 use Image;
 class DokumentasiController extends AdminController {
-
-
     public function index() {       
         $dokumentasi=Dokumentasi::get();      
         return view('dashboard.gambar',['data'=>$dokumentasi]);
     }
-
-    public function dokCreat(){
+    public function tambah_dokumentasi(){
         
         $bidanghukum=BidangHukum::get();
         return view('dashboard.create.create-dokumentasi',['data'=>$bidanghukum],compact('category','caption'));
     }
-
     public function create(Request $request){
         $this->validate($request, [
-
             'fotodokumentasi' => 'required',
             'fotodokumentasi.*' => 'image|mimes:jpeg,png,jpg,gif,svg,[3]',
             'caption'=>['required', 'string', 'max:255'],
@@ -38,7 +33,6 @@ class DokumentasiController extends AdminController {
                 $data[] = $filename;  
             }
         }
-
         $user=auth()->user();
         $form= new Dokumentasi();
         $form->judul_dokumentasi =$request->category;
@@ -49,12 +43,10 @@ class DokumentasiController extends AdminController {
         Alert::success('Berhasil', 'Data Berhasil Di Tambahkan')->persistent("Ok");
         return redirect()->route('admin.dokumentasi');
     }
-
     public function edit($id) {
         $dokumentasi = Dokumentasi::find($id); // menemukan id data yang dicari untuk diedit
         return view('dashboard.edit.editDokumen', compact('dokumentasi'));
     }
-
     public function update(Request $request,$id){ 
         $this->validate($request, [
             'nama_bid_hukum'    =>  'required',
@@ -68,9 +60,7 @@ class DokumentasiController extends AdminController {
         Alert::success('Berhasil', 'Data Berhasil Di Update');
         return redirect()->route('table');
     }
-
-
-    public function hapus($id){
+    public function hapus_dokumentasi($id){
         $dokumentasi=Dokumentasi::find($id);
         $dokumentasi->delete();
         Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");

@@ -77,8 +77,13 @@
                                         Lawyers </a>
                                 </li>
                                 <li>
+                                    <a href="{{route('konsultasi')}}"><i class="fa fa-table"></i> Konsultasi Masyarakat </a>
+                                </li>
+                                <li>
                                     <a href="{{route('layout')}}"><i class="fa fa-clone"></i>Layouts </a>
                                 </li>
+
+                                
                             </ul>
                         </div>
 

@@ -21,7 +21,7 @@
                     <div class="arms">
                         <div class="arm"></div>
                         <div class="arm arm-r"></div>
-                    </div>z
+                    </div>
                 </div>
                 <div class="form" style="width:400px">
                     <div class="control">

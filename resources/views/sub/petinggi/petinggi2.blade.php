@@ -30,4 +30,8 @@
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 268244db5e532b16b46617a7e32bcc435c6fb931

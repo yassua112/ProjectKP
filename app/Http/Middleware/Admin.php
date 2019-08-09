@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Http\Middleware;
-
 use Closure;
-
 class Admin
 {
     /**
@@ -17,11 +14,9 @@ class Admin
     {
         // $setting = Setting::where('id', 1)->first();
         // App::setLocale($setting->bahasa);
-
         if (auth()->check() && auth()->user()->hasRole('1')) {
             return $next($request);
         }
-
         return redirect('login');
     }
 }

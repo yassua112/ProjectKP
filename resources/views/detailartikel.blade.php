@@ -188,7 +188,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>

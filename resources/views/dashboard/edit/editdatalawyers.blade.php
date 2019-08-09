@@ -132,4 +132,8 @@
 <script type="text/javascript" src="{{asset('vendor/gentella/parsleyjs/dist/parsley.min.js')}}"></script>
 
 
+<<<<<<< HEAD
 @stop
+=======
+@stop
+>>>>>>> 268244db5e532b16b46617a7e32bcc435c6fb931

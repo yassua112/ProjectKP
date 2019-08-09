@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class TableSelebihnya extends Migration
 {
     /**
@@ -13,7 +11,6 @@ class TableSelebihnya extends Migration
      */
     public function up()
     {       
-
         Schema::create('bidang_hukum', function (Blueprint $table) {
             $table->increments('id');            
             $table->string('nama_bid_hukum',100);
@@ -23,8 +20,6 @@ class TableSelebihnya extends Migration
             $table->foreign('id_admin')->references('id')->on('users');
             
         });
-
-
         Schema::create('dokumentasi', function (Blueprint $table) {
             $table->bigIncrements('id');            
             $table->string('judul_dokumentasi',100);
@@ -35,7 +30,6 @@ class TableSelebihnya extends Migration
             $table->foreign('id_admin')->references('id')->on('users');
             
         });
-
         Schema::create('konsultasi', function (Blueprint $table) {
             $table->bigIncrements('id');
             
@@ -49,7 +43,6 @@ class TableSelebihnya extends Migration
             
         });    
     }
-
     /**
      * Reverse the migrations.
      *
@@ -62,6 +55,5 @@ class TableSelebihnya extends Migration
         Schema::dropIfExists('det_dokumentasi');
         Schema::dropIfExists('Dokumentasi');
         Schema::dropIfExists('konsultasi');
-
     }
 }

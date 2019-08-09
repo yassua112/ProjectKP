@@ -26,7 +26,8 @@
 
                 <h4>{{$data->SekilasTentang}}</h4>
                 <h4>Berikut in adalah cv dari {{$data->nama}}</h4><br>
-                <button><a href="" download='{{$data->fileCV}}'>Unduh</a></button>
+                <!-- <a src="" target="_blank">download</a> -->
+                <button><a href="" download="{{asset('cv-folder/' .$data->fileCV)}}">Unduh</a></button>
             </div>
             <!-- Right Barr-->
             @include('layouts.right-bar')

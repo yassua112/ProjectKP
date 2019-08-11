@@ -23,9 +23,10 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Post Article<small>Sessions</small></h2>
+                    <h2>Post Artikel<small>Sessions</small></h2>
                     <hr>
                     <h3>Judul artikel</h3>
+                    
                     <form action="{{route('detail.artikel')}}" method="POST" id="wizardForm"
                         enctype="multipart/form-data">
                         @csrf

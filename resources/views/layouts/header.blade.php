@@ -48,7 +48,7 @@
 							</li>
 
 							<li>
-								<a href="{{route('kontakkami')}}">KONTAK KAMI</a>
+								<a href="{{route('konsultasi.create')}}">KONTAK KAMI</a>
 							</li>
 
 							<li>

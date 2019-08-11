@@ -19,7 +19,7 @@
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 
                     <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                        Welcome to Antinomi Law Office's Website Official
+                        Welcome to Antinomi Law Office Website Official
                     </h2>
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
@@ -35,7 +35,7 @@
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 
                     <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                        Welcome to Antinomi Law Office's Website Official
+                        Welcome to Antinomi Law Office Website Official
                     </h2>
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
@@ -51,7 +51,7 @@
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 
                     <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                        Welcome to Antinomi Law Office's Website Official
+                        Welcome to Antinomi Law Office Website Official
                     </h2>
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
@@ -80,9 +80,10 @@
                         </a>
 
                         <div class="item-blog-txt p-t-33">
-                            <p class="p-b-12">
-                                Sebagai pendiri dari Antinomi Law Office pada Tahun 2018, rupanya Ucok Tamba menyadari
-                                akan kekurangan sebagai single partner...
+                            <p class="p-b-12" align="justify">
+                                ANTINOMI Law Office adalah kantor hukum yang  bertujuan  untuk memberikan layanan jasa hukum kepada seluruh lapisan masyarakat pencari keadilan dalam semua aspek hukum dengan pendekatan <i>litigasi</i> dan <i>non-litigasi</i>. ANTINOMI Law Office didirikan di kota Bandung pada tahun 2008 oleh para Advokat Ucok Rolando Parulian Tamba,S.H.,M.H., Dr.Sahat Maruli Situmeang,S.H.,M.H. dan Dr.Musa Darwin Pane,S.H.,M.H. <br> <br>
+
+                                Kata Antinomi berarti satu dua kesimpulan atau dua klaim yang sama-sama benar namun kelihatannya bertentangan atau bertolak belakang, oleh karenanya nilai yang saling bertentangan (berkontradiksi) tidak dapat saling menegasikan/mengingkari, justru dalam situasi yang bertentangan itu keduanya saling meng-ada. Bahwa para pendiri akhirnya memahami dalam domain penegakan hukum makna <b>ANTINOMI</b> baiknya menjadi satu pegangan filosofi, baik secara <i>ontologi</i>, <i>epistemologi</i> dan <i>aksiologi</i>.
                             </p>                            
                         </div>
                     </div>

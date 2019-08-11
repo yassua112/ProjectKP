@@ -9,7 +9,6 @@
 <link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/noui/nouislider.min.css')}}">
 
 @section('content')
-
 <section class="bgwhite p-t-20">
     <div class="container">
         <div class="row">
@@ -24,7 +23,7 @@
                     </div>
                     <div class="col-6 col-sm-4">
                         <h4><i class='fa fa-clock-o'>
-                                update:{!!substr(strip_tags($data->created_at), 0, 10) !!}</i></h4>
+                                update:{!! substr(strip_tags($data->created_at), 0, 10) !!}</i></h4>
                     </div>
                 </div>
                 <br>

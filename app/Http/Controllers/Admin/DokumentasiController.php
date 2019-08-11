@@ -1,5 +1,4 @@
-<?php
-namespace App\Http\Controllers\Admin;
+<?php namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Dokumentasi;
 use App\BidangHukum;

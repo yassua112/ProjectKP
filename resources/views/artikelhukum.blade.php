@@ -34,13 +34,13 @@
             <div class="media">
                 <img src="{{asset('images/cover/' .$item->foto)}}" class="mr-3" alt="..." width="300" height="200">
                 <div class="media-body">
-                    <a href="{{url('artikelhukum/'.$item->judul_artikel)}}">
+                    <a href="{{url('artikel-hukum/'.$item->judul_artikel)}}">
                         <h3 style="color:#ab1818;">{{$item->judul_artikel}}</h3>                        
                         <p><i class='fa fa-edit'>by : {{$item->username}}  </i>   <i class='fa fa-clock-o'>  update:{{ substr(strip_tags($item->created_at), 0, 10) }}</i></p>
                     </a><br>
                     {{ substr(strip_tags($item->isi_artikel), 0, 200)}}
                     
-                    <button><a href="{{url('artikelhukum/'.$item->judul_artikel)}}">
+                    <button><a href="{{url('artikel-hukum/'.$item->judul_artikel)}}">
                     <div class="text-primary">
                     Selengkapnya....
                     </div>

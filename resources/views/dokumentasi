@@ -1,29 +1,11 @@
---
-Tolong tuliskan dokumentasi tentang progress yang baru dikerjakan disini,
-lengkap beserta NAMA FILE dan NOMOR LINE FILE CODING, agar tidak terjadi tumpang tindih
---
-Terima kasih
-
-Ferlin
--------
-April 16, 2019  01.48
--mengubah <a href="{{route('artikelhukum')}}">ARTIKEL HUKUM</a> di header.blade.php
--halaman detail artikel dan halaman artikel hukum sudah jalan
--menambah tabel lawyers pada database phpmyadmin
-
-next - mengubah caroussel dengan foto-foto lawyers
-	 - CRUD Artikel hukum (menu admin)
-	 - CRUD Dokumentasi (menu admin)
-	 - CRUD Lawyers
-
-Yosua
---------
--memperbaiki back-end lawyers
--menambah tale kariawan/lawyer
+Masalah di website antinomi law office
 ----------------------------------------
--menambah front-end dashboard
 
-next -mengisi front-end dari sub menu
+dari sisi admin ->
+-upload foto dokumentasi. upload 3 file foto berbeda, yang muncul adalah 3 foto, 2 foto sama, 1 foto berbeda.
 
-Leo
---------
+-bagian upload artikel. tulisan artikel tidak dapat menampilkan numbering dan bulleting yang telah dibuat dihalaman Ckeditor admin.
+
+
+dari sisi pengunjung ->
+-ketika membuka profil lawyers, dan mengklik salah satu lawyers. Ketika mengunduh cv. Hasil unduhan setelah dibuka adalah salah.

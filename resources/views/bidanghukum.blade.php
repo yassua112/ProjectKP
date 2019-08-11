@@ -19,7 +19,7 @@
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 
                     <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                        Welcome to Antinomi Law Office's Website Official
+                        Welcome to Antinomi Law Office Website Official
                     </h2>
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
@@ -35,7 +35,7 @@
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 
                     <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                        Welcome to Antinomi Law Office's Website Official
+                        Welcome to Antinomi Law Office Website Official
                     </h2>
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
@@ -51,7 +51,7 @@
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 
                     <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                        Welcome to Antinomi Law Office's Website Official
+                        Welcome to Antinomi Law Office Website Official
                     </h2>
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">

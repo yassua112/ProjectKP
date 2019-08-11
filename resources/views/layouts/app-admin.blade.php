@@ -70,7 +70,7 @@
                                     <a href="{{route('admin.dokumentasi')}}"><i class="fa fa-file-image-o"></i>Dokumentasi</a>
                                 </li>
                                 <li>
-                                    <a href="{{route('article.show')}}"><i class="fa fa-edit"></i> Artikel </a>
+                                    <a href="{{route('adminartikel.show')}}"><i class="fa fa-edit"></i> Artikel </a>
                                 </li>
                                 <li>
                                     <a href="{{route('data')}}"><i class="fa fa-bar-chart-o"></i> Data Admin dan

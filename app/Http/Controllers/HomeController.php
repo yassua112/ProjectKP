@@ -14,7 +14,7 @@ class HomeController extends Controller
     }
     public function artikelhukum(){
         
-        $artikel =Artikel::paginate(5);    
+        $artikel = Artikel::paginate(5);    
         return view('artikelhukum',['data'=>$artikel]);
     }
     public function artikel_show($id){

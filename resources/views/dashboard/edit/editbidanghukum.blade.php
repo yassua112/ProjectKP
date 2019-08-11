@@ -10,7 +10,7 @@
 		@endif
 		<div class="row">
 			<div class="col-12">
-				<form action="{{url('/dashboard/table/'. $data->id.'/update')}}" method="POST">
+				<form action="{{url('/dashboard/table/'. $bidanghukum->id.'/update')}}" method="POST">
 				@csrf				
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">Nama Bidang Hukum</label>

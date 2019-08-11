@@ -36,7 +36,7 @@
 
                                         <div class="mx-auto">
                                             <a href="lawyers/ucokrolando">
-                                                <h5 class="text-uppercase text-center">Ucok Orlando Parulian Tamba,S.H.,
+                                                <h5 class="text-uppercase text-center">Ucok Rolando Parulian Tamba,S.H.,
                                                     M.H
                                                 </h5>
                                             </a>

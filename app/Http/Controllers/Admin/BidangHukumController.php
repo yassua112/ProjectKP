@@ -29,11 +29,17 @@ class BidangHukumController extends AdminController
         Alert::success('Berhasil', 'Data Berhasil Di Tambahkan');
         return redirect()->route('table');
     }
+
+
+
+
+
     public function edit_bidanghukum($id) {
         $bidanghukum = BidangHukum::find($id); // menemukan id data yang dicari untuk diedit
         return view('dashboard.edit.editbidanghukum', compact('bidanghukum'));
     }
-    public function update(Request $request,$id){ 
+    public function update(Request $request,$id){
+        
         $this->validate($request, [
             'nama_bid_hukum'    =>  'required',
             'keterangan'     =>  'required'
@@ -44,7 +50,7 @@ class BidangHukumController extends AdminController
         $bidanghukum->keterangan=$request->get('keterangan');
         $bidanghukum->save();
         Alert::success('Berhasil', 'Data Berhasil Di Update');
-        return redirect()->route('data');
+        return redirect()->route('table');
     }
     public function hapus_bidanghukum($id)
     {

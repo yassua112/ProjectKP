@@ -27,7 +27,7 @@
                     <hr>
                     <h3>Judul artikel</h3>
 
-                    <form action="{{url('/dashboard/artikel/'. $item->id.'/update')}}" method="POST"  id="wizardForm"
+                    <form action="{{url('/dashboard/artikel/'. $artikel->id.'/update')}}" method="POST"  id="wizardForm"
                         enctype="multipart/form-data">
                         @csrf
                         <div class="row col-sm-12">
@@ -101,8 +101,5 @@
 <script type="text/javascript" src="{{asset('vendor/gentella/jquery.hotkeys/jquery.hotkeys.js')}}"></script>
 <script type="text/javascript" src="{{asset('vendor/gentella/google-code-prettify/src/prettify.js')}}"></script>
 <script type="text/javascript" src="{{asset('vendor/gentella/parsleyjs/dist/parsley.min.js')}}"></script>
-
-
-
 
 @stop

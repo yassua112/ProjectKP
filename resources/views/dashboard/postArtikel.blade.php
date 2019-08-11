@@ -10,17 +10,17 @@
 
 <div class="row">
     <h1 class="text-center">Data Artikel</h1>
-    <a href="{{route('article.create')}}" class="btn btn-primary btn-sm">Buat Article Baru</a>
+    <a href="{{route('artikel.create')}}" class="btn btn-primary btn-sm">Buat Artikel Baru</a>
     <table class="table table-hover">
         <tr>
             <th>No</th>
             <th>cover</th>
-            <th>Judul Article</th>
-            <th>Isis Artilce</th>
+            <th>Judul Artikel</th>
+            <th>Isi Artikel</th>
             <th>Aksi</th>
         </tr>
         <?php $no=0 ;?>
-        @foreach($data as $item)
+        @foreach($artikel as $item)
         <tr>
             <?php $no++ ;?>
             <th>{{$no}}</th>

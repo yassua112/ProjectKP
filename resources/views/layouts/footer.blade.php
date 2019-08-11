@@ -7,7 +7,7 @@
 
             <div class="">
                 <p class="colorwhite">
-                    Jl. Wira Angun-Angun No. 24, Kota Bandung. <br>
+                    Jl. Wira Angun-Angun No. 21, Kota Bandung. <br>
                     Telp   : 07163467a<br>
                     E-mail : antinomilawoffice@yahoo.co.id<br>
                 </p>

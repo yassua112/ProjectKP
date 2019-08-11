@@ -18,22 +18,21 @@ Route::get('/', 'HomeController@index')->name('home');
 // Halaman View Konsultasi
 
 
-Route::get('/dashboard/article', 'Admin\ArtikelController@article_show')->name('article.show');
-Route::get('/dashboard/create/article', 'Admin\ArtikelController@tambah_artikel')->name('article.create');
+Route::get('/dashboard/artikel', 'Admin\ArtikelController@article_show')->name('adminartikel.show');
+Route::get('/dashboard/create/artikel', 'Admin\ArtikelController@tambah_artikel')->name('artikel.create');
 Route::post('/detailartikel', 'Admin\ArtikelController@form_pref')->name('detail.artikel');
 Route::get('/dashboard/artikel/{id}/delete','Admin\ArtikelController@hapus_artikel')->name('artikel.hapus');
-Route::get('/dashboard/artikel/{id}/edit','Admin\ArtikelController@edit_artikel')->name('artikel.show');
+Route::get('/dashboard/artikel/{id}/edit','Admin\ArtikelController@edit_artikel')->name('artikel.edit');
 Route::post('/dashboard/artikel/{id}/update','Admin\ArtikelController@update')->name('artikel.update');
-// bidang hukum---------------------------------------------------------------------------------------
+
+// bidang hukum---------------------------------------------------------------------------------
 Route::get('/dashboard/table','Admin\BidangHukumController@index')->name('table');
 Route::get('/dashboard/table/create','Admin\BidangHukumController@tambah_bidanghukum')->name('table.create');
 Route::get('/dashboard/table/{id}/edit','Admin\BidangHukumController@edit_bidanghukum')->name('table.show');
 Route::post('/dashboard/table/{id}/update','Admin\BidangHukumController@update')->name('table.update');
 Route::get('/dashboard/table/{id}/delete','Admin\BidangHukumController@hapus_bidanghukum')->name('tabel.hapus');
 //----------------------------------------------------------------------------------------------------
-Route::post('/bidang-hukum','Admin\BidangHukumController@bidang_pref')->name('table.pref');
-Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
-Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');
+
 // kariawan---------------------------------------------------------------------------------------
 Route::get('/dashboard/data','Admin\LawyersController@index')->name('data');
 Route::get('/dashboard/data/create','Admin\LawyersController@tambah_lawyer')->name('kariawan.create');
@@ -74,6 +73,12 @@ Route::get('/lawyers/musadarwinpane','PetinggiController@petinggi2')->name('lawy
 Route::get('/lawyers/sahatmarulitua','PetinggiController@petinggi3')->name('lawyers.maruli');
 Route::get('/lawyers','HomeController@lawyers')->name('lawyers');
 Route::get('/lawyers/{id}', 'HomeController@lawyers_show')->name('lawyers.show');
-Route::get('/artikelhukum', 'HomeController@artikelhukum')->name('artikel.hukum');
-Route::get('/artikelhukum/{id}', 'HomeController@artikel_show')->name('artikel.show');  
+
+Route::get('/artikel-hukum', 'HomeController@artikelhukum')->name('artikel.hukum');
+Route::get('/artikel-hukum/{id}', 'HomeController@artikel_show')->name('artikel.show');  
+
 Route::get('/dokumentasi-kegiatan', 'HomeController@dokumentasikegiatan')->name('dokumentasi');
+
+Route::post('/bidang-hukum','Admin\BidangHukumController@bidang_pref')->name('table.pref');
+Route::get('/bidang-hukum', 'HomeController@bidang_hukum')->name('bidanghukum');
+Route::get('/bidang-hukum/{id}', 'HomeController@bidang_hukum_show')->name('bidanghukum.show');

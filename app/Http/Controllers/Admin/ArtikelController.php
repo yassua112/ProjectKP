@@ -13,7 +13,7 @@ class ArtikelController extends AdminController
     
     $title= Artikel::all();
     
-        return view('dashboard.postArtikel',['data'=>$title]);
+        return view('dashboard.postArtikel',['artikel'=>$title]);
     
     }
     public function tambah_artikel(){
@@ -49,28 +49,29 @@ class ArtikelController extends AdminController
             $artikel->save();
         }
         Alert::success('Berhasil', 'Data Berhasil Di Tambahkan')->persistent("Ok");
-        return redirect()->route('article.show');     
+        return redirect()->route('adminartikel.show');     
     }
+
+
     public function edit_artikel($id) {
-        $artikel=Artikel::find($id); // menemukan id data yang dicari untuk diedit
+        $artikel = Artikel::find($id); // menemukan id data yang dicari untuk diedit
         return view('dashboard.edit.editArticle', compact('artikel'));
     }
-    public function update(Request $request,$id){ 
-      
+    public function update (Request $request,$id){
         $artikel = Artikel::find($id);
         // dd($request,$id);      
         $artikel->judul_artikel=$request->get('title');
         $artikel->isi_artikel=$request->get('ckedtor');
         $artikel->save();
         Alert::success('Berhasil', 'Data Berhasil Di Update');
-        return redirect()->route('article.show');
+        return redirect()->route('adminartikel.show');
     }
     
     public function hapus_artikel($id){
         $artikel=Artikel::find($id);
         $artikel->delete();
         Alert::success('Berhasil', 'Data Berhasil Di Hapus')->persistent("Ok");
-        return redirect()->route('article.show');        
+        return redirect()->route('adminartikel.show');        
     }
  
 }

@@ -24,8 +24,8 @@
                 <h4> Jenis Kelamin <i class ="fa fa-male"> : {{$data->gender}} </i> </h4>
                 <hr />
 
-                <h4>{{$data->SekilasTentang}}</h4>
-                <h4>Berikut in adalah cv dari {{$data->nama}}</h4><br>
+                <p>{{$data->SekilasTentang}}</p>
+                <h5>Berikut ini adalah cv dari {{$data->nama}}</h5><br>
                 <button><a href="" download='{{$data->fileCV}}'>Unduh</a></button>
             </div>
             <!-- Right Barr-->

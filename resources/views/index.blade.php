@@ -9,63 +9,72 @@
 <link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/noui/nouislider.min.css')}}">
 
 @stop
+<style>
+    /* Set the size of the div element that contains the map */
+    #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+    }
+</style>
 
 @section('content')
 <!-- Slide1 -->
 <section class="slide1">
     <div class="wrap-slick1">
         <div class="slick1">
-            <div class="item-slick1 item1-slick1" style="background-image: url({{asset('assets/images/master-slide-02.jpg')}});">
+            <div class="item-slick1 item2-slick1"
+                style="background-image: url({{asset('assets/images/background1.jpg')}});">
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-                        Women Collection 2018
-                    </span>
 
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-                        New arrivals
-                    </h2>
-
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
-                        <!-- Button -->
-                        <a href="{{asset('assets/product.html')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                            LIHAT PROFILE
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item-slick1 item2-slick1" style="background-image: url({{asset('assets/images/master-slide-03.jpg')}});">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
-                        Women Collection 2018
-                    </span>
-
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                        New arrivals
+                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
+                        data-appear="lightSpeedIn">
+                        Welcome to Antinomi Law Office's Website Official
                     </h2>
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
                         <!-- Button -->
-                        <a href="{{asset('assets/product.html')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                        <a href="{{route('tentangkami')}}"
+                            class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
                             LIHAT PROFILE
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="item-slick1 item3-slick1" style="background-image: url({{asset('assets/images/master-slide-04.jpg')}});">
+            <div class="item-slick1 item2-slick1"
+                style="background-image: url({{asset('assets/images/background2.jpg')}});">
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
-                        Women Collection 2018
-                    </span>
 
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
-                        New arrivals
+                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
+                        data-appear="lightSpeedIn">
+                        Welcome to Antinomi Law Office's Website Official
                     </h2>
 
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
+                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
                         <!-- Button -->
-                        <a href="{{asset('assets/product.html')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                        <a href="{{route('tentangkami')}}"
+                            class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                            LIHAT PROFILE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-slick1 item2-slick1"
+                style="background-image: url({{asset('assets/images/background3.jpg')}});">
+                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+
+                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
+                        data-appear="lightSpeedIn">
+                        Welcome to Antinomi Law Office's Website Official
+                    </h2>
+
+                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
+                        <!-- Button -->
+                        <a href="{{route('tentangkami')}}"
+                            class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
                             LIHAT PROFILE
                         </a>
                     </div>
@@ -84,24 +93,30 @@
                 <div class="p-r-50 p-r-0-lg">
                     <div class="item-blog p-b-30">
                         <a href="{{url('blog/detail/A001')}}" class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="{{asset('assets/images/blog-04.jpg')}}" alt="IMG-BLOG">
-                            <span class="dis-block flex-c-m pos1 size20 bg4 s-text1">
-                                Selamat datang di Website Antinomi Law Office
-                            </span>
+                            <img src="{{asset('assets/images/logoantinomi2.jpg')}}" alt="IMG-BLOG">
                         </a>
 
                         <div class="item-blog-txt p-t-33">
-                            <p class="p-b-12">
-                                Sebagai pendiri dari Antinomi Law Office pada Tahun 2018, rupanya Ucok Tamba menyadari
-                                akan kekurangan sebagai single partner...
-                            </p>                            
+                            <p class="p-b-12" align="justify">
+                                Sebagai pendiri dari Antinomi Law Office pada Tahun 2008, rupanya Ucok Tamba menyadari
+                                akan kekurangan sebagai single partner dalam melayani masyarakat terkait bidang hukum.
+                                Bersama dengan kedua rekan advokatnya, yakni Dr. Sahat Maruli Tua Situmeang, S.H., M.H,
+                                dan Dr. Musa Darwin Pane, S.H., M.H, bersepakat untuk membangun suatu lembaga pelayanan
+                                jasa bidang hukum yang berfokus pada keadilan dan solusi pada setiap permasalahan hukum
+                                pada masyarakat yang terjadi di Indonesia. <br><br>
+                                Berbekal pengalaman dalam menangani berbagai kasus bidang hukum, Antinomi Law Office
+                                senantiasa mendedikasikan diri untuk membantu klien mencapai tujuannya, yaitu hak hukum
+                                yang adil dengan berbagai saran, strategi, dan dukungan yang solutif dan respon yang
+                                cepat sepanjang waktu.
+
+                            </p>
                         </div>
                     </div>
                     <hr>
-                    <h2 class="m-text23 p-t-10 p-b-34 text-center">
-                        MOTTO ANTINOMI LAW OFFICE
-                    </h2>
+                    <h4 class="m-text23 t-center" style="color:#ab1818;">
+                        MOTTO ANTINOMI LAW OFFICE</h4>
                     <div class="wrap-tags flex-w justify-content-center ">
+
                         <a class="tag-item">
                             <p class="m-text11"> PROFESIONAL </p>
                         </a>
@@ -115,164 +130,67 @@
                         </a>
 
                         <a class="tag-item">
-                            <p class="m-text15"> LIGAT </p>
-                        </a>                    
+                            <p class="m-text15"> KEKELUARGAAN </p>
+                        </a>
                     </div>
-                    <div class="raw">
-                        <div class="p-t-50">
-                            <h2 class="m-text20 text-center">
-                                THE FOUNDER
-                            </h2>
-                            <div class="mx-auto">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded mx-auto d-block" alt="theManager1">
+                    <hr>
+
+                    <div class="row">
+                        <h4 class="m-text23 mx-auto" style="color:#ab1818;">
+                            THE FOUNDER
+                        </h4>
+                    </div>
+                    <div class="row">
+                        <div class="mx-auto">
+                            <img src="{{asset('assets/images/profile-founder.jpg')}}" class="rounded mx-auto d-block"
+                                alt="theManager1">
+
+                            <a href="#">
+                                <h5 class="text-uppercase text-center">Ucok Rolando Parulian Tamba, S.H., M.H
+                                </h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row p-t10">
+                        <h4 class="m-text23 mx-auto" style="color:#ab1818;">
+                            LAW OFFICE MANAGER
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <div class="row mx-auto">
+                            <img align="center" src="{{asset('assets/images/profile-manager.jpg')}}"
+                                class="rounded float-left" alt="theManager1">
+                            <div class="col text-center ">
+                                <h5 class="text-uppercase">Dr. Musa Darwin Pane, S.H., M.H</h5>
+                            </div>
                             </div>
                         </div>
-                    
-                        <!-- The founder Barr -->
-                        <h2 class="m-text20 text-center p-t-20">
-                                LAW OFFICE MANAGER
-                                </h2>
-                        <div class="row p-l-20 " >                        
-                            <div class="col-md-7 col-lg-6 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-left" alt="theManager1">                        
+                        <div class="col-md-4 ml-auto">
+                            <div class="row mx-auto">
+                                <img align="center" src="{{asset('assets/images/profile-manager2.jpg')}}"
+                                    class="rounded float-right" alt="theManager2">
+                                <div class="col text-center">
+                                    <h5 class="text-uppercase ">Dr. Sahat Maruli Tua Situmeang, S.H.,
+                                        M.H</h5>
+                                </div>
                             </div>
-                            <div class="col-md-4 col-lg-5 p-b-75">
-                                <img src="{{asset('assets/images/item-cart-01.jpg')}}" class="rounded float-right p-l-20" alt="theManager2">
-                            </div>                    
-                        </div>                                           
-                    </div>                
-                </div>         
+                        </div>
+                    </div>
+                </div>
             </div>
+      
 
-            <!-- Right Barr-->
-            @include('layouts.right-bar')
-        </div>
+        <!-- Right Barr-->
+        @include('layouts.right-bar')
+    </div>
     </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
-    <div class="flex-w p-b-90">
-        <div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
-            <h4 class="s-text12 p-b-30">
-                Kantor Antinomi Law Office
-            </h4>
-
-            <div>
-                <p class="s-text7 w-size27">
-                    Jl. Wira Angun-Angun No. 24, Kota Bandung. <br>
-                    Telp   : <br>
-                    E-mail : <br>
-                </p>
-
-                <div class="flex-m p-t-30">
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-            <h4 class="s-text12 p-b-30">
-                Categories
-            </h4>
-
-            <ul>
-                <li>
-                    <a href="#" class="s-text7">
-                        Men
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="s-text7">
-                        Women
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Dresses
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Sunglasses
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-            <h4 class="s-text12 p-b-30">
-                Links
-            </h4>
-
-            <ul>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Search
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        About Us
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Contact Us
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Returns
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-            <h4 class="s-text12 p-b-30">
-                Help
-            </h4>
-
-            <ul>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Track Order
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Returns
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Shipping
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        FAQs
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="t-center s-text7 p-t-10">
-        MADE BY <i class="fa fa-heart-o" aria-hidden="true"></i>
-    </div>
-</footer>
+@include('layouts.footer')
 
 
 
@@ -290,7 +208,6 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
     });
-
 </script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="{{asset('assets/vendor/slick/slick.min.js')}}"></script>
